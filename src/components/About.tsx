@@ -67,7 +67,7 @@ const About = () => {
 
                     {/* Image Content */}
                     <div className="relative order-1 lg:order-2 flex justify-center lg:justify-end">
-                        <div className={`relative aspect-[4/5] w-full max-w-[500px] overflow-hidden bg-muted ${isVisible ? 'animate-reveal-mask' : 'opacity-0'}`}>
+                        <div className={`relative aspect-[4/5] w-full max-w-[500px] overflow-hidden bg-muted rounded-2xl shadow-2xl border border-white/10 ${isVisible ? 'animate-reveal-mask' : 'opacity-0'}`}>
                             <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10"></div>
                             <img
                                 src={potrait}

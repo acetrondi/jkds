@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Separator } from "@/components/ui/separator";
 
 interface StatItemProps {
   label: string;
@@ -52,21 +51,21 @@ const StatItem = ({ label, value, suffix, showPlus }: StatItemProps) => {
   }, [isVisible, value]);
 
   return (
-    <div ref={ref} className="flex flex-col items-center text-center py-8 md:py-0">
-      <span className="text-[13px] md:text-[14px] font-medium uppercase tracking-[0.2em] text-muted-foreground mb-4">
+    <div ref={ref} className="flex flex-col justify-between h-full p-8 md:p-12 transition-colors duration-300 hover:bg-white/5">
+      <span className="text-sm md:text-base font-medium tracking-[0.2em] text-muted-foreground uppercase mb-8">
         {label}
       </span>
-      <div className="flex items-start ml-2">
-        <span className="text-[56px] md:text-[72px] lg:text-[80px] font-bold leading-none text-foreground">
+      <div className="flex items-baseline gap-1">
+        <span className="font-orbitron text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight">
           {count}
         </span>
         {showPlus && (
-          <span className="text-[40px] md:text-[56px] lg:text-[64px] font-bold leading-none text-primary ml-1 transition-all duration-300 hover:brightness-125 hover:drop-shadow-[0_0_8px_hsl(var(--primary)/0.5)]">
+          <span className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
             +
           </span>
         )}
         {suffix && (
-          <span className="text-[56px] md:text-[72px] lg:text-[80px] font-bold leading-none text-foreground">
+          <span className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             {suffix}
           </span>
         )}
@@ -77,29 +76,30 @@ const StatItem = ({ label, value, suffix, showPlus }: StatItemProps) => {
 
 const Stats = () => {
   const stats = [
-    { label: "COUNTRIES", value: 44 },
-    { label: "EXPERIENCE", value: 40, showPlus: true },
-    { label: "PROJECTS", value: 950 },
-    { label: "AWARDS", value: 50, showPlus: true },
+    { label: "Countries", value: 44 },
+    { label: "Years of experience", value: 40, showPlus: true },
+    { label: "Projects", value: 950 },
+    { label: "Awards", value: 50, showPlus: true },
   ];
 
   return (
-    <section className="w-full bg-background py-20 md:py-[120px]">
-      <div className="max-w-[1320px] mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0">
+    <section className="w-full bg-black py-20 md:py-[120px]">
+      <div className="w-full px-6 md:px-12 lg:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-white/10 bg-black/50 backdrop-blur-sm rounded-none overflow-hidden">
           {stats.map((stat, index) => (
-            <div key={stat.label} className="flex items-center justify-center">
+            <div
+              key={stat.label}
+              className={`
+                border-b border-white/10 last:border-b-0 
+                lg:border-b-0 lg:border-r lg:last:border-r-0
+                ${index % 2 === 0 ? 'md:border-r' : 'md:border-r-0'}
+              `}
+            >
               <StatItem
                 label={stat.label}
                 value={stat.value}
                 showPlus={stat.showPlus}
               />
-              {index < stats.length - 1 && (
-                <Separator
-                  orientation="vertical"
-                  className="hidden lg:block h-24 ml-auto bg-border"
-                />
-              )}
             </div>
           ))}
         </div>

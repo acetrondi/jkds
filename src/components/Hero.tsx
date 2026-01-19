@@ -1,4 +1,4 @@
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import heroBedroomRender from "@/assets/hero-bedroom-render.jpg";
 import interior1 from "@/assets/interior-1.jpg";
 import interior2 from "@/assets/interior-2.jpg";
@@ -19,15 +19,15 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
       </div>
 
-      {/* Gold Play Button - Center Right */}
-      <div className="absolute top-1/2 right-1/4 -translate-y-1/2 z-20 hidden lg:flex">
-        <button className="w-24 h-24 rounded-full bg-primary flex items-center justify-center hover:scale-105 transition-transform duration-300 shadow-lg">
-          <Play className="w-8 h-8 text-background fill-background ml-1" />
-        </button>
+      {/* Big Background Overlay Text */}
+      <div className="absolute inset-0 z-[5] flex items-center justify-center pointer-events-none overflow-hidden select-none">
+        <h2 className="text-[20vw] md:text-[25vw] font-serif font-black text-white/[0.6] leading-none tracking-tighter">
+          JDKS
+        </h2>
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 w-full">
+      <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
           {/* Left Content - Headlines */}
           <div className="space-y-4">

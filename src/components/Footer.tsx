@@ -1,3 +1,5 @@
+import jdksLogo from "@/assets/jdks_logo_wordmark.png";
+
 const footerLinks = [
   "Interior Visualization",
   "Exterior Visualization",
@@ -13,10 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full border-2 border-primary flex items-center justify-center">
-              <span className="text-primary text-xs font-bold">★</span>
-            </div>
-            <span className="text-xl font-semibold tracking-wider text-foreground">JDKS</span>
+            <img src={jdksLogo} alt="JDKS Logo" className="h-32 w-auto" />
           </a>
 
           {/* Links */}
@@ -36,7 +35,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-border text-center">
           <p className="text-xs text-muted-foreground">
-            © 2023 Jash Kadakiia Design Studio. All rights reserved.
+            © {new Date().getFullYear()} Jash Kadakiia Design Studio. All rights reserved.
           </p>
         </div>
       </div>
