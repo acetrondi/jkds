@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Lumiere Residences",
             "description": "Atmospheric residential spaces designed for modern urban living.",
-            "image": "/src/assets/project-1.jpg",
+            "image": "/project-1.jpg",
             "area": "150m²",
             "style": "Minimalism",
             "date": "2024"
@@ -13,7 +13,7 @@
             "id": 2,
             "title": "Elysium Villas",
             "description": "Luxury villa complexes with a focus on seamless indoor-outdoor flow.",
-            "image": "/src/assets/project-2.jpg",
+            "image": "/project-2.jpg",
             "area": "320m²",
             "style": "Contemporary",
             "date": "2023"
@@ -22,7 +22,7 @@
             "id": 3,
             "title": "The Grand Maison",
             "description": "Showcase lighting, textures, and atmosphere of spaces before construction begins.",
-            "image": "/src/assets/project-3.jpg",
+            "image": "/project-3.jpg",
             "area": "450m²",
             "style": "Neoclassical",
             "date": "2024"
@@ -31,7 +31,7 @@
             "id": 4,
             "title": "Serenity Villas",
             "description": "Minimalist retreats crafted for ultimate peace and relaxation.",
-            "image": "/src/assets/project-4.jpg",
+            "image": "/project-4.jpg",
             "area": "200m²",
             "style": "Zen",
             "date": "2023"
@@ -40,7 +40,7 @@
             "id": 5,
             "title": "Arbor Estate",
             "description": "Nature-integrated homes that speak to the soul of the environment.",
-            "image": "/src/assets/project-5.jpg",
+            "image": "/project-5.jpg",
             "area": "500m²",
             "style": "Organic",
             "date": "2024"
