@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import contactBg from "@/assets/contact-bg.jpg";
-import jdksLogo from "@/assets/jdks_logo.avif";
+import jkdsLogo from "@/assets/jkds_logo.avif";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

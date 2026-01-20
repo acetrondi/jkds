@@ -35,7 +35,7 @@ const About = () => {
                 {/* Header info */}
                 <div className="flex justify-between items-start mb-24">
                     <div className="flex items-center gap-2">
-                        <span className="text-xl font-bold tracking-tight uppercase">JDKS</span>
+                        <span className="text-xl font-bold tracking-tight uppercase">JKDS</span>
                         <span className="text-[10px] font-medium opacity-50 uppercase tracking-widest mt-1">Design</span>
                     </div>
                     <div className="flex flex-col items-end">
@@ -53,7 +53,7 @@ const About = () => {
                     {/* Left Column */}
                     <div className="lg:col-span-4 flex flex-col pt-4 order-2 lg:order-1">
                         <p className="text-base md:text-lg leading-relaxed mb-12 lg:mb-16 opacity-80 max-w-md lg:max-w-xs text-foreground">
-                            My name is Jash Kadakiia. I founded this studio not to build more — but to build better. With care, restraint, and meaning. JDKS is a space for slow creation.
+                            My name is Jash Kadakiia. I founded this studio not to build more — but to build better. With care, restraint, and meaning. JKDS is a space for slow creation.
                         </p>
 
                         <div className={`relative ${isVisible ? 'animate-reveal-mask' : 'opacity-0'} w-full max-w-[400px] lg:max-w-none`}>
@@ -72,18 +72,18 @@ const About = () => {
                         <div className="relative mb-24 lg:mb-0">
                             {/* Headline Shadow Effect */}
                             <div className="absolute top-6 left-6 opacity-[0.05] pointer-events-none select-none hidden md:block">
-                                <h2 className="text-7xl md:text-8xl lg:text-[10vw] font-bold leading-[0.85] tracking-tighter">
+                                <h2 className="text-6xl md:text-6xl lg:text-[8vw] font-bold leading-[0.85] tracking-tighter">
                                     Architecture begins<br />with listening
                                 </h2>
                             </div>
-                            <h2 className="text-5xl md:text-7xl lg:text-[9vw] font-bold leading-[0.85] tracking-tighter relative z-10">
+                            <h2 className="text-4xl md:text-6xl lg:text-[8vw] font-bold leading-[0.85] tracking-tighter relative z-10">
                                 Architecture begins<br />with listening
                             </h2>
                         </div>
 
                         <div className="max-w-xl md:max-w-2xl mt-auto pt-16 lg:pt-0">
                             <p className="text-lg md:text-2xl lg:text-3xl leading-[1.3] tracking-tight opacity-70 font-medium">
-                                JDKS is a space for slow creation. We design private residences and villas with a personal, hands-on approach — from the very first sketch to the last presence on site.
+                                JKDS is a space for slow creation. We design private residences and villas with a personal, hands-on approach — from the very first sketch to the last presence on site.
                             </p>
                         </div>
                     </div>

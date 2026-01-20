@@ -1,4 +1,4 @@
-import jdksLogo from "@/assets/jdks_logo_wordmark.png";
+import jkdsLogo from "@/assets/jkds_logo_wordmark.png";
 
 const footerLinks = [
   "Interior Visualization",
@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src={jdksLogo} alt="JDKS Logo" className="h-32 w-auto" />
+            <img src={jkdsLogo} alt="jkds Logo" className="h-32 w-auto" />
           </a>
 
           {/* Links */}

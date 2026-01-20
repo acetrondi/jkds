@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import jdksLogo from "@/assets/jdks_logo_wordmark.png";
+import jkdsLogo from "@/assets/jkds_logo_wordmark.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <img src={jdksLogo} alt="JDKS Logo" className="h-32 w-auto" />
+            <img src={jkdsLogo} alt="JKDS Logo" className="h-32 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
