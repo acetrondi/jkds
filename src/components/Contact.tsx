@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="w-full bg-black py-48 px-4 md:px-12 lg:px-20 overflow-visible">
+    <section className="w-full bg-black pb-60 lg:pb-48 px-4 md:px-12 lg:px-20 overflow-visible">
       <div className="relative w-full max-w-7xl mx-auto">
         {/* Background Card - Now with limited overflow */}
         <div className="relative w-full aspect-[21/9] min-h-[400px] md:min-h-[500px] rounded-[40px] overflow-hidden flex flex-col items-center justify-center px-8 z-10">

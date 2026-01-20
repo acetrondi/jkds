@@ -1,0 +1,76 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Lumiere Residences",
+            "description": "Atmospheric residential spaces designed for modern urban living.",
+            "image": "/src/assets/project-1.jpg",
+            "area": "150m²",
+            "style": "Minimalism",
+            "date": "2024"
+        },
+        {
+            "id": 2,
+            "title": "Elysium Villas",
+            "description": "Luxury villa complexes with a focus on seamless indoor-outdoor flow.",
+            "image": "/src/assets/project-2.jpg",
+            "area": "320m²",
+            "style": "Contemporary",
+            "date": "2023"
+        },
+        {
+            "id": 3,
+            "title": "The Grand Maison",
+            "description": "Showcase lighting, textures, and atmosphere of spaces before construction begins.",
+            "image": "/src/assets/project-3.jpg",
+            "area": "450m²",
+            "style": "Neoclassical",
+            "date": "2024"
+        },
+        {
+            "id": 4,
+            "title": "Serenity Villas",
+            "description": "Minimalist retreats crafted for ultimate peace and relaxation.",
+            "image": "/src/assets/project-4.jpg",
+            "area": "200m²",
+            "style": "Zen",
+            "date": "2023"
+        },
+        {
+            "id": 5,
+            "title": "Arbor Estate",
+            "description": "Nature-integrated homes that speak to the soul of the environment.",
+            "image": "/src/assets/project-5.jpg",
+            "area": "500m²",
+            "style": "Organic",
+            "date": "2024"
+        }
+    ],
+    "testimonials": [
+        {
+            "id": 1,
+            "name": "Jason Brown",
+            "designation": "Crowne Plaza Owner",
+            "quote": "Architect dapibus augue metus the nec feugiat erat hendrerit nec. Duis ve ante the lemon sanleo nec feugiat erat hendrerit necuis ve ante.",
+            "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=988&auto=format&fit=crop",
+            "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-with-glass-walls-and-a-pool-34440-large.mp4"
+        },
+        {
+            "id": 2,
+            "name": "James Wilson",
+            "designation": "Modern Living",
+            "quote": "The team's ability to blend functionality with aesthetics is remarkable. They created a space that feels both expansive and intimate, perfectly suiting our lifestyle.",
+            "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=987&auto=format&fit=crop",
+            "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-interior-of-a-modern-apartment-with-gray-walls-and-furniture-44331-large.mp4"
+        },
+        {
+            "id": 3,
+            "name": "Elena Rodriguez",
+            "designation": "Coastal Retreat",
+            "quote": "Working with JDKS was an absolute pleasure. Their innovative approach to design and dedication to quality resulted in a home that exceeds all our expectations.",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1061&auto=format&fit=crop",
+            "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-a-view-of-the-city-at-night-44329-large.mp4"
+        }
+    ],
+    "promoVideoUrl": "https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-with-glass-walls-and-a-pool-34440-large.mp4"
+}

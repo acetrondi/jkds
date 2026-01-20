@@ -51,7 +51,7 @@ const StatItem = ({ label, value, suffix, showPlus }: StatItemProps) => {
   }, [isVisible, value]);
 
   return (
-    <div ref={ref} className="flex flex-col justify-between h-full p-8 md:p-12 transition-colors duration-300 hover:bg-white/5">
+    <div ref={ref} className="flex flex-col justify-between h-full p-8 md:p-12 transition-colors duration-300 hover:bg-primary/5">
       <span className="text-sm md:text-base font-medium tracking-[0.2em] text-muted-foreground uppercase mb-8">
         {label}
       </span>
@@ -83,14 +83,14 @@ const Stats = () => {
   ];
 
   return (
-    <section className="w-full bg-black py-20 md:py-[120px]">
+    <section className="w-full bg-background py-20 md:py-[120px]">
       <div className="w-full px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-white/10 bg-black/50 backdrop-blur-sm rounded-none overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border border-border bg-card/50 backdrop-blur-sm rounded-none overflow-hidden">
           {stats.map((stat, index) => (
             <div
               key={stat.label}
               className={`
-                border-b border-white/10 last:border-b-0 
+                border-b border-border last:border-b-0 
                 lg:border-b-0 lg:border-r lg:last:border-r-0
                 ${index % 2 === 0 ? 'md:border-r' : 'md:border-r-0'}
               `}

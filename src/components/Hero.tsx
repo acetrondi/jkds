@@ -21,8 +21,8 @@ const Hero = () => {
 
       {/* Big Background Overlay Text */}
       <div className="absolute inset-0 z-[5] flex items-center justify-center pointer-events-none overflow-hidden select-none">
-        <h2 className="text-[20vw] md:text-[25vw] font-serif font-black text-white/[0.6] leading-none tracking-tighter">
-          JDKS
+        <h2 className="text-[20vw] md:text-[25vw] font-serif font-black text-black/[0.7] leading-none ">
+          JKDS
         </h2>
       </div>
 
@@ -32,10 +32,10 @@ const Hero = () => {
           {/* Left Content - Headlines */}
           <div className="space-y-4">
             <div className="space-y-0">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-wider leading-[0.95]">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-wider leading-[0.95]">
                 LIGHT<span className="text-primary">.</span> <span className="text-primary">SPACE.</span>
               </h1>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-wider leading-[0.95]">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-wider leading-[0.95]">
                 ATMOSPHERE<span className="text-primary">.</span>
               </h1>
             </div>

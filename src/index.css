@@ -7,63 +7,72 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    /* Primary Color Palette */
+    --color-black: 0 0% 2%;  /* #050505 - Deep Black */
+    --color-white: 0 0% 100%; /* #FFFFFF - Pure White */
+    --color-gold: 35 45% 58%; /* #C5A065 - Luxury Gold */
+    --color-taupe: 30 10% 84%; /* #D6D3D1 - Warm Grey/Taupe */
+    
+    /* Semantic Mapping */
+    --background: var(--color-white);
+    --foreground: var(--color-black);
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: var(--color-black);
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--color-black);
 
-    --primary: 35 45% 60%;
-    --primary-foreground: 0 0% 5%;
+    --primary: var(--color-gold);
+    --primary-foreground: var(--color-white);
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: var(--color-taupe);
+    --secondary-foreground: var(--color-black);
 
-    --muted: 0 0% 12%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: var(--color-gold);
+    --accent-foreground: var(--color-white);
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: var(--color-gold);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: var(--color-black);
+    --foreground: var(--color-white);
+
+    --card: 0 0% 5%;
+    --card-foreground: var(--color-white);
+
+    --popover: 0 0% 5%;
+    --popover-foreground: var(--color-white);
+
+    --primary: var(--color-gold);
+    --primary-foreground: var(--color-black);
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: var(--color-white);
+
+    --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
 
-    --accent: 35 45% 20%;
-    --accent-foreground: 35 45% 60%;
+    --accent: 0 0% 15%;
+    --accent-foreground: var(--color-white);
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 12%;
-    --input: 0 0% 12%;
-    --ring: 35 45% 60%;
-
-    --radius: 0rem;
-
-    /* Custom Design System Colors */
-    --surface: 0 0% 8%;
-    --gold: 35 45% 60%;
-    --gold-dark: 35 45% 20%;
-    --stone: 0 0% 65%;
-  }
-
-  .dark {
-    --background: 0 0% 6%;
-    --foreground: 0 0% 96%;
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 96%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 96%;
-    --primary: 40 38% 60%;
-    --primary-foreground: 0 0% 6%;
-    --secondary: 30 3% 54%;
-    --secondary-foreground: 0 0% 96%;
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 60%;
-    --accent: 32 42% 17%;
-    --accent-foreground: 40 38% 60%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 96%;
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 40 38% 60%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: var(--color-gold);
   }
 }
 
