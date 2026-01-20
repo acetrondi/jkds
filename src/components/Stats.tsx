@@ -56,16 +56,16 @@ const StatItem = ({ label, value, suffix, showPlus }: StatItemProps) => {
         {label}
       </span>
       <div className="flex items-baseline gap-1">
-        <span className="font-orbitron text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight">
+        <span className="font-mono-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground tracking-tight">
           {count}
         </span>
         {showPlus && (
-          <span className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
+          <span className="font-mono-display text-3xl md:text-4xl lg:text-5xl font-bold text-primary">
             +
           </span>
         )}
         {suffix && (
-          <span className="font-orbitron text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
+          <span className="font-mono-display text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
             {suffix}
           </span>
         )}
