@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["'Urbanist'", "'Plus Jakarta Sans'", "sans-serif"],
+        sans: ["'Inter'", "'Urbanist'", "'Plus Jakarta Sans'", "sans-serif"],
+        serif: ["'Canela'", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
