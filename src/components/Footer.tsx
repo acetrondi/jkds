@@ -1,4 +1,4 @@
-import jkdsLogo from "@/assets/jkds_logo_wordmark.png";
+import jkdsLogo from "@/assets/jkds_logo.png";
 
 const footerLinks = [
   "Interior Visualization",

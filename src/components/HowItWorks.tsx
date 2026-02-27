@@ -74,12 +74,7 @@ const HowItWorks = () => {
         <p className="text-sm md:text-base opacity-70 mb-8 leading-relaxed">
           We accompany you at every stage to make the process really comfortable and transparent.
         </p>
-        <button className="group relative inline-flex items-center h-14 pl-8 pr-16 rounded-full border border-foreground/20 hover:border-foreground transition-colors mx-auto lg:mx-0">
-          <span className="text-xs font-bold uppercase tracking-widest">Order a Consultation</span>
-          <div className="absolute right-2 w-10 h-10 rounded-full bg-foreground flex items-center justify-center text-background group-hover:scale-110 transition-transform">
-            <span className="w-1.5 h-1.5 rounded-full bg-background ml-0.5" />
-          </div>
-        </button>
+
       </div>
 
       {/* Decorative Close/Cross at top center */}

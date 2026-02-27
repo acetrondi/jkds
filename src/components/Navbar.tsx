@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import jkdsLogo from "@/assets/jkds_logo_wordmark.png";
+import jkdsLogo from "@/assets/jkds_logo.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,7 +17,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = ["About", "Services", "Portfolio", "Blog"];
+  const navLinks = [
+    { name: "About", path: "/#about" },
+    { name: "Services", path: "/#services" },
+    { name: "Portfolio", path: "/portfolio" },
+    { name: "Blog", path: "/#blog" }
+  ];
 
   return (
     <nav
@@ -23,29 +30,29 @@ const Navbar = () => {
         }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <img src={jkdsLogo} alt="JKDS Logo" className="h-32 w-auto" />
-          </a>
+          <Link to="/" className="flex items-center gap-2">
+            <img src={jkdsLogo} alt="JKDS Logo" className="h-20 w-auto" />
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
+              <Link
+                key={link.name}
+                to={link.path}
+                className="text-sm font-medium text-white/70 hover:text-primary transition-colors duration-300 uppercase tracking-widest"
               >
-                {link}
-              </a>
+                {link.name}
+              </Link>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="gold" size="sm">
-              Get Free Consultation
+              Let's connect
             </Button>
           </div>
 
@@ -63,14 +70,14 @@ const Navbar = () => {
           <div className="md:hidden bg-background/95 backdrop-blur-md border-t border-border">
             <div className="py-4 space-y-4">
               {navLinks.map((link) => (
-                <a
-                  key={link}
-                  href={`#${link.toLowerCase()}`}
-                  className="block px-4 py-2 text-muted-foreground hover:text-foreground transition-colors"
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className="block px-4 py-2 text-muted-foreground hover:text-primary transition-colors uppercase tracking-widest text-xs font-bold"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link}
-                </a>
+                  {link.name}
+                </Link>
               ))}
               <div className="px-4 pt-2">
                 <Button variant="gold" className="w-full">

@@ -40,15 +40,7 @@ const Hero = () => {
               </h1>
             </div>
 
-            {/* CTA Button */}
-            <div className="pt-6">
-              <button className="inline-flex items-center gap-4 bg-foreground text-background rounded-full pl-8 pr-2 py-2 hover:bg-foreground/90 transition-colors group">
-                <span className="text-sm font-medium tracking-wide uppercase">Request a Quote</span>
-                <span className="w-10 h-10 rounded-full border border-background/20 flex items-center justify-center group-hover:bg-background/10 transition-colors">
-                  <ArrowUpRight className="w-4 h-4" />
-                </span>
-              </button>
-            </div>
+
           </div>
 
           {/* Right Content - Vertical Text with Images */}

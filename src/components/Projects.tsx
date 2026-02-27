@@ -1,11 +1,20 @@
 import { useState } from "react";
-import siteData from "@/data/site-data.json";
+import { useNavigate } from "react-router-dom";
+import projectsData from "@/data/projects.json";
 
-// Projects section using central site-data.json
+// Projects section using central projects.json as single source of truth
 
 const Projects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(2); // Middle one expanded by default
-  const projectsData = siteData.projects;
+  const navigate = useNavigate();
+
+  const handleProjectClick = (index, id) => {
+    if (hoveredIndex === index) {
+      navigate(`/portfolio/${id}`);
+    } else {
+      setHoveredIndex(index);
+    }
+  };
 
 
   return (
@@ -27,13 +36,13 @@ const Projects = () => {
           <div
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
-            onClick={() => setHoveredIndex(index)} // Allow click on mobile
+            onClick={() => handleProjectClick(index, project.id)}
             className={`relative transition-all duration-700 ease-[cubic-bezier(0.4, 0, 0.2, 1)] rounded-[24px] lg:rounded-[32px] overflow-hidden cursor-pointer group 
               ${hoveredIndex === index ? 'h-[400px] lg:h-full lg:flex-[4]' : 'h-[80px] lg:h-full lg:flex-[1]'}`}
           >
             {/* Project Image */}
             <img
-              src={project.image}
+              src={project.images[0]}
               alt={project.title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
