@@ -42,7 +42,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 to={link.path}
-                className="text-sm font-medium text-white/70 hover:text-primary transition-colors duration-300 uppercase tracking-widest"
+                className={`text-sm font-medium transition-colors duration-300 uppercase tracking-widest ${location.pathname.startsWith("/portfolio") ? "text-black/80 hover:text-primary" : "text-white/70 hover:text-primary"}`}
               >
                 {link.name}
               </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className={`md:hidden ${location.pathname.startsWith("/portfolio") ? "text-black" : "text-foreground"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}

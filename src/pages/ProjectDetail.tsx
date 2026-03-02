@@ -29,7 +29,7 @@ const ProjectDetail = () => {
     }
 
     return (
-        <div className="min-h-screen bg-[#050505] text-white">
+        <div className="min-h-screen bg-white text-black">
             <Navbar />
 
             {/* Hero Section */}
@@ -39,34 +39,34 @@ const ProjectDetail = () => {
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-[3s] hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-black/20 to-transparent" />
 
                 <div className="absolute bottom-0 left-0 w-full p-8 md:p-20">
                     <div className="max-w-7xl mx-auto">
                         <Link
                             to="/portfolio"
-                            className="flex items-center gap-2 text-white/60 hover:text-primary transition-colors mb-8 group"
+                            className="flex items-center gap-2 text-black/60 hover:text-primary transition-colors mb-8 group"
                         >
                             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                             <span className="text-xs font-bold uppercase tracking-[0.2em]">Back to Portfolio</span>
                         </Link>
 
-                        <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase mb-6 animate-fade-up">
+                        <h1 className="text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter uppercase mb-6 animate-fade-up text-black">
                             {project.title}
                         </h1>
 
                         <div className="flex flex-wrap gap-12 text-sm uppercase tracking-widest font-light">
                             <div>
                                 <span className="block text-primary font-bold mb-1">Style</span>
-                                <span className="text-white/80">{project.style}</span>
+                                <span className="text-black/80">{project.style}</span>
                             </div>
                             <div>
                                 <span className="block text-primary font-bold mb-1">Area</span>
-                                <span className="text-white/80">{project.area}</span>
+                                <span className="text-black/80">{project.area}</span>
                             </div>
                             <div>
                                 <span className="block text-primary font-bold mb-1">Year</span>
-                                <span className="text-white/80">{project.date}</span>
+                                <span className="text-black/80">{project.date}</span>
                             </div>
                         </div>
                     </div>
@@ -80,20 +80,20 @@ const ProjectDetail = () => {
                     <div className="lg:col-span-12">
                         <div className="flex flex-col md:flex-row gap-12 items-start justify-between">
                             <div className="max-w-3xl">
-                                <h2 className="text-3xl font-bold mb-8 uppercase tracking-tight">The Vision</h2>
-                                <p className="text-white/60 text-lg md:text-xl leading-relaxed font-light">
+                                <h2 className="text-3xl font-bold mb-8 uppercase tracking-tight text-black">The Vision</h2>
+                                <p className="text-black/60 text-lg md:text-xl leading-relaxed font-light">
                                     {project.description}
                                 </p>
                             </div>
-                            <div className="hidden lg:block w-px h-64 bg-white/10" />
+                            <div className="hidden lg:block w-px h-64 bg-black/10" />
                             <div className="flex flex-col gap-4">
                                 <div className="group cursor-pointer">
-                                    <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 block mb-2">Category</span>
-                                    <span className="text-xl font-bold uppercase transition-colors group-hover:text-primary">Residential</span>
+                                    <span className="text-[10px] uppercase tracking-[0.4em] text-black/40 block mb-2">Category</span>
+                                    <span className="text-xl font-bold uppercase transition-colors group-hover:text-primary text-black">Residential</span>
                                 </div>
                                 <div className="group cursor-pointer">
-                                    <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 block mb-2">Location</span>
-                                    <span className="text-xl font-bold uppercase transition-colors group-hover:text-primary">International</span>
+                                    <span className="text-[10px] uppercase tracking-[0.4em] text-black/40 block mb-2">Location</span>
+                                    <span className="text-xl font-bold uppercase transition-colors group-hover:text-primary text-black">International</span>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +104,7 @@ const ProjectDetail = () => {
                         {project.images.map((img, idx) => (
                             <div
                                 key={idx}
-                                className={`group relative overflow-hidden rounded-2xl bg-neutral-900 aspect-[4/3] ${idx % 3 === 0 ? 'md:col-span-2 aspect-[21/9]' : ''}`}
+                                className={`group relative overflow-hidden rounded-2xl bg-neutral-100 aspect-[4/3] ${idx % 3 === 0 ? 'md:col-span-2 aspect-[21/9]' : ''}`}
                             >
                                 <img
                                     src={img}
@@ -121,10 +121,10 @@ const ProjectDetail = () => {
             </section>
 
             {/* Testimonial Section */}
-            <section className="bg-neutral-950 py-32 border-y border-white/5">
+            <section className="bg-neutral-50 py-32 border-y border-black/5">
                 <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                     <div className="relative">
-                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-white/10">
+                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-black/10">
                             <img
                                 src={project.testimonial.image}
                                 alt="Client"
@@ -143,14 +143,14 @@ const ProjectDetail = () => {
 
                     <div className="space-y-12">
                         <span className="text-primary font-black uppercase tracking-[0.5em] text-xs underline underline-offset-[12px] decoration-primary/30">Client Experience</span>
-                        <blockquote className="text-3xl md:text-5xl font-serif italic text-white/90 leading-tight">
+                        <blockquote className="text-3xl md:text-5xl font-serif italic text-black/90 leading-tight">
                             "{project.testimonial.text}"
                         </blockquote>
                         <div className="pt-8 flex items-center gap-6">
                             <div className="w-16 h-px bg-primary" />
                             <div>
-                                <p className="font-bold uppercase tracking-widest">Satisfied Client</p>
-                                <p className="text-xs text-white/40 uppercase tracking-widest mt-1">Verified Owner</p>
+                                <p className="font-bold uppercase tracking-widest text-black">Satisfied Client</p>
+                                <p className="text-xs text-black/40 uppercase tracking-widest mt-1">Verified Owner</p>
                             </div>
                         </div>
                     </div>
@@ -158,16 +158,16 @@ const ProjectDetail = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-32 bg-black overflow-hidden relative">
-                <div className="absolute -right-20 top-0 text-[30vw] font-black text-white/[0.02] leading-none pointer-events-none select-none">
+            <section className="py-32 bg-neutral-50 overflow-hidden relative">
+                <div className="absolute -right-20 top-0 text-[30vw] font-black text-black/[0.02] leading-none pointer-events-none select-none">
                     NEXT
                 </div>
 
                 <div className="max-w-7xl mx-auto px-6 text-center relative z-10">
-                    <h2 className="text-4xl md:text-6xl font-black mb-12 uppercase tracking-tighter">Ready to visualize <br /> your project?</h2>
+                    <h2 className="text-4xl md:text-6xl font-black mb-12 uppercase tracking-tighter text-black">Ready to visualize <br /> your project?</h2>
                     <Link
                         to="/#contact"
-                        className="inline-flex items-center gap-4 px-12 py-5 bg-white text-black font-bold uppercase tracking-[0.2em] hover:bg-primary transition-all group"
+                        className="inline-flex items-center gap-4 px-12 py-5 bg-black text-white font-bold uppercase tracking-[0.2em] hover:bg-primary transition-all group"
                     >
                         Get in Touch
                         <MoveRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />

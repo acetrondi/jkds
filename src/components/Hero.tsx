@@ -1,86 +1,142 @@
-import { ArrowUpRight } from "lucide-react";
-import heroBedroomRender from "@/assets/hero-bedroom-render.jpg";
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { ArrowUpRight, ChevronRight, ChevronLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+import heroHall from "@/assets/hero-hall.jpg";
 import interior1 from "@/assets/interior-1.jpg";
 import interior2 from "@/assets/interior-2.jpg";
-import heroHall from "@/assets/hero-hall.jpg";
+import heroBedroom from "@/assets/hero-bedroom-render.jpg";
+
+const slides = [
+  { image: heroHall, title: "LIGHT.", subtitle: "SPACE.", accent: "ATMOSPHERE." },
+  { image: heroBedroom, title: "FORM.", subtitle: "TEXTURE.", accent: "ESSENCE." },
+  { image: interior1, title: "CRAFT.", subtitle: "DETAIL.", accent: "LEGACY." },
+];
 
 const Hero = () => {
+  const navigate = useNavigate();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section className="relative min-h-screen flex items-end overflow-hidden pb-12 lg:pb-16">
-      {/* Background Image */}
+    /* FIXED: Using dvh (dynamic viewport height) and padding-top to accommodate Navbar */
+    <section className="relative h-[100dvh] w-full bg-background overflow-hidden flex flex-col pt-20">
+
+      {/* --- BACKGROUND CAROUSEL --- */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroHall}
-          alt="Luxury bedroom interior visualization"
-          className="w-full h-full object-cover"
-        />
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-background/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent" />
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={current}
+            src={slides[current].image}
+            initial={{ scale: 1.1, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.95, opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        </AnimatePresence>
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      {/* Big Background Overlay Text */}
-      <div className="absolute inset-0 z-[5] flex items-center justify-center pointer-events-none overflow-hidden select-none">
-        <h2 className="text-[20vw] md:text-[25vw] font-serif font-black text-black/[0.7] leading-none ">
+      {/* --- JKDS WATERMARK --- */}
+      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.07 }}
+          className="text-[25vw] font-black tracking-tighter text-white select-none"
+        >
           JKDS
-        </h2>
+        </motion.h2>
       </div>
 
-      {/* Content */}
-      <div className="w-full px-6 md:px-12 lg:px-20 relative z-10">
-        <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
-          {/* Left Content - Headlines */}
-          <div className="space-y-4">
-            <div className="space-y-0">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-wider leading-[0.95]">
-                LIGHT<span className="text-primary">.</span> <span className="text-primary">SPACE.</span>
-              </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light tracking-wider leading-[0.95]">
-                ATMOSPHERE<span className="text-primary">.</span>
-              </h1>
-            </div>
+      {/* --- CONTENT LAYER --- */}
+      {/* FIXED: justify-center on mobile, justify-end on desktop to keep buttons visible */}
+      <div className="relative z-20 flex-1 flex flex-col justify-end pb-8 md:pb-16 px-6 md:px-12 lg:px-20">
+        <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 md:gap-12">
 
+          {/* Left: Headlines & Button */}
+          <div className="w-full lg:max-w-4xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={current}
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.5 }}
+                className="space-y-1"
+              >
+                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extralight tracking-tighter leading-[0.9]">
+                  {slides[current].title} <span className="text-primary">{slides[current].subtitle}</span>
+                </h1>
+                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9] text-primary">
+                  {slides[current].accent}
+                </h1>
+              </motion.div>
+            </AnimatePresence>
 
+            {/* FIXED: Reduced margin-top for mobile accessibility */}
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="mt-6 md:mt-10 flex items-center gap-3 bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-full text-sm md:text-base font-medium hover:bg-primary hover:text-white transition-all group"
+              onClick={() => navigate("/portfolio")}
+            >
+              VIEW PROJECTS
+              <ArrowUpRight className="w-4 h-4 md:w-5 md:h-5 group-hover:rotate-45 transition-transform" />
+            </motion.button>
           </div>
 
-          {/* Right Content - Vertical Text with Images */}
-          <div className="hidden lg:block max-w-xs">
-            <div className="space-y-3 text-right">
-              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                Photorealistic
+          {/* Right: Desktop-only Visuals */}
+          <div className="hidden lg:flex flex-col items-end text-right gap-6">
+            <div className="flex items-center gap-4">
+              <div className="h-[1px] w-12 bg-primary/50" />
+              <p className="text-xs uppercase tracking-[0.4em] text-white/60">Selected Works 2024-2026</p>
+            </div>
+
+            <div className="flex gap-2">
+              {slides.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setCurrent(idx)}
+                  className={`h-1 transition-all duration-500 ${current === idx ? 'w-12 bg-primary' : 'w-4 bg-white/20'}`}
+                />
+              ))}
+            </div>
+
+            <div className="max-w-[200px] space-y-4">
+              <p className="text-sm text-white/70 font-light leading-relaxed">
+                Photorealistic visualizations that showcase your ideas before they are <span className="text-white font-bold">built.</span>
               </p>
-              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                Visualizations
-              </p>
-              <div className="flex items-center justify-end gap-2">
-                <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                  That
-                </p>
-                <div className="w-8 h-8 rounded-full overflow-hidden border border-primary/30">
-                  <img src={interior1} alt="" className="w-full h-full object-cover" />
-                </div>
-                <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                  Showcase
-                </p>
-              </div>
-              <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                Your Ideas Before
-              </p>
-              <div className="flex items-center justify-end gap-2">
-                <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground">
-                  They're
-                </p>
-                <div className="w-6 h-6 rounded-full overflow-hidden border border-primary/30">
-                  <img src={interior2} alt="" className="w-full h-full object-cover" />
-                </div>
-                <p className="text-sm uppercase tracking-[0.2em] text-primary font-medium">
-                  Built.
-                </p>
-              </div>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Mobile Navigation Controls */}
+      {/* FIXED: Positioned slightly higher to avoid overlapping with bottom system bars */}
+      <div className="lg:hidden absolute bottom-6 right-6 z-30 flex gap-3">
+        <button
+          onClick={() => setCurrent(current === 0 ? slides.length - 1 : current - 1)}
+          className="p-3 border border-white/20 rounded-full bg-black/20 backdrop-blur-md active:bg-primary"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+        <button
+          onClick={() => setCurrent(current === slides.length - 1 ? 0 : current + 1)}
+          className="p-3 border border-white/20 rounded-full bg-black/20 backdrop-blur-md active:bg-primary"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+      </div>
+
     </section>
   );
 };
