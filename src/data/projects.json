@@ -4,20 +4,20 @@
         "title": "Aphrodite Foods",
         "description": "A sophisticated culinary space designed with a focus on elegant aesthetics and ambient lighting.",
         "images": [
-            "/src/assets/projects/aphrodtie-foods/1.avif",
-            "/src/assets/projects/aphrodtie-foods/2.avif",
-            "/src/assets/projects/aphrodtie-foods/3.avif",
-            "/src/assets/projects/aphrodtie-foods/4.avif",
-            "/src/assets/projects/aphrodtie-foods/5.avif",
-            "/src/assets/projects/aphrodtie-foods/6.avif"
+            "/projects/aphrodtie-foods/1.avif",
+            "/projects/aphrodtie-foods/2.avif",
+            "/projects/aphrodtie-foods/3.avif",
+            "/projects/aphrodtie-foods/4.avif",
+            "/projects/aphrodtie-foods/5.avif",
+            "/projects/aphrodtie-foods/6.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/aphrodtie-foods/1.avif",
-            "/src/assets/projects/aphrodtie-foods/2.avif"
+            "/projects/aphrodtie-foods/1.avif",
+            "/projects/aphrodtie-foods/2.avif"
         ],
         "testimonial": {
             "text": "The design perfectly captures the essence of our brand. The play of light and shadow is masterfully executed.",
-            "image": "/src/assets/projects/aphrodtie-foods/7.avif",
+            "image": "/projects/aphrodtie-foods/7.avif",
             "video": ""
         },
         "is_hero_project": true,
@@ -30,19 +30,19 @@
         "title": "Chudgar Residence",
         "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
         "images": [
-            "/src/assets/projects/dimple-chudgars/final living 1.avif",
-            "/src/assets/projects/dimple-chudgars/Living Room With White Travertine.avif",
-            "/src/assets/projects/dimple-chudgars/final masterview 1.avif",
-            "/src/assets/projects/dimple-chudgars/daughter (1).avif",
-            "/src/assets/projects/dimple-chudgars/kitchen1 copy.avif"
+            "/projects/dimple-chudgars/final living 1.avif",
+            "/projects/dimple-chudgars/Living Room With White Travertine.avif",
+            "/projects/dimple-chudgars/final masterview 1.avif",
+            "/projects/dimple-chudgars/daughter (1).avif",
+            "/projects/dimple-chudgars/kitchen1 copy.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/dimple-chudgars/final living 1.avif",
-            "/src/assets/projects/dimple-chudgars/final living 2.avif"
+            "/projects/dimple-chudgars/final living 1.avif",
+            "/projects/dimple-chudgars/final living 2.avif"
         ],
         "testimonial": {
             "text": "Living here is an absolute joy. The attention to detail in every room, especially the living area, is phenomenal.",
-            "image": "/src/assets/projects/dimple-chudgars/final masterview 2.avif",
+            "image": "/projects/dimple-chudgars/final masterview 2.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -55,18 +55,18 @@
         "title": "Heena Building",
         "description": "An architectural landmark showcasing modern structure and lighting design for urban environments.",
         "images": [
-            "/src/assets/projects/heena-building/HEENA DAY.avif",
-            "/src/assets/projects/heena-building/HEENA NIGHT.avif",
-            "/src/assets/projects/heena-building/1.avif",
-            "/src/assets/projects/heena-building/2.avif"
+            "/projects/heena-building/HEENA DAY.avif",
+            "/projects/heena-building/HEENA NIGHT.avif",
+            "/projects/heena-building/1.avif",
+            "/projects/heena-building/2.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/heena-building/HEENA DAY.avif",
-            "/src/assets/projects/heena-building/HEENA NIGHT.avif"
+            "/projects/heena-building/HEENA DAY.avif",
+            "/projects/heena-building/HEENA NIGHT.avif"
         ],
         "testimonial": {
             "text": "The transition from day to night lighting is seamless. The building has become a true icon in the city.",
-            "image": "/src/assets/projects/heena-building/1.avif",
+            "image": "/projects/heena-building/1.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -79,19 +79,19 @@
         "title": "Kanakia House",
         "description": "A spacious family home designed for comfort and elegance, featuring light-filled passages and living spaces.",
         "images": [
-            "/src/assets/projects/kanakia-house/Living room.avif",
-            "/src/assets/projects/kanakia-house/Living room 2.avif",
-            "/src/assets/projects/kanakia-house/Passage 1.avif",
-            "/src/assets/projects/kanakia-house/1.avif",
-            "/src/assets/projects/kanakia-house/2.avif"
+            "/projects/kanakia-house/Living room.avif",
+            "/projects/kanakia-house/Living room 2.avif",
+            "/projects/kanakia-house/Passage 1.avif",
+            "/projects/kanakia-house/1.avif",
+            "/projects/kanakia-house/2.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/kanakia-house/Living room.avif",
-            "/src/assets/projects/kanakia-house/Living room 3.avif"
+            "/projects/kanakia-house/Living room.avif",
+            "/projects/kanakia-house/Living room 3.avif"
         ],
         "testimonial": {
             "text": "The way the light travels through the house is beautiful. It's a perfect blend of space and intimacy.",
-            "image": "/src/assets/projects/kanakia-house/3.avif",
+            "image": "/projects/kanakia-house/3.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -104,19 +104,19 @@
         "title": "Khandala Valley I",
         "description": "A breathtaking retreat in the valleys, blending seamlessly with nature through biophilic design and open vistas.",
         "images": [
-            "/src/assets/projects/khandala-valley-one/1.avif",
-            "/src/assets/projects/khandala-valley-one/2.avif",
-            "/src/assets/projects/khandala-valley-one/3.avif",
-            "/src/assets/projects/khandala-valley-one/4.avif",
-            "/src/assets/projects/khandala-valley-one/5.avif"
+            "/projects/khandala-valley-one/1.avif",
+            "/projects/khandala-valley-one/2.avif",
+            "/projects/khandala-valley-one/3.avif",
+            "/projects/khandala-valley-one/4.avif",
+            "/projects/khandala-valley-one/5.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/khandala-valley-one/1.avif",
-            "/src/assets/projects/khandala-valley-one/2.avif"
+            "/projects/khandala-valley-one/1.avif",
+            "/projects/khandala-valley-one/2.avif"
         ],
         "testimonial": {
             "text": "The valley views are perfectly framed. It's more than a house; it's a sanctuary in the heart of nature.",
-            "image": "/src/assets/projects/khandala-valley-one/liv rev1.avif",
+            "image": "/projects/khandala-valley-one/liv rev1.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -129,19 +129,19 @@
         "title": "Mehta House",
         "description": "A premium urban residence featuring high-end kitchen design, spacious living areas, and master suites.",
         "images": [
-            "/src/assets/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
-            "/src/assets/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_2.avif",
-            "/src/assets/projects/mehul-mehta-house/BEDROOM 2.avif",
-            "/src/assets/projects/mehul-mehta-house/KITCHEN VIEW 001.avif",
-            "/src/assets/projects/mehul-mehta-house/MASTER BATHROOM FINAL VIEW 001.avif"
+            "/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
+            "/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_2.avif",
+            "/projects/mehul-mehta-house/BEDROOM 2.avif",
+            "/projects/mehul-mehta-house/KITCHEN VIEW 001.avif",
+            "/projects/mehul-mehta-house/MASTER BATHROOM FINAL VIEW 001.avif"
         ],
         "cover_images": [
-            "/src/assets/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
-            "/src/assets/projects/mehul-mehta-house/PALAK BEDROOM VIEW 001.avif"
+            "/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
+            "/projects/mehul-mehta-house/PALAK BEDROOM VIEW 001.avif"
         ],
         "testimonial": {
             "text": "Every corner of our home feels curated and special. The design exceeded all our expectations.",
-            "image": "/src/assets/projects/mehul-mehta-house/KITCHEN VIEW 002.avif",
+            "image": "/projects/mehul-mehta-house/KITCHEN VIEW 002.avif",
             "video": ""
         },
         "is_hero_project": false,
