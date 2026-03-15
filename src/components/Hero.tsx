@@ -2,20 +2,26 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowUpRight, ChevronRight, ChevronLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useData } from "@/context/DataContext";
 
-import heroHall from "@/assets/hero-hall.jpg";
-import interior1 from "@/assets/interior-1.jpg";
-import interior2 from "@/assets/interior-2.jpg";
-import heroBedroom from "@/assets/hero-bedroom-render.jpg";
+const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string | undefined
 
-const slides = [
-  { image: heroHall, title: "LIGHT.", subtitle: "SPACE.", accent: "ATMOSPHERE." },
-  { image: heroBedroom, title: "FORM.", subtitle: "TEXTURE.", accent: "ESSENCE." },
-  { image: interior1, title: "CRAFT.", subtitle: "DETAIL.", accent: "LEGACY." },
-];
+/**
+ * Returns an optimised src for the hero background:
+ * - ImageKit URL  → append transformation params (WebP, 1920px wide, q-80)
+ * - Local path    → use as-is (fallback)
+ */
+function heroSrc(url: string): string {
+  if (!url) return ''
+  if (url.includes('ik.imagekit.io') || (IK_ENDPOINT && url.startsWith(IK_ENDPOINT))) {
+    return `${url}?tr=f-webp,q-80,w-1920`
+  }
+  return url
+}
 
 const Hero = () => {
   const navigate = useNavigate();
+  const { heroSlides: slides } = useData();
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
@@ -26,7 +32,6 @@ const Hero = () => {
   }, []);
 
   return (
-    /* FIXED: Using dvh (dynamic viewport height) and padding-top to accommodate Navbar */
     <section className="relative h-[100dvh] w-full bg-background overflow-hidden flex flex-col pt-20">
 
       {/* --- BACKGROUND CAROUSEL --- */}
@@ -34,7 +39,7 @@ const Hero = () => {
         <AnimatePresence mode="wait">
           <motion.img
             key={current}
-            src={slides[current].image}
+            src={heroSrc(slides[current].image)}
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
@@ -58,7 +63,6 @@ const Hero = () => {
       </div>
 
       {/* --- CONTENT LAYER --- */}
-      {/* FIXED: justify-center on mobile, justify-end on desktop to keep buttons visible */}
       <div className="relative z-20 flex-1 flex flex-col justify-end pb-8 md:pb-16 px-6 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 md:gap-12">
 
@@ -82,7 +86,6 @@ const Hero = () => {
               </motion.div>
             </AnimatePresence>
 
-            {/* FIXED: Reduced margin-top for mobile accessibility */}
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -121,7 +124,6 @@ const Hero = () => {
       </div>
 
       {/* Mobile Navigation Controls */}
-      {/* FIXED: Positioned slightly higher to avoid overlapping with bottom system bars */}
       <div className="lg:hidden absolute bottom-6 right-6 z-30 flex gap-3">
         <button
           onClick={() => setCurrent(current === 0 ? slides.length - 1 : current - 1)}

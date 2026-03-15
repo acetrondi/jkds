@@ -76,10 +76,10 @@ const StatItem = ({ label, value, suffix, showPlus }: StatItemProps) => {
 
 const Stats = () => {
   const stats = [
-    { label: "Countries", value: 44 },
-    { label: "Years of experience", value: 40, showPlus: true },
-    { label: "Projects", value: 950 },
-    { label: "Awards", value: 50, showPlus: true },
+    { label: "Ongoing Projects", value: 10, showPlus: true },
+    { label: "Years of Experience", value: 10, showPlus: true },
+    { label: "Projects", value: 150, showPlus: true },
+    { label: "Recognition", value: 8, showPlus: true },
   ];
 
   return (

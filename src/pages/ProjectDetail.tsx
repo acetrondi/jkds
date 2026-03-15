@@ -1,14 +1,15 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { ArrowLeft, Maximize2, MoveRight, Play } from "lucide-react";
-import projectsData from "@/data/projects.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
+import { useData } from "@/context/DataContext";
 
 const ProjectDetail = () => {
     const { id } = useParams();
     const navigate = useNavigate();
-    const project = projectsData.find((p) => p.id === id);
+    const { projects } = useData();
+    const project = projects.find((p) => p.id === id);
 
     useEffect(() => {
         window.scrollTo(0, 0);

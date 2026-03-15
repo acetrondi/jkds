@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import projectsData from "@/data/projects.json";
-
-// Projects section using central projects.json as single source of truth
+import { useData } from "@/context/DataContext";
 
 const Projects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(2); // Middle one expanded by default
+  const { projects: projectsData } = useData();
+  const [hoveredIndex, setHoveredIndex] = useState(2);
   const navigate = useNavigate();
 
   const handleProjectClick = (index, id) => {

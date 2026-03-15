@@ -1,12 +1,13 @@
 import { useState, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
-import projectsData from "@/data/projects.json";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { useData } from "@/context/DataContext";
 
 const Portfolio = () => {
     const navigate = useNavigate();
+    const { projects: projectsData } = useData();
 
     // Randomize the gallery items on mount
     const galleryItems = useMemo(() => {
@@ -27,7 +28,7 @@ const Portfolio = () => {
             [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
         }
         return shuffled;
-    }, []);
+    }, [projectsData]);
 
     return (
         <div className="min-h-screen bg-white text-black">
