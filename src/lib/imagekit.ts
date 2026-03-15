@@ -4,6 +4,19 @@ const publicKey = import.meta.env.VITE_IMAGEKIT_PUBLIC_KEY as string
 const privateKey = import.meta.env.VITE_IMAGEKIT_PRIVATE_KEY as string
 export const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string
 
+/**
+ * Returns an optimised ImageKit src URL.
+ * - ImageKit URLs → appends ?tr=<transforms>
+ * - External / local URLs → returned as-is
+ */
+export function ikSrc(url: string, transforms = 'f-webp,q-80'): string {
+  if (!url) return ''
+  if (url.includes('ik.imagekit.io') || (IK_ENDPOINT && url.startsWith(IK_ENDPOINT))) {
+    return `${url}?tr=${transforms}`
+  }
+  return url
+}
+
 export async function generateAuth() {
   const token = crypto.randomUUID()
   const expire = Math.floor(Date.now() / 1000) + 3600

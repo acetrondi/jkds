@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useData } from "@/context/DataContext";
+import { ikSrc } from "@/lib/imagekit";
 
 const Projects = () => {
   const { projects: projectsData } = useData();
@@ -41,7 +42,7 @@ const Projects = () => {
           >
             {/* Project Image */}
             <img
-              src={project.images[0]}
+              src={ikSrc(project.images[0], 'f-webp,q-75,w-800')}
               alt={project.title}
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />

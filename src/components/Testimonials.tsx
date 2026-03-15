@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Play, Quote } from "lucide-react";
-import siteData from "@/data/site-data.json";
+import { useData } from "@/context/DataContext";
+import { ikSrc } from "@/lib/imagekit";
 
 const Testimonials = () => {
+    const { testimonials } = useData();
     const [currentIndex, setCurrentIndex] = useState(0);
-    const testimonials = siteData.testimonials;
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -14,6 +15,7 @@ const Testimonials = () => {
     }, [testimonials.length]);
 
     const testimonial = testimonials[currentIndex];
+    if (!testimonial) return null;
 
     return (
         <section id="testimonials" className="relative w-full min-h-[800px] bg-black overflow-hidden py-24 border-b-2 border-white/5">
@@ -70,7 +72,7 @@ const Testimonials = () => {
                                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
                                     <div className="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden border border-white/10">
                                         <img
-                                            src={testimonial.image}
+                                            src={ikSrc(testimonial.image, 'f-webp,q-80,w-200,h-200')}
                                             alt={testimonial.name}
                                             className="w-full h-full object-cover"
                                         />

@@ -3,22 +3,25 @@ import { Button } from '@/components/ui/button'
 import { ProjectList } from '@/components/admin/ProjectList'
 import { ProjectForm } from '@/components/admin/ProjectForm'
 import { HeroManager } from '@/components/admin/HeroManager'
+import { TestimonialsManager } from '@/components/admin/TestimonialsManager'
 import { useAdminAuth } from '@/hooks/useAdminAuth'
 import { useData } from '@/context/DataContext'
 import { saveJSONToImageKit } from '@/lib/imagekit'
 import { LogOut, Save, Loader2, CheckCircle2 } from 'lucide-react'
 import type { Project } from '@/types/project'
 import type { HeroSlide } from '@/types/hero'
+import type { Testimonial } from '@/types/testimonial'
 
-type Tab = 'projects' | 'hero'
+type Tab = 'projects' | 'hero' | 'testimonials'
 type SaveState = 'idle' | 'saving' | 'saved' | 'error'
 
 export function AdminDashboard() {
   const { logout } = useAdminAuth()
-  const { projects: liveProjects, heroSlides: liveHero, setProjects: setLiveProjects, setHeroSlides: setLiveHero } = useData()
+  const { projects: liveProjects, heroSlides: liveHero, testimonials: liveTestimonials, setProjects: setLiveProjects, setHeroSlides: setLiveHero, setTestimonials: setLiveTestimonials } = useData()
 
   const [projects, setProjects] = useState<Project[]>(liveProjects)
   const [heroSlides, setHeroSlides] = useState<HeroSlide[]>(liveHero)
+  const [testimonials, setTestimonials] = useState<Testimonial[]>(liveTestimonials)
   const [tab, setTab] = useState<Tab>('projects')
   const [editingProject, setEditingProject] = useState<Project | null>(null)
   const [formOpen, setFormOpen] = useState(false)
@@ -46,10 +49,11 @@ export function AdminDashboard() {
       await Promise.all([
         saveJSONToImageKit(projects, 'projects.json'),
         saveJSONToImageKit(heroSlides, 'hero.json'),
+        saveJSONToImageKit(testimonials, 'testimonials.json'),
       ])
-      // Update the live context so other pages immediately reflect changes
       setLiveProjects(projects)
       setLiveHero(heroSlides)
+      setLiveTestimonials(testimonials)
       setSaveState('saved')
       setTimeout(() => setSaveState('idle'), 3000)
     } catch (err) {
@@ -62,6 +66,7 @@ export function AdminDashboard() {
   const tabs: { id: Tab; label: string }[] = [
     { id: 'projects', label: 'Projects' },
     { id: 'hero', label: 'Hero' },
+    { id: 'testimonials', label: 'Testimonials' },
   ]
 
   return (
@@ -127,6 +132,9 @@ export function AdminDashboard() {
         )}
         {tab === 'hero' && (
           <HeroManager slides={heroSlides} onChange={setHeroSlides} />
+        )}
+        {tab === 'testimonials' && (
+          <TestimonialsManager testimonials={testimonials} onChange={setTestimonials} />
         )}
       </main>
 

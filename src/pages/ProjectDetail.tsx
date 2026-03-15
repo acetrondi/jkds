@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
 import { useData } from "@/context/DataContext";
+import { ikSrc } from "@/lib/imagekit";
 
 const ProjectDetail = () => {
     const { id } = useParams();
@@ -36,7 +37,7 @@ const ProjectDetail = () => {
             {/* Hero Section */}
             <section className="relative h-[80vh] w-full overflow-hidden">
                 <img
-                    src={project.cover_images[0] || project.images[0]}
+                    src={ikSrc(project.cover_images[0] || project.images[0], 'f-webp,q-80,w-1920')}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-[3s] hover:scale-105"
                 />
@@ -108,7 +109,7 @@ const ProjectDetail = () => {
                                 className={`group relative overflow-hidden rounded-2xl bg-neutral-100 aspect-[4/3] ${idx % 3 === 0 ? 'md:col-span-2 aspect-[21/9]' : ''}`}
                             >
                                 <img
-                                    src={img}
+                                    src={ikSrc(img, 'f-webp,q-80')}
                                     alt={`${project.title} showcase ${idx}`}
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                 />
@@ -127,7 +128,7 @@ const ProjectDetail = () => {
                     <div className="relative">
                         <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-black/10">
                             <img
-                                src={project.testimonial.image}
+                                src={ikSrc(project.testimonial.image, 'f-webp,q-80,w-800')}
                                 alt="Client"
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                             />

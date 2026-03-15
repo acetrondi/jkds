@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useData } from "@/context/DataContext";
+import { ikSrc } from "@/lib/imagekit";
 
 const Portfolio = () => {
     const navigate = useNavigate();
@@ -58,7 +59,7 @@ const Portfolio = () => {
                                 className="break-inside-avoid mb-6 relative group cursor-pointer overflow-hidden rounded-2xl bg-neutral-100 border border-black/[0.03] shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.15)] transition-all duration-500"
                             >
                                 <img
-                                    src={item.displayImage}
+                                    src={ikSrc(item.displayImage, 'f-webp,q-75,w-800')}
                                     alt={item.title}
                                     className="w-full h-auto object-cover transition-transform duration-1000 group-hover:scale-105"
                                     loading="lazy"
