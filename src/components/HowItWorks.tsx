@@ -1,93 +1,86 @@
-// How It Works section redesigned with circular architectural aesthetics.
-
-
+import { useState } from "react";
 
 const HowItWorks = () => {
+  const [hoveredCircle, setHoveredCircle] = useState<string | null>(null);
+
   const stages = [
-    { id: "01", title: "CONSULTATION", type: "outline" },
-    { id: "02", title: "DESIGN", type: "filled" },
-    { id: "03", title: "DEVELOPMENT", type: "outline" },
-    { id: "04", title: "IMPLEMENTATION", type: "outline" },
+    { id: "01", title: "UNDERSTANDING" },
+    { id: "02", title: "CONCEPTUALIZING" },
+    { id: "03", title: "DESIGNING" },
+    { id: "04", title: "VISUALIZATION" },
+    { id: "05", title: "COMMERCIALIZING" },
+    { id: "06", title: "SELECTIONS" },
+    { id: "07", title: "EXECUTING" },
   ];
 
+  const services = [
+    "Architecture Design",
+    "Interior Design",
+    "Design & Build"
+  ];
+
+  const activeCircle = hoveredCircle || "01";
+
   return (
-    <section id="process" className="relative w-full min-h-screen bg-secondary py-20 px-6 md:px-12 lg:px-20 overflow-hidden text-foreground">
+    <section id="process" className="relative w-full min-h-[100dvh] bg-secondary pt-24 pb-8 md:py-20 px-4 md:px-8 lg:px-12 overflow-hidden text-foreground flex flex-col justify-between">
       {/* Header Info */}
-      <div className="flex justify-between items-start mb-8 relative z-30">
+      <div className="flex justify-between items-start shrink-0 relative z-30">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-foreground" />
-          <span className="text-[11px] font-bold uppercase tracking-[0.2em] opacity-60">Stages of Work</span>
+          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.2em] opacity-60">Process & Expertise</span>
         </div>
         <div className="flex items-center gap-2 opacity-40">
-          <span className="text-[11px] font-bold uppercase tracking-[0.1em]">hover to learn more</span>
+          <span className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.1em] hidden md:block">hover to learn more</span>
           <span className="text-xs">←</span>
         </div>
       </div>
 
-      {/* Main Stage Grid/Layout */}
-      <div className="relative w-full max-w-[1200px] mx-auto h-[600px] mt-12 hidden lg:block">
-        {/* 01 Consultation */}
-        <div className="absolute top-[5%] left-[15%] w-[320px] h-[320px] rounded-full border border-foreground/20 flex flex-col items-center justify-center group hover:border-foreground transition-all duration-500 z-10">
-          <span className="text-[10px] font-bold opacity-40 mb-2">01</span>
-          <h3 className="text-xl font-bold tracking-widest">CONSULTATION</h3>
+      <div className="w-full max-w-[1440px] mx-auto flex-1 flex flex-col justify-center gap-12 md:gap-16 mt-8 md:mt-0">
+        
+        {/* Process Stages */}
+        <div className="relative w-full flex flex-wrap justify-center items-center gap-3 sm:gap-4 lg:gap-8 z-20 max-w-[340px] md:max-w-none mx-auto">
+          {stages.map((stage, i) => {
+            const isFilled = activeCircle === stage.id;
+            const translateY = i % 2 === 0 ? 'md:-translate-y-4 lg:-translate-y-6' : 'md:translate-y-4 lg:translate-y-6';
+            
+            return (
+              <div 
+                key={stage.id} 
+                onMouseEnter={() => setHoveredCircle(stage.id)}
+                onMouseLeave={() => setHoveredCircle(null)}
+                className={`w-[90px] h-[90px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px] rounded-full flex flex-col items-center justify-center transition-all duration-500 group relative z-10 cursor-pointer shadow-sm
+                  ${translateY} hover:z-20
+                  ${isFilled 
+                    ? 'bg-foreground text-background shadow-xl scale-110 md:scale-105' 
+                    : 'border border-foreground/30 hover:border-foreground bg-transparent scale-95 md:scale-100'
+                  }`}
+              >
+                <span className={`text-[8px] md:text-[10px] font-bold md:mb-1 transition-opacity duration-300 ${isFilled ? 'opacity-80' : 'opacity-40'}`}>{stage.id}</span>
+                <h3 className="text-[6.5px] sm:text-[8px] md:text-[9px] lg:text-[11px] font-bold tracking-widest text-center px-1 md:px-2 uppercase leading-tight">{stage.title}</h3>
+              </div>
+            );
+          })}
+          
+          {/* Decorative Curve */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full bg-foreground/5 blur-3xl -z-10 pointer-events-none" />
         </div>
 
-        {/* 02 Design (Filled) */}
-        <div className="absolute top-[0%] left-[45%] w-[380px] h-[380px] rounded-full bg-foreground text-background flex flex-col items-center justify-center shadow-2xl z-20 hover:scale-105 transition-transform duration-500 group">
-          <span className="text-[10px] font-bold opacity-40 mb-2">02</span>
-          <h3 className="text-2xl font-bold tracking-widest">DESIGN</h3>
+        {/* Services Section */}
+        <div className="relative z-20 w-full mb-4 md:mb-0">
+            <h5 className="text-[9px] lg:text-[10px] font-bold uppercase tracking-[0.2em] opacity-40 mb-4 md:mb-6 text-center">What we do</h5>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 lg:gap-8">
+               {services.map((service, idx) => (
+                  <div key={idx} className="border border-foreground/20 py-4 px-5 md:p-6 lg:p-8 flex flex-row md:flex-col group hover:bg-foreground hover:text-background transition-colors duration-500 cursor-default shadow-sm hover:shadow-lg rounded-sm items-center md:items-start text-left justify-between md:justify-start">
+                    <span className="text-[9px] lg:text-[10px] font-bold opacity-40 md:mb-4 lg:mb-6 uppercase tracking-widest order-2 md:order-1">0{idx + 1}</span>
+                    <h3 className="text-base md:text-lg lg:text-2xl font-medium tracking-tight leading-snug order-1 md:order-2">
+                      {service}
+                    </h3>
+                  </div>
+               ))}
+            </div>
         </div>
-
-        {/* 03 Development */}
-        <div className="absolute bottom-[0%] left-[50%] w-[350px] h-[350px] rounded-full border border-foreground/20 flex flex-col items-center justify-center group hover:border-foreground transition-all duration-500 z-10">
-          <span className="text-[10px] font-bold opacity-40 mb-2">03</span>
-          <h3 className="text-xl font-bold tracking-widest uppercase">Development</h3>
-        </div>
-
-        {/* 04 Implementation */}
-        <div className="absolute bottom-[5%] left-[78%] w-[360px] h-[360px] rounded-full border border-foreground/20 flex flex-col items-center justify-center group hover:border-foreground transition-all duration-500 z-0">
-          <span className="text-[10px] font-bold opacity-40 mb-2">04</span>
-          <h3 className="text-xl font-bold tracking-widest uppercase">Implementation</h3>
-        </div>
-
-        {/* Big Decorative Curve at bottom left */}
-        <div className="absolute bottom-[-100px] left-[-150px] w-[600px] h-[600px] rounded-full bg-foreground/5 blur-3xl -z-10" />
       </div>
-
-      {/* Mobile/Tablet Layout */}
-      <div className="lg:hidden flex flex-col gap-6 mt-12 relative z-20 items-center">
-        {stages.map((stage) => (
-          <div
-            key={stage.id}
-            className={`aspect-square w-full max-w-[280px] rounded-full flex flex-col items-center justify-center border transition-all duration-300
-                        ${stage.type === 'filled' ? 'bg-foreground text-background border-transparent shadow-lg' : 'border-foreground/20 bg-transparent'}
-                        `}
-          >
-            <span className="text-[10px] font-bold opacity-40 mb-2">{stage.id}</span>
-            <h3 className="text-lg font-bold tracking-widest">{stage.title}</h3>
-          </div>
-        ))}
-      </div>
-
-      {/* Bottom Content Area */}
-      <div className="relative lg:absolute bottom-0 lg:bottom-12 left-0 lg:left-20 max-w-sm z-30 mt-16 lg:mt-0 px-6 lg:px-0 text-center lg:text-left mx-auto lg:mx-0">
-        <p className="text-sm md:text-base opacity-70 mb-8 leading-relaxed">
-          We accompany you at every stage to make the process really comfortable and transparent.
-        </p>
-
-      </div>
-
-      {/* Decorative Close/Cross at top center */}
-      <div className="absolute top-8 md:top-12 left-1/2 -translate-x-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-foreground flex items-center justify-center text-background cursor-pointer hover:scale-110 transition-transform z-30">
-        <span className="text-xl">×</span>
-      </div>
-
-      {/* Top Right Icons (Minimal) */}
-      <div className="absolute top-8 md:top-12 right-6 md:right-12 lg:right-20 flex flex-col gap-6 z-30 opacity-40 hidden md:flex">
-        <div className="w-4 h-4 border border-foreground rotate-45" />
-        <div className="w-4 h-4 rounded-full border border-foreground" />
-        <div className="w-4 h-4 border-foreground border-t-2 border-r-2 -rotate-45" />
-      </div>
+      
     </section>
   );
 };

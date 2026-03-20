@@ -30,18 +30,17 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [testimonials, setTestimonials] = useState<Testimonial[]>(testimonialsFallback as Testimonial[])
 
   useEffect(() => {
+    // Only fetch hero and testimonials from ImageKit. We force local JSON for projects.
     Promise.all([
-      fetchJSON<Project[]>(`${IK_ENDPOINT}/config/projects.json`),
       fetchJSON<HeroSlide[]>(`${IK_ENDPOINT}/config/hero.json`),
       fetchJSON<Testimonial[]>(`${IK_ENDPOINT}/config/testimonials.json`),
     ])
-      .then(([p, h, t]) => {
-        setProjects(p)
+      .then(([h, t]) => {
         setHeroSlides(h)
         setTestimonials(t)
       })
-      .catch(() => {
-        // Config not on ImageKit yet — bundled fallback stays active
+      .catch((e) => {
+        console.warn('Failed to fetch config from ImageKit:', e);
       })
   }, [])
 

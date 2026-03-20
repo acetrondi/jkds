@@ -1,9 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import contactBg from "@/assets/contact-bg.jpg";
-import jkdsLogo from "@/assets/jkds_logo.avif";
+
+import img1 from "@/assets/Contact/IMG_6073.webp";
+import img2 from "@/assets/Contact/IMG_6074.webp";
+import img3 from "@/assets/Contact/IMG_6075.webp";
+import img4 from "@/assets/Contact/IMG_6076.webp";
+
+const carouselImages = [img1, img2, img3, img4];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +16,15 @@ const Contact = () => {
     phone: "",
     message: "",
   });
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+    }, 4500); // changes every 4.5 seconds
+    return () => clearInterval(interval);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,14 +37,20 @@ const Contact = () => {
       <div className="relative w-full max-w-7xl mx-auto">
         {/* Background Card - Now with limited overflow */}
         <div className="relative w-full aspect-[21/9] min-h-[400px] md:min-h-[500px] rounded-[40px] overflow-hidden flex flex-col items-center justify-center px-8 z-10">
-          <div className="absolute inset-0 z-0">
-            <img
-              src={contactBg}
-              alt="Luxury interior"
-              className="w-full h-full object-cover"
-            />
+          <div className="absolute inset-0 z-0 bg-black">
+            {/* Auto moving premium carousel */}
+            {carouselImages.map((img, idx) => (
+              <img
+                key={idx}
+                src={img}
+                alt={`Luxury interior ${idx + 1}`}
+                className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
+                  idx === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+                }`}
+              />
+            ))}
             {/* Darker overlay for better text readability */}
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
 
           {/* Text Content - Centered in the card */}

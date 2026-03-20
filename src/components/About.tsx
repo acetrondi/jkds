@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import potrait from "@/assets/about-img.jpg";
+import potrait from "@/assets/about-img.png";
 
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +46,7 @@ const About = () => {
                     {/* Left Column - The Persona */}
                     <div className="lg:col-span-4 flex flex-col order-2 lg:order-1">
                         <div className={`relative mb-12 ${isVisible ? 'animate-reveal-mask' : 'opacity-0'} w-full`}>
-                            <div className="aspect-[3/4] overflow-hidden grayscale contrast-[1.1] brightness-[0.9]">
+                            <div className="aspect-[3/4] overflow-hidden contrast-[1.1] brightness-[0.9]">
                                 <img
                                     src={potrait}
                                     alt="Jash Kadakia"
@@ -107,6 +107,8 @@ const About = () => {
                     <div>
                         <h5 className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-40 mb-6">Publications</h5>
                         <ul className="text-sm space-y-2 font-medium opacity-70">
+                            <li>Architectural Digest</li>
+                            <li>Inside Architecture</li>
                             <li>Architect’s Diary</li>
                             <li>Architects & Interiors India</li>
                             <li>Home Publication</li>

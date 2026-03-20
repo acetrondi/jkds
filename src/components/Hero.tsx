@@ -4,6 +4,13 @@ import { ArrowUpRight, ChevronRight, ChevronLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useData } from "@/context/DataContext";
 
+import img1 from "@/assets/Hero/IMG_6063.webp";
+import img2 from "@/assets/Hero/IMG_6064.webp";
+import img3 from "@/assets/Hero/IMG_6065.webp";
+import img4 from "@/assets/Hero/IMG_6066.webp";
+
+const localHeroImages = [img1, img2, img3, img4];
+
 const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string | undefined
 
 /**
@@ -21,15 +28,22 @@ function heroSrc(url: string): string {
 
 const Hero = () => {
   const navigate = useNavigate();
-  const { heroSlides: slides } = useData();
+  const { heroSlides: originalSlides } = useData();
   const [current, setCurrent] = useState(0);
 
+  // Map the new local images overriding the default ones securely.
+  const slides = originalSlides.map((slide, index) => ({
+    ...slide,
+    image: localHeroImages[index % localHeroImages.length]
+  }));
+
   useEffect(() => {
+    if (slides.length === 0) return;
     const timer = setInterval(() => {
       setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [slides.length]);
 
   return (
     <section className="relative h-[100dvh] w-full bg-background overflow-hidden flex flex-col pt-20">
@@ -39,7 +53,7 @@ const Hero = () => {
         <AnimatePresence mode="wait">
           <motion.img
             key={current}
-            src={heroSrc(slides[current].image)}
+            src={heroSrc(slides[current]?.image)}
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
@@ -51,17 +65,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      {/* --- JKDS WATERMARK --- */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 0.07 }}
-          className="text-[25vw] font-black tracking-tighter text-white select-none"
-        >
-          JKDS
-        </motion.h2>
-      </div>
-
       {/* --- CONTENT LAYER --- */}
       <div className="relative z-20 flex-1 flex flex-col justify-end pb-8 md:pb-16 px-6 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-6 md:gap-12">
@@ -69,21 +72,23 @@ const Hero = () => {
           {/* Left: Headlines & Button */}
           <div className="w-full lg:max-w-4xl">
             <AnimatePresence mode="wait">
-              <motion.div
-                key={current}
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                exit={{ y: -20, opacity: 0 }}
-                transition={{ duration: 0.5 }}
-                className="space-y-1"
-              >
-                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extralight tracking-tighter leading-[0.9]">
-                  {slides[current].title} <span className="text-primary">{slides[current].subtitle}</span>
-                </h1>
-                <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9] text-primary">
-                  {slides[current].accent}
-                </h1>
-              </motion.div>
+              {slides[current] && (
+                <motion.div
+                  key={current}
+                  initial={{ y: 20, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  exit={{ y: -20, opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="space-y-1"
+                >
+                  <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extralight tracking-tighter leading-[0.9]">
+                    {slides[current].title} <span className="text-primary">{slides[current].subtitle}</span>
+                  </h1>
+                  <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9] text-primary">
+                    {slides[current].accent}
+                  </h1>
+                </motion.div>
+              )}
             </AnimatePresence>
 
             <motion.button

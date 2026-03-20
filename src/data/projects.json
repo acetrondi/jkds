@@ -1,23 +1,29 @@
 [
     {
-        "id": "aphrodtie-foods",
+        "id": "aphrodite-foods",
         "title": "Aphrodite Foods",
         "description": "A sophisticated culinary space designed with a focus on elegant aesthetics and ambient lighting.",
         "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/2.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/3.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/4.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/5.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/6.avif"
+            "/src/assets/projects/aphrodite-foods/1.avif",
+            "/src/assets/projects/aphrodite-foods/10.avif",
+            "/src/assets/projects/aphrodite-foods/11.avif",
+            "/src/assets/projects/aphrodite-foods/12.avif",
+            "/src/assets/projects/aphrodite-foods/2.avif",
+            "/src/assets/projects/aphrodite-foods/3.avif",
+            "/src/assets/projects/aphrodite-foods/4.avif",
+            "/src/assets/projects/aphrodite-foods/5.avif",
+            "/src/assets/projects/aphrodite-foods/6.avif",
+            "/src/assets/projects/aphrodite-foods/7.avif",
+            "/src/assets/projects/aphrodite-foods/8.avif",
+            "/src/assets/projects/aphrodite-foods/9.avif"
         ],
         "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/2.avif"
+            "/src/assets/projects/aphrodite-foods/1.avif",
+            "/src/assets/projects/aphrodite-foods/10.avif"
         ],
         "testimonial": {
             "text": "The design perfectly captures the essence of our brand. The play of light and shadow is masterfully executed.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/aphrodtie-foods/7.avif",
+            "image": "/src/assets/projects/aphrodite-foods/11.avif",
             "video": ""
         },
         "is_hero_project": true,
@@ -26,23 +32,56 @@
         "date": "2024"
     },
     {
-        "id": "dimple-chudgars",
+        "id": "dr-dimple",
         "title": "Chudgar Residence",
         "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
         "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/final living 1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/Living Room With White Travertine.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/final masterview 1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/daughter (1).avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/kitchen1 copy.avif"
+            "/src/assets/projects/dr-dimple/DSC03344+b cr2.avif",
+            "/src/assets/projects/dr-dimple/DSC03361+b cr2.avif",
+            "/src/assets/projects/dr-dimple/DSC03377+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03389+b cr2.avif",
+            "/src/assets/projects/dr-dimple/DSC03399+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03414+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03426+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03436+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03458+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03478+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03503+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03528+b2 bulb.avif",
+            "/src/assets/projects/dr-dimple/DSC03546+b bulb.avif",
+            "/src/assets/projects/dr-dimple/DSC03557+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03573+bb2.avif",
+            "/src/assets/projects/dr-dimple/DSC03585+bb2.avif",
+            "/src/assets/projects/dr-dimple/DSC03610+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03625+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03654+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03671+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03684+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03696+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03711+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03723+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03738+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03748+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03764+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03777+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03786+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03790+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03802+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03809+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03818+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03826+b switchboard.avif",
+            "/src/assets/projects/dr-dimple/DSC03832+b switchboard.avif",
+            "/src/assets/projects/dr-dimple/DSC03842+b2.avif",
+            "/src/assets/projects/dr-dimple/DSC03853+b.avif",
+            "/src/assets/projects/dr-dimple/DSC03864+b.avif"
         ],
         "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/final living 1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/final living 2.avif"
+            "/src/assets/projects/dr-dimple/DSC03344+b cr2.avif",
+            "/src/assets/projects/dr-dimple/DSC03361+b cr2.avif"
         ],
         "testimonial": {
             "text": "Living here is an absolute joy. The attention to detail in every room, especially the living area, is phenomenal.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/dimple-chudgars/final masterview 2.avif",
+            "image": "/src/assets/projects/dr-dimple/DSC03377+b.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -51,47 +90,39 @@
         "date": "2023"
     },
     {
-        "id": "heena-building",
-        "title": "Heena Building",
-        "description": "An architectural landmark showcasing modern structure and lighting design for urban environments.",
-        "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/HEENA DAY.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/HEENA NIGHT.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/2.avif"
-        ],
-        "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/HEENA DAY.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/heena-building/HEENA NIGHT.avif"
-        ],
-        "testimonial": {
-            "text": "The transition from day to night lighting is seamless. The building has become a true icon in the city.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/heena-building/1.avif",
-            "video": ""
-        },
-        "is_hero_project": false,
-        "area": "1200m²",
-        "style": "Modern Architectural",
-        "date": "2024"
-    },
-    {
-        "id": "kanakia-house",
+        "id": "kanakias",
         "title": "Kanakia House",
         "description": "A spacious family home designed for comfort and elegance, featuring light-filled passages and living spaces.",
         "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/Living room.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/Living room 2.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/Passage 1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/2.avif"
+            "/src/assets/projects/kanakias/E_SZ89773.avif",
+            "/src/assets/projects/kanakias/E_SZ89785.avif",
+            "/src/assets/projects/kanakias/E_SZ89788.avif",
+            "/src/assets/projects/kanakias/E_SZ89800.avif",
+            "/src/assets/projects/kanakias/E_SZ89807.avif",
+            "/src/assets/projects/kanakias/E_SZ89815.avif",
+            "/src/assets/projects/kanakias/E_SZ89825.avif",
+            "/src/assets/projects/kanakias/E_SZ89832.avif",
+            "/src/assets/projects/kanakias/E_SZ89838a.avif",
+            "/src/assets/projects/kanakias/E_SZ89841.avif",
+            "/src/assets/projects/kanakias/E_SZ89844.avif",
+            "/src/assets/projects/kanakias/E_SZ89857a.avif",
+            "/src/assets/projects/kanakias/E_SZ89860.avif",
+            "/src/assets/projects/kanakias/E_SZ89865.avif",
+            "/src/assets/projects/kanakias/E_SZ89869.avif",
+            "/src/assets/projects/kanakias/E_SZ89872.avif",
+            "/src/assets/projects/kanakias/E_SZ89875.avif",
+            "/src/assets/projects/kanakias/E_SZ89877.avif",
+            "/src/assets/projects/kanakias/E_SZ89882.avif",
+            "/src/assets/projects/kanakias/E_SZ89885.avif",
+            "/src/assets/projects/kanakias/E_SZ89891.avif"
         ],
         "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/Living room.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/Living room 3.avif"
+            "/src/assets/projects/kanakias/E_SZ89773.avif",
+            "/src/assets/projects/kanakias/E_SZ89785.avif"
         ],
         "testimonial": {
             "text": "The way the light travels through the house is beautiful. It's a perfect blend of space and intimacy.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/kanakia-house/3.avif",
+            "image": "/src/assets/projects/kanakias/E_SZ89788.avif",
             "video": ""
         },
         "is_hero_project": false,
@@ -100,53 +131,161 @@
         "date": "2023"
     },
     {
-        "id": "khandala-valley-one",
-        "title": "Khandala Valley I",
-        "description": "A breathtaking retreat in the valleys, blending seamlessly with nature through biophilic design and open vistas.",
-        "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/2.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/3.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/4.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/5.avif"
-        ],
-        "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/2.avif"
-        ],
-        "testimonial": {
-            "text": "The valley views are perfectly framed. It's more than a house; it's a sanctuary in the heart of nature.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/khandala-valley-one/liv rev1.avif",
-            "video": ""
-        },
-        "is_hero_project": false,
-        "area": "600m²",
-        "style": "Organic Modern",
-        "date": "2024"
-    },
-    {
-        "id": "mehul-mehta-house",
+        "id": "mehul-mehta",
         "title": "Mehta House",
         "description": "A premium urban residence featuring high-end kitchen design, spacious living areas, and master suites.",
         "images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_2.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/BEDROOM 2.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/KITCHEN VIEW 001.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/MASTER BATHROOM FINAL VIEW 001.avif"
+            "/src/assets/projects/mehul-mehta/IMG_4262.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4266.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4275.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4276.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4281.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4291.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4295.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4306.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4307.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4309.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4311.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4314.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4317.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4319.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4320.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4330.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4332.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4339.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4341.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4345.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4347.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4349.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4350.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4357.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4358.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4364-2.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4368-2.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4379.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4380.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4419.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4426.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4603.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4610.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4619.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4642.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4650.avif"
         ],
         "cover_images": [
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/LIVING_ROOM_MEHTA_HOUSE_1.avif",
-            "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/PALAK BEDROOM VIEW 001.avif"
+            "/src/assets/projects/mehul-mehta/IMG_4262.avif",
+            "/src/assets/projects/mehul-mehta/IMG_4266.avif"
         ],
         "testimonial": {
             "text": "Every corner of our home feels curated and special. The design exceeded all our expectations.",
-            "image": "https://ik.imagekit.io/jashkadakiia/projects/mehul-mehta-house/KITCHEN VIEW 002.avif",
+            "image": "/src/assets/projects/mehul-mehta/IMG_4275.avif",
             "video": ""
         },
         "is_hero_project": false,
         "area": "450m²",
         "style": "Premium Urban",
         "date": "2024"
+    },
+    {
+        "id": "monil-bhala",
+        "title": "Monil Bhala",
+        "description": "A stunning architectural showcase of premium design and luxurious details.",
+        "images": [
+            "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+            "/src/assets/projects/monil-bhala/DSC09740+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09782+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09806+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09823+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09833+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09850+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09881+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09897+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09922+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09949+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09978+b.avif",
+            "/src/assets/projects/monil-bhala/DSC09988+b cr.avif"
+        ],
+        "cover_images": [
+            "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+            "/src/assets/projects/monil-bhala/DSC09740+b.avif"
+        ],
+        "testimonial": {
+            "text": "An exemplary execution that flawlessly blended creativity with precision.",
+            "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+            "video": ""
+        },
+        "is_hero_project": false,
+        "area": "500m²",
+        "style": "Modern Architecture",
+        "date": "2025"
+    },
+    {
+        "id": "nirmaan-heena",
+        "title": "Heena Building",
+        "description": "An architectural landmark showcasing modern structure and lighting design for urban environments.",
+        "images": [
+            "/src/assets/projects/nirmaan-heena/1.avif",
+            "/src/assets/projects/nirmaan-heena/2.avif",
+            "/src/assets/projects/nirmaan-heena/3.avif",
+            "/src/assets/projects/nirmaan-heena/4.avif"
+        ],
+        "cover_images": [
+            "/src/assets/projects/nirmaan-heena/1.avif",
+            "/src/assets/projects/nirmaan-heena/2.avif"
+        ],
+        "testimonial": {
+            "text": "The transition from day to night lighting is seamless. The building has become a true icon in the city.",
+            "image": "/src/assets/projects/nirmaan-heena/3.avif",
+            "video": ""
+        },
+        "is_hero_project": false,
+        "area": "1200m²",
+        "style": "Modern Architectural",
+        "date": "2024"
+    },
+    {
+        "id": "rakyan-infra",
+        "title": "Rakyan Infra",
+        "description": "A stunning architectural showcase of premium design and luxurious details.",
+        "images": [
+            "/src/assets/projects/rakyan-infra/NOW_8563.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8564.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8569.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8574.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8595.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8597.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8601.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8604.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8609.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8611.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8615.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8619.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8623.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8625.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8627.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8629.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8631.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8635.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8641.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8644.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8647.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8651.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8654.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8657.avif"
+        ],
+        "cover_images": [
+            "/src/assets/projects/rakyan-infra/NOW_8563.avif",
+            "/src/assets/projects/rakyan-infra/NOW_8564.avif"
+        ],
+        "testimonial": {
+            "text": "An exemplary execution that flawlessly blended creativity with precision.",
+            "image": "/src/assets/projects/rakyan-infra/NOW_8569.avif",
+            "video": ""
+        },
+        "is_hero_project": false,
+        "area": "500m²",
+        "style": "Modern Architecture",
+        "date": "2025"
     }
 ]

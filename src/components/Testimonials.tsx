@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Play, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import { useData } from "@/context/DataContext";
 import { ikSrc } from "@/lib/imagekit";
 
@@ -44,14 +44,22 @@ const Testimonials = () => {
 
             <div className="relative z-10 container-custom h-full flex flex-col justify-center gap-12 lg:gap-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    {/* Left side: Promo Video Trigger */}
-                    <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 order-2 lg:order-1">
-                        <button className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center group hover:bg-primary/40 transition-all duration-500">
-                            <Play className="w-8 h-8 text-primary fill-primary" />
-                        </button>
+                    
+                    {/* Left side: Embedded Inline Video */}
+                    <div className="flex flex-col space-y-6 order-2 lg:order-1 items-center lg:items-start text-center lg:text-left w-full">
                         <span className="text-white text-sm font-bold tracking-[0.3em] uppercase opacity-70">
-                            View Promo Video
+                            Testimonial Video
                         </span>
+                        <div className="w-full aspect-video bg-black/50 rounded-xl overflow-hidden shadow-2xl relative border border-white/10 group">
+                            <iframe 
+                                src="https://www.youtube.com/embed/8TZMtslA3UY" 
+                                title="YouTube video player" 
+                                frameBorder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowFullScreen
+                                className="absolute inset-0 w-full h-full"
+                            ></iframe>
+                        </div>
                     </div>
 
                     {/* Right side: Testimonial Card */}
@@ -103,18 +111,6 @@ const Testimonials = () => {
                     </div>
                 </div>
 
-                {/* Brand Logo Stripe at bottom */}
-                <div className="pt-20 border-t border-white/5 flex flex-wrap justify-between items-center gap-8 opacity-40 hover:opacity-100 transition-opacity">
-                    {[...Array(5)].map((_, i) => (
-                        <div key={i} className="flex flex-col items-center scale-75 md:scale-100 grayscale hover:grayscale-0 transition-all gap-2">
-                            {/* Minimalist Brand Symbol Icons */}
-                            <div className="border border-white/40 p-3 rotate-45 mb-2 transition-transform hover:rotate-90">
-                                <div className="w-4 h-4 border border-white/60" />
-                            </div>
-                            <span className="text-[10px] tracking-widest uppercase font-black text-white">STUDIO {i + 1}</span>
-                        </div>
-                    ))}
-                </div>
             </div>
         </section>
     );
