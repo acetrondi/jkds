@@ -4,7 +4,7 @@ const publicKey = import.meta.env.VITE_IMAGEKIT_PUBLIC_KEY as string
 const privateKey = import.meta.env.VITE_IMAGEKIT_PRIVATE_KEY as string
 export const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string
 
-const localAssets = import.meta.glob('/src/assets/projects/**/*.{avif,webp,jpg,png,jpeg}', { eager: true, as: 'url' }) as Record<string, string>;
+const localAssets = import.meta.glob('/src/assets/projects/**/*.{avif,webp,jpg,png,jpeg}', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
 
 /**
  * Returns an optimised ImageKit src URL.

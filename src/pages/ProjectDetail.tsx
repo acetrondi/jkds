@@ -39,7 +39,7 @@ const ProjectDetail = () => {
                 <img
                     src={ikSrc(project.cover_images[0] || project.images[0], 'f-webp,q-80,w-1920')}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-[3s] hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-[3000ms] hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-white via-black/20 to-transparent" />
 

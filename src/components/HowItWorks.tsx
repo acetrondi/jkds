@@ -22,7 +22,7 @@ const HowItWorks = () => {
   const activeCircle = hoveredCircle || "01";
 
   return (
-    <section id="process" className="relative w-full min-h-[100dvh] bg-secondary pt-24 pb-8 md:py-20 px-4 md:px-8 lg:px-12 overflow-hidden text-foreground flex flex-col justify-between">
+    <section id="services" className="relative w-full min-h-[100dvh] bg-secondary pt-24 pb-8 md:py-20 px-4 md:px-8 lg:px-12 overflow-hidden text-foreground flex flex-col justify-between">
       {/* Header Info */}
       <div className="flex justify-between items-start shrink-0 relative z-30">
         <div className="flex items-center gap-2">

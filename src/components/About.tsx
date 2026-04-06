@@ -50,7 +50,7 @@ const About = () => {
                                 <img
                                     src={potrait}
                                     alt="Jash Kadakia"
-                                    className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
+                                    className="h-full w-full object-cover hover:scale-105 transition-transform duration-700 rounded-lg"
                                 />
                             </div>
                         </div>

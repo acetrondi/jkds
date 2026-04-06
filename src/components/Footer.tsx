@@ -1,9 +1,9 @@
 import jkdsLogo from "@/assets/jkds_logo.png";
-import { Facebook, Instagram, Phone } from "lucide-react";
+import { Instagram, Phone, Linkedin } from "lucide-react";
 
 const socialLinks = [
-  { name: "Facebook", url: "https://www.facebook.com/jashkadakiiadesignstudio?rdid=hJeyPVeIU4zpc5x1", icon: Facebook },
   { name: "Instagram", url: "https://www.instagram.com/jashkadakiiadesignstudio", icon: Instagram },
+  { name: "LinkedIn", url: "https://www.linkedin.com/company/jashkadakiiadesignstudio/", icon: Linkedin },
 ];
 
 const Footer = () => {
