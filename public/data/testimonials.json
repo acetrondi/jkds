@@ -1,26 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Jason Brown",
-    "designation": "Crowne Plaza Owner",
+    "name": "Test",
+    "designation": "tests",
     "quote": "Architect dapibus augue metus the nec feugiat erat hendrerit nec. Duis ve ante the lemon sanleo nec feugiat erat hendrerit necuis ve ante.",
-    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=988&auto=format&fit=crop",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-with-glass-walls-and-a-pool-34440-large.mp4"
-  },
-  {
-    "id": 2,
-    "name": "James Wilson",
-    "designation": "Modern Living",
-    "quote": "The team's ability to blend functionality with aesthetics is remarkable. They created a space that feels both expansive and intimate, perfectly suiting our lifestyle.",
-    "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=987&auto=format&fit=crop",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-interior-of-a-modern-apartment-with-gray-walls-and-furniture-44331-large.mp4"
-  },
-  {
-    "id": 3,
-    "name": "Elena Rodriguez",
-    "designation": "Coastal Retreat",
-    "quote": "Working with JKDS was an absolute pleasure. Their innovative approach to design and dedication to quality resulted in a home that exceeds all our expectations.",
-    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1061&auto=format&fit=crop",
-    "videoUrl": "https://assets.mixkit.co/videos/preview/mixkit-modern-apartment-with-a-view-of-the-city-at-night-44329-large.mp4"
+    "image": "/uploads/testimonials/9fb1bbe3-pexels-taryn-elliott-3889742.webp",
+    "videoUrl": "https://www.youtube.com/watch?v=Z3PpyCpI0hw"
   }
 ]
