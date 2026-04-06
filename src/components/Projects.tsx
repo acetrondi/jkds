@@ -43,8 +43,10 @@ const Projects = () => {
           >
             {/* Project Image */}
             <img
-              src={ikSrc(project.images[0], 'f-webp,q-75,w-800')}
+              src={ikSrc(project.cover_images?.[0] || project.images[0])}
               alt={project.title}
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
             />
 
