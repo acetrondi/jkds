@@ -84,7 +84,7 @@
       "image": "/src/assets/projects/dr-dimple/DSC03377+b.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "350m²",
     "style": "Contemporary Luxury",
     "date": "2023"
@@ -125,7 +125,7 @@
       "image": "/src/assets/projects/kanakias/E_SZ89788.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "400m²",
     "style": "Elegant Modern",
     "date": "2023"
@@ -181,7 +181,7 @@
       "image": "/src/assets/projects/mehul-mehta/IMG_4275.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "450m²",
     "style": "Premium Urban",
     "date": "2024"
@@ -215,7 +215,7 @@
       "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "500m²",
     "style": "Modern Architecture",
     "date": "2025"
@@ -239,7 +239,7 @@
       "image": "/src/assets/projects/nirmaan-heena/3.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "1200m²",
     "style": "Modern Architectural",
     "date": "2024"
@@ -283,7 +283,7 @@
       "image": "/src/assets/projects/rakyan-infra/NOW_8569.avif",
       "video": ""
     },
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "500m²",
     "style": "Modern Architecture",
     "date": "2025"
