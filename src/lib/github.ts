@@ -1,4 +1,6 @@
-const ADMIN_TOKEN = import.meta.env.VITE_ADMIN_TOKEN as string
+function getToken(): string {
+  return sessionStorage.getItem('adminAuth') ?? ''
+}
 
 async function fileToBase64(file: File): Promise<string> {
   return new Promise((resolve, reject) => {
@@ -22,12 +24,7 @@ export async function uploadToGitHub(file: File, folder: string): Promise<string
   const res = await fetch('/api/upload', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      path,
-      content: base64,
-      message: `upload: ${path}`,
-      adminToken: ADMIN_TOKEN,
-    }),
+    body: JSON.stringify({ path, content: base64, message: `upload: ${path}`, token: getToken() }),
   })
 
   if (!res.ok) {
@@ -46,7 +43,7 @@ export async function publishData(data: {
   const res = await fetch('/api/publish', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ ...data, adminToken: ADMIN_TOKEN }),
+    body: JSON.stringify({ ...data, token: getToken() }),
   })
 
   if (!res.ok) {

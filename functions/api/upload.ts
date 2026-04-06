@@ -1,23 +1,38 @@
 interface Env {
   GITHUB_TOKEN: string
-  ADMIN_TOKEN: string
+  GITHUB_REPO: string
+  ADMIN_USERNAME: string
+  ADMIN_PASSWORD: string
 }
 
-const OWNER = 'acetrondi'
-const REPO = 'jkds'
-const BRANCH = 'main'
+async function generateToken(username: string, password: string): Promise<string> {
+  const encoder = new TextEncoder()
+  const data = encoder.encode(`${username}:${password}`)
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data)
+  return Array.from(new Uint8Array(hashBuffer))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+}
+
+async function isValidToken(token: string, env: Env): Promise<boolean> {
+  const expected = await generateToken(env.ADMIN_USERNAME, env.ADMIN_PASSWORD)
+  return token === expected
+}
 
 export async function onRequestPost({ request, env }: { request: Request; env: Env }) {
-  let body: { path: string; content: string; message?: string; adminToken: string }
+  let body: { path: string; content: string; message?: string; token: string }
   try {
     body = await request.json()
   } catch {
     return new Response('Bad request', { status: 400 })
   }
 
-  if (body.adminToken !== env.ADMIN_TOKEN) {
+  if (!(await isValidToken(body.token, env))) {
     return new Response('Unauthorized', { status: 401 })
   }
+
+  const [owner, repo] = env.GITHUB_REPO.split('/')
+  const branch = 'main'
 
   const ghHeaders = {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
@@ -26,9 +41,8 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
     Accept: 'application/vnd.github.v3+json',
   }
 
-  // Get existing file SHA (required for updates)
   let sha: string | undefined
-  const getRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${body.path}`, {
+  const getRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${body.path}`, {
     headers: ghHeaders,
   })
   if (getRes.ok) {
@@ -36,13 +50,13 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
     sha = existing.sha
   }
 
-  const putRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/${body.path}`, {
+  const putRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${body.path}`, {
     method: 'PUT',
     headers: ghHeaders,
     body: JSON.stringify({
       message: body.message ?? `upload: ${body.path}`,
       content: body.content,
-      branch: BRANCH,
+      branch,
       ...(sha ? { sha } : {}),
     }),
   })

@@ -1,23 +1,38 @@
 interface Env {
   GITHUB_TOKEN: string
-  ADMIN_TOKEN: string
+  GITHUB_REPO: string
+  ADMIN_USERNAME: string
+  ADMIN_PASSWORD: string
 }
 
-const OWNER = 'acetrondi'
-const REPO = 'jkds'
-const BRANCH = 'main'
+async function generateToken(username: string, password: string): Promise<string> {
+  const encoder = new TextEncoder()
+  const data = encoder.encode(`${username}:${password}`)
+  const hashBuffer = await crypto.subtle.digest('SHA-256', data)
+  return Array.from(new Uint8Array(hashBuffer))
+    .map((b) => b.toString(16).padStart(2, '0'))
+    .join('')
+}
+
+async function isValidToken(token: string, env: Env): Promise<boolean> {
+  const expected = await generateToken(env.ADMIN_USERNAME, env.ADMIN_PASSWORD)
+  return token === expected
+}
 
 export async function onRequestPost({ request, env }: { request: Request; env: Env }) {
-  let body: { projects: unknown; heroSlides: unknown; testimonials: unknown; adminToken: string }
+  let body: { projects: unknown; heroSlides: unknown; testimonials: unknown; token: string }
   try {
     body = await request.json()
   } catch {
     return new Response('Bad request', { status: 400 })
   }
 
-  if (body.adminToken !== env.ADMIN_TOKEN) {
+  if (!(await isValidToken(body.token, env))) {
     return new Response('Unauthorized', { status: 401 })
   }
+
+  const [owner, repo] = env.GITHUB_REPO.split('/')
+  const branch = 'main'
 
   const ghHeaders = {
     Authorization: `Bearer ${env.GITHUB_TOKEN}`,
@@ -26,23 +41,23 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
     Accept: 'application/vnd.github.v3+json',
   }
 
-  // Step 1: get latest commit SHA on main
-  const refRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/refs/heads/${BRANCH}`, {
+  // Get latest commit SHA
+  const refRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/refs/heads/${branch}`, {
     headers: ghHeaders,
   })
   if (!refRes.ok) return new Response('Failed to fetch branch ref', { status: 502 })
   const refData = (await refRes.json()) as { object: { sha: string } }
   const latestCommitSha = refData.object.sha
 
-  // Step 2: get tree SHA from that commit
-  const commitRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/commits/${latestCommitSha}`, {
+  // Get base tree SHA
+  const commitRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/commits/${latestCommitSha}`, {
     headers: ghHeaders,
   })
   if (!commitRes.ok) return new Response('Failed to fetch commit', { status: 502 })
   const commitData = (await commitRes.json()) as { tree: { sha: string } }
   const baseTreeSha = commitData.tree.sha
 
-  // Step 3: create blobs for each JSON file
+  // Create blobs for each JSON file
   const files = [
     { path: 'src/data/projects.json', content: JSON.stringify(body.projects, null, 2) },
     { path: 'src/data/hero.json', content: JSON.stringify(body.heroSlides, null, 2) },
@@ -51,7 +66,7 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
 
   const blobs = await Promise.all(
     files.map(async (f) => {
-      const res = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/blobs`, {
+      const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/blobs`, {
         method: 'POST',
         headers: ghHeaders,
         body: JSON.stringify({ content: f.content, encoding: 'utf-8' }),
@@ -62,8 +77,8 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
     })
   )
 
-  // Step 4: create new tree
-  const treeRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/trees`, {
+  // Create new tree
+  const treeRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/trees`, {
     method: 'POST',
     headers: ghHeaders,
     body: JSON.stringify({ base_tree: baseTreeSha, tree: blobs }),
@@ -71,8 +86,8 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
   if (!treeRes.ok) return new Response('Failed to create tree', { status: 502 })
   const { sha: newTreeSha } = (await treeRes.json()) as { sha: string }
 
-  // Step 5: create commit
-  const newCommitRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/commits`, {
+  // Create commit
+  const newCommitRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/commits`, {
     method: 'POST',
     headers: ghHeaders,
     body: JSON.stringify({
@@ -84,8 +99,8 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
   if (!newCommitRes.ok) return new Response('Failed to create commit', { status: 502 })
   const { sha: newCommitSha } = (await newCommitRes.json()) as { sha: string }
 
-  // Step 6: update branch ref
-  const updateRefRes = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/git/refs/heads/${BRANCH}`, {
+  // Update branch ref
+  const updateRefRes = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/refs/heads/${branch}`, {
     method: 'PATCH',
     headers: ghHeaders,
     body: JSON.stringify({ sha: newCommitSha }),

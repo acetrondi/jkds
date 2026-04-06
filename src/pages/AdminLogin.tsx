@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { Loader2 } from 'lucide-react'
 import { useAdminAuth } from '@/hooks/useAdminAuth'
 
 export function AdminLogin() {
@@ -11,11 +12,14 @@ export function AdminLogin() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
-    const ok = login(username, password)
+    setLoading(true)
+    const ok = await login(username, password)
+    setLoading(false)
     if (ok) {
       navigate('/admin', { replace: true })
     } else {
@@ -54,7 +58,8 @@ export function AdminLogin() {
             />
           </div>
           {error && <p className="text-sm text-destructive">{error}</p>}
-          <Button type="submit" className="w-full">
+          <Button type="submit" className="w-full" disabled={loading}>
+            {loading && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
             Sign in
           </Button>
         </form>
