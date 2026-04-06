@@ -59,9 +59,9 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
 
   // Create blobs for each JSON file
   const files = [
-    { path: 'src/data/projects.json', content: JSON.stringify(body.projects, null, 2) },
-    { path: 'src/data/hero.json', content: JSON.stringify(body.heroSlides, null, 2) },
-    { path: 'src/data/testimonials.json', content: JSON.stringify(body.testimonials, null, 2) },
+    { path: 'public/data/projects.json', content: JSON.stringify(body.projects, null, 2) },
+    { path: 'public/data/hero.json', content: JSON.stringify(body.heroSlides, null, 2) },
+    { path: 'public/data/testimonials.json', content: JSON.stringify(body.testimonials, null, 2) },
   ]
 
   const blobs = await Promise.all(

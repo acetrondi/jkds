@@ -1,0 +1,144 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e14]:
+    - banner [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - generic [ref=e18]: Admin
+          - navigation [ref=e19]:
+            - button "Projects" [ref=e20] [cursor=pointer]
+            - button "Hero" [ref=e21] [cursor=pointer]
+            - button "Homepage" [ref=e22] [cursor=pointer]
+            - button "Testimonials" [ref=e23] [cursor=pointer]
+        - generic [ref=e24]:
+          - button "Publish" [ref=e25] [cursor=pointer]:
+            - img
+            - text: Publish
+          - button "Logout" [ref=e26] [cursor=pointer]:
+            - img
+            - text: Logout
+      - generic [ref=e134]: Publish failed
+    - main [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "Projects (7)" [level=2] [ref=e30]
+          - button "Add Project" [ref=e31] [cursor=pointer]:
+            - img
+            - text: Add Project
+        - table [ref=e33]:
+          - rowgroup [ref=e34]:
+            - row "Thumb Title Style Date Hero Actions" [ref=e35]:
+              - columnheader "Thumb" [ref=e36]
+              - columnheader "Title" [ref=e37]
+              - columnheader "Style" [ref=e38]
+              - columnheader "Date" [ref=e39]
+              - columnheader "Hero" [ref=e40]
+              - columnheader "Actions" [ref=e41]
+          - rowgroup [ref=e42]:
+            - row "Aphrodite Foods Aphrodite Foods aphrodite-foods Modern Luxury 2024 Yes" [ref=e43]:
+              - cell "Aphrodite Foods" [ref=e44]:
+                - img "Aphrodite Foods" [ref=e45]
+              - cell "Aphrodite Foods aphrodite-foods" [ref=e46]:
+                - generic [ref=e47]: Aphrodite Foods
+                - generic [ref=e48]: aphrodite-foods
+              - cell "Modern Luxury" [ref=e49]
+              - cell "2024" [ref=e50]
+              - cell "Yes" [ref=e51]
+              - cell [ref=e52]:
+                - generic [ref=e53]:
+                  - button [ref=e54] [cursor=pointer]:
+                    - img
+                  - button [ref=e55] [cursor=pointer]:
+                    - img
+            - row "Chudgar Residence Chudgar Residence dr-dimple Contemporary Luxury 2023 No" [ref=e56]:
+              - cell "Chudgar Residence" [ref=e57]:
+                - img "Chudgar Residence" [ref=e58]
+              - cell "Chudgar Residence dr-dimple" [ref=e59]:
+                - generic [ref=e60]: Chudgar Residence
+                - generic [ref=e61]: dr-dimple
+              - cell "Contemporary Luxury" [ref=e62]
+              - cell "2023" [ref=e63]
+              - cell "No" [ref=e64]
+              - cell [ref=e65]:
+                - generic [ref=e66]:
+                  - button [ref=e67] [cursor=pointer]:
+                    - img
+                  - button [ref=e68] [cursor=pointer]:
+                    - img
+            - row "Kanakia House Kanakia House kanakias Elegant Modern 2023 No" [ref=e69]:
+              - cell "Kanakia House" [ref=e70]:
+                - img "Kanakia House" [ref=e71]
+              - cell "Kanakia House kanakias" [ref=e72]:
+                - generic [ref=e73]: Kanakia House
+                - generic [ref=e74]: kanakias
+              - cell "Elegant Modern" [ref=e75]
+              - cell "2023" [ref=e76]
+              - cell "No" [ref=e77]
+              - cell [ref=e78]:
+                - generic [ref=e79]:
+                  - button [ref=e80] [cursor=pointer]:
+                    - img
+                  - button [ref=e81] [cursor=pointer]:
+                    - img
+            - row "Mehta House Mehta House mehul-mehta Premium Urban 2024 No" [ref=e82]:
+              - cell "Mehta House" [ref=e83]:
+                - img "Mehta House" [ref=e84]
+              - cell "Mehta House mehul-mehta" [ref=e85]:
+                - generic [ref=e86]: Mehta House
+                - generic [ref=e87]: mehul-mehta
+              - cell "Premium Urban" [ref=e88]
+              - cell "2024" [ref=e89]
+              - cell "No" [ref=e90]
+              - cell [ref=e91]:
+                - generic [ref=e92]:
+                  - button [ref=e93] [cursor=pointer]:
+                    - img
+                  - button [ref=e94] [cursor=pointer]:
+                    - img
+            - row "Monil Bhala Monil Bhala monil-bhala Modern Architecture 2025 No" [ref=e95]:
+              - cell "Monil Bhala" [ref=e96]:
+                - img "Monil Bhala" [ref=e97]
+              - cell "Monil Bhala monil-bhala" [ref=e98]:
+                - generic [ref=e99]: Monil Bhala
+                - generic [ref=e100]: monil-bhala
+              - cell "Modern Architecture" [ref=e101]
+              - cell "2025" [ref=e102]
+              - cell "No" [ref=e103]
+              - cell [ref=e104]:
+                - generic [ref=e105]:
+                  - button [ref=e106] [cursor=pointer]:
+                    - img
+                  - button [ref=e107] [cursor=pointer]:
+                    - img
+            - row "Heena Building Heena Building nirmaan-heena Modern Architectural 2024 No" [ref=e108]:
+              - cell "Heena Building" [ref=e109]:
+                - img "Heena Building" [ref=e110]
+              - cell "Heena Building nirmaan-heena" [ref=e111]:
+                - generic [ref=e112]: Heena Building
+                - generic [ref=e113]: nirmaan-heena
+              - cell "Modern Architectural" [ref=e114]
+              - cell "2024" [ref=e115]
+              - cell "No" [ref=e116]
+              - cell [ref=e117]:
+                - generic [ref=e118]:
+                  - button [ref=e119] [cursor=pointer]:
+                    - img
+                  - button [ref=e120] [cursor=pointer]:
+                    - img
+            - row "Rakyan Infra Rakyan Infra rakyan-infra Modern Architecture 2025 No" [ref=e121]:
+              - cell "Rakyan Infra" [ref=e122]:
+                - img "Rakyan Infra" [ref=e123]
+              - cell "Rakyan Infra rakyan-infra" [ref=e124]:
+                - generic [ref=e125]: Rakyan Infra
+                - generic [ref=e126]: rakyan-infra
+              - cell "Modern Architecture" [ref=e127]
+              - cell "2025" [ref=e128]
+              - cell "No" [ref=e129]
+              - cell [ref=e130]:
+                - generic [ref=e131]:
+                  - button [ref=e132] [cursor=pointer]:
+                    - img
+                  - button [ref=e133] [cursor=pointer]:
+                    - img

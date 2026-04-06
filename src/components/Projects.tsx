@@ -4,8 +4,9 @@ import { useData } from "@/context/DataContext";
 import { ikSrc } from "@/lib/imagekit";
 
 const Projects = () => {
-  const { projects: projectsData } = useData();
-  const [hoveredIndex, setHoveredIndex] = useState(2);
+  const { projects } = useData();
+  const projectsData = projects.filter((p) => p.is_hero_project);
+  const [hoveredIndex, setHoveredIndex] = useState(0);
   const navigate = useNavigate();
 
   const handleProjectClick = (index, id) => {
