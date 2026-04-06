@@ -53,18 +53,27 @@ export function TestimonialsManager({ testimonials, onChange }: TestimonialsMana
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="space-y-1.5">
-                <Label className="text-xs text-muted-foreground">Name</Label>
-                <Input value={t.name} onChange={(e) => update(idx, { name: e.target.value })} placeholder="Jane Smith" />
+                <div className="flex justify-between">
+                  <Label className="text-xs text-muted-foreground">Name</Label>
+                  <span className={`text-[10px] ${t.name.length > 40 ? 'text-destructive' : 'text-muted-foreground'}`}>{t.name.length}/40</span>
+                </div>
+                <Input value={t.name} onChange={(e) => update(idx, { name: e.target.value.slice(0, 40) })} placeholder="Jane Smith" />
               </div>
               <div className="space-y-1.5">
-                <Label className="text-xs text-muted-foreground">Designation</Label>
-                <Input value={t.designation} onChange={(e) => update(idx, { designation: e.target.value })} placeholder="Villa Owner" />
+                <div className="flex justify-between">
+                  <Label className="text-xs text-muted-foreground">Designation</Label>
+                  <span className={`text-[10px] ${t.designation.length > 50 ? 'text-destructive' : 'text-muted-foreground'}`}>{t.designation.length}/50</span>
+                </div>
+                <Input value={t.designation} onChange={(e) => update(idx, { designation: e.target.value.slice(0, 50) })} placeholder="Villa Owner" />
               </div>
             </div>
 
             <div className="space-y-1.5">
-              <Label className="text-xs text-muted-foreground">Quote</Label>
-              <Textarea value={t.quote} onChange={(e) => update(idx, { quote: e.target.value })} rows={2} />
+              <div className="flex justify-between">
+                <Label className="text-xs text-muted-foreground">Quote</Label>
+                <span className={`text-[10px] ${t.quote.length > 280 ? 'text-destructive' : 'text-muted-foreground'}`}>{t.quote.length}/280</span>
+              </div>
+              <Textarea value={t.quote} onChange={(e) => update(idx, { quote: e.target.value.slice(0, 280) })} rows={2} />
             </div>
 
             <div className="space-y-1.5">

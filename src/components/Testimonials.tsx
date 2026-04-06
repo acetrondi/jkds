@@ -3,6 +3,20 @@ import { Quote } from "lucide-react";
 import { useData } from "@/context/DataContext";
 import { ikSrc } from "@/lib/imagekit";
 
+function getEmbedUrl(url: string): string {
+    if (!url) return ''
+    const short = url.match(/youtu\.be\/([^?&]+)/)
+    if (short) return `https://www.youtube.com/embed/${short[1]}`
+    const long = url.match(/[?&]v=([^?&]+)/)
+    if (long) return `https://www.youtube.com/embed/${long[1]}`
+    if (url.includes('youtube.com/embed/')) return url
+    return ''
+}
+
+function isYouTube(url: string): boolean {
+    return url.includes('youtube.com') || url.includes('youtu.be')
+}
+
 const Testimonials = () => {
     const { testimonials } = useData();
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,17 +35,18 @@ const Testimonials = () => {
         <section id="testimonials" className="relative w-full min-h-[800px] bg-black overflow-hidden py-24 border-b-2 border-white/5">
             {/* Background Video */}
             <div className="absolute inset-0 z-0">
-                <video
-                    key={testimonial.videoUrl}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover opacity-60 transition-opacity duration-1000"
-                >
-                    <source src={testimonial.videoUrl} type="video/mp4" />
-                </video>
-                {/* Overlay darkening */}
+                {!isYouTube(testimonial.videoUrl) && testimonial.videoUrl && (
+                    <video
+                        key={testimonial.videoUrl}
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-cover opacity-60 transition-opacity duration-1000"
+                    >
+                        <source src={testimonial.videoUrl} type="video/mp4" />
+                    </video>
+                )}
                 <div className="absolute inset-0 bg-black/40" />
             </div>
 
@@ -51,14 +66,21 @@ const Testimonials = () => {
                             Testimonial Video
                         </span>
                         <div className="w-full aspect-video bg-black/50 rounded-xl overflow-hidden shadow-2xl relative border border-white/10 group">
-                            <iframe 
-                                src="https://www.youtube.com/embed/8TZMtslA3UY" 
+                            {isYouTube(testimonial.videoUrl) ? (
+                            <iframe
+                                key={testimonial.videoUrl}
+                                src={getEmbedUrl(testimonial.videoUrl)}
                                 title="YouTube video player" 
                                 frameBorder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                                 allowFullScreen
                                 className="absolute inset-0 w-full h-full"
                             ></iframe>
+                            ) : (
+                            <div className="absolute inset-0 flex items-center justify-center text-white/20 text-sm">
+                                No video
+                            </div>
+                            )}
                         </div>
                     </div>
 
