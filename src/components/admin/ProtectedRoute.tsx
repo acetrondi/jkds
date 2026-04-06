@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from 'react-router-dom'
 
 export function ProtectedRoute() {
-  const isAuthenticated = sessionStorage.getItem('adminAuth') === 'true'
+  const isAuthenticated = Boolean(sessionStorage.getItem('adminAuth'))
   if (!isAuthenticated) {
     return <Navigate to="/admin/login" replace />
   }
