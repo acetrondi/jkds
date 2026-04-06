@@ -123,6 +123,7 @@ export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps
               url={form.cover_images[0] || undefined}
               onUpload={(url) => set('cover_images', [url])}
               onRemove={() => set('cover_images', [])}
+              folder={`projects/${form.id || 'misc'}`}
             />
           </div>
 
@@ -141,6 +142,7 @@ export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps
                     set('images', next)
                   }}
                   onRemove={() => set('images', form.images.filter((_, idx) => idx !== i))}
+                  folder={`projects/${form.id || 'misc'}`}
                 />
               ))}
               <button
@@ -187,6 +189,7 @@ export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps
                 onRemove={() =>
                   set('testimonial', { ...form.testimonial, image: '' })
                 }
+                folder={`projects/${form.id || 'misc'}`}
               />
             </div>
           </div>

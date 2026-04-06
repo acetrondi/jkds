@@ -45,7 +45,7 @@ export function HeroManager({ slides, onChange }: HeroManagerProps) {
       </div>
 
       <p className="text-sm text-muted-foreground">
-        Each slide shows a full-screen background image with animated headline text. Upload images via ImageKit for optimal delivery.
+        Each slide shows a full-screen background image with animated headline text.
       </p>
 
       <div className="space-y-4">
@@ -86,6 +86,7 @@ export function HeroManager({ slides, onChange }: HeroManagerProps) {
                   url={slide.image || undefined}
                   onUpload={(url) => update(idx, { image: url })}
                   onRemove={() => update(idx, { image: '' })}
+                  folder="hero"
                 />
                 <Input
                   className="w-48 text-xs h-7"

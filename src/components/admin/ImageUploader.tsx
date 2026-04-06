@@ -1,9 +1,6 @@
 import { useRef, useState } from 'react'
-import { upload } from '@imagekit/react'
 import { Loader2, X, Upload, AlertCircle } from 'lucide-react'
-import { generateAuth } from '@/lib/imagekit'
-
-const publicKey = import.meta.env.VITE_IMAGEKIT_PUBLIC_KEY as string
+import { uploadToGitHub } from '@/lib/github'
 
 const MAX_SIZE_MB = 20
 const WEBP_QUALITY = 0.85
@@ -56,6 +53,7 @@ interface ImageUploaderProps {
   onUpload: (url: string) => void
   onRemove: () => void
   label?: string
+  folder: string
 }
 
 type Stage = 'idle' | 'validating' | 'converting' | 'uploading'
@@ -67,7 +65,7 @@ const stageLabel: Record<Stage, string> = {
   uploading: 'Uploading…',
 }
 
-export function ImageUploader({ url, onUpload, onRemove, label }: ImageUploaderProps) {
+export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageUploaderProps) {
   const [stage, setStage] = useState<Stage>('idle')
   const [error, setError] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -83,18 +81,8 @@ export function ImageUploader({ url, onUpload, onRemove, label }: ImageUploaderP
       const webpFile = await convertToWebP(file)
 
       setStage('uploading')
-      const { token, expire, signature } = await generateAuth()
-      const res = await upload({
-        file: webpFile,
-        fileName: webpFile.name,
-        publicKey,
-        token,
-        expire,
-        signature,
-        folder: '/portfolio',
-        useUniqueFileName: true,
-      })
-      onUpload(res.url)
+      const uploadedUrl = await uploadToGitHub(webpFile, folder)
+      onUpload(uploadedUrl)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Upload failed')
     } finally {

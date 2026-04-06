@@ -1,60 +1,22 @@
-import { upload } from '@imagekit/react'
-
-const publicKey = import.meta.env.VITE_IMAGEKIT_PUBLIC_KEY as string
-const privateKey = import.meta.env.VITE_IMAGEKIT_PRIVATE_KEY as string
-export const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string
-
-const localAssets = import.meta.glob('/src/assets/projects/**/*.{avif,webp,jpg,png,jpeg}', { eager: true, query: '?url', import: 'default' }) as Record<string, string>;
+// Local Vite asset map — resolves existing /src/assets/... paths to hashed build URLs
+const localAssets = import.meta.glob('/src/assets/projects/**/*.{avif,webp,jpg,png,jpeg}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
 
 /**
- * Returns an optimised ImageKit src URL.
- * - ImageKit URLs → appends ?tr=<transforms>
- * - Local Vite matched paths → mapped correctly to hashed build files using import.meta.glob
- * - External / local URLs → returned as-is
+ * Resolves an image URL for display.
+ * - /src/assets/... paths → mapped to hashed Vite build URLs (existing images)
+ * - /uploads/... and external URLs → returned as-is (new GitHub-hosted images)
  */
-export function ikSrc(url: string, transforms = 'f-webp,q-80'): string {
+export function ikSrc(url: string, _transforms?: string): string {
   if (!url) return ''
-  if (url.includes('ik.imagekit.io') || (IK_ENDPOINT && url.startsWith(IK_ENDPOINT))) {
-    return `${url}?tr=${transforms}`
-  }
-  // Lookup inside localAssets if the url is a local Vite static string like /src/assets/projects/...
   if (url.startsWith('/src/assets') && localAssets[url]) {
     return localAssets[url]
   }
   return url
 }
 
-export async function generateAuth() {
-  const token = crypto.randomUUID()
-  const expire = Math.floor(Date.now() / 1000) + 3600
-  const enc = new TextEncoder()
-  const key = await crypto.subtle.importKey(
-    'raw',
-    enc.encode(privateKey),
-    { name: 'HMAC', hash: 'SHA-1' },
-    false,
-    ['sign']
-  )
-  const raw = await crypto.subtle.sign('HMAC', key, enc.encode(token + expire))
-  const signature = Array.from(new Uint8Array(raw))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('')
-  return { token, expire, signature }
-}
-
-export async function saveJSONToImageKit(data: unknown, filename: string): Promise<void> {
-  const { token, expire, signature } = await generateAuth()
-  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
-  const file = new File([blob], filename, { type: 'application/json' })
-  await upload({
-    file,
-    fileName: filename,
-    publicKey,
-    token,
-    expire,
-    signature,
-    folder: '/config',
-    useUniqueFileName: false,
-    overwriteFile: true,
-  })
-}
+// Keep export shape compatible with existing imports
+export const IK_ENDPOINT = ''

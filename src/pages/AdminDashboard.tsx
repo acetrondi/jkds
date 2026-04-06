@@ -4,20 +4,28 @@ import { ProjectList } from '@/components/admin/ProjectList'
 import { ProjectForm } from '@/components/admin/ProjectForm'
 import { HeroManager } from '@/components/admin/HeroManager'
 import { TestimonialsManager } from '@/components/admin/TestimonialsManager'
+import { HomepageManager } from '@/components/admin/HomepageManager'
 import { useAdminAuth } from '@/hooks/useAdminAuth'
 import { useData } from '@/context/DataContext'
-import { saveJSONToImageKit } from '@/lib/imagekit'
+import { publishData } from '@/lib/github'
 import { LogOut, Save, Loader2, CheckCircle2 } from 'lucide-react'
 import type { Project } from '@/types/project'
 import type { HeroSlide } from '@/types/hero'
 import type { Testimonial } from '@/types/testimonial'
 
-type Tab = 'projects' | 'hero' | 'testimonials'
+type Tab = 'projects' | 'hero' | 'homepage' | 'testimonials'
 type SaveState = 'idle' | 'saving' | 'saved' | 'error'
 
 export function AdminDashboard() {
   const { logout } = useAdminAuth()
-  const { projects: liveProjects, heroSlides: liveHero, testimonials: liveTestimonials, setProjects: setLiveProjects, setHeroSlides: setLiveHero, setTestimonials: setLiveTestimonials } = useData()
+  const {
+    projects: liveProjects,
+    heroSlides: liveHero,
+    testimonials: liveTestimonials,
+    setProjects: setLiveProjects,
+    setHeroSlides: setLiveHero,
+    setTestimonials: setLiveTestimonials,
+  } = useData()
 
   const [projects, setProjects] = useState<Project[]>(liveProjects)
   const [heroSlides, setHeroSlides] = useState<HeroSlide[]>(liveHero)
@@ -46,18 +54,14 @@ export function AdminDashboard() {
     setSaveState('saving')
     setSaveError('')
     try {
-      await Promise.all([
-        saveJSONToImageKit(projects, 'projects.json'),
-        saveJSONToImageKit(heroSlides, 'hero.json'),
-        saveJSONToImageKit(testimonials, 'testimonials.json'),
-      ])
+      await publishData({ projects, heroSlides, testimonials })
       setLiveProjects(projects)
       setLiveHero(heroSlides)
       setLiveTestimonials(testimonials)
       setSaveState('saved')
       setTimeout(() => setSaveState('idle'), 3000)
     } catch (err) {
-      setSaveError(err instanceof Error ? err.message : 'Save failed')
+      setSaveError(err instanceof Error ? err.message : 'Publish failed')
       setSaveState('error')
       setTimeout(() => setSaveState('idle'), 4000)
     }
@@ -66,6 +70,7 @@ export function AdminDashboard() {
   const tabs: { id: Tab; label: string }[] = [
     { id: 'projects', label: 'Projects' },
     { id: 'hero', label: 'Hero' },
+    { id: 'homepage', label: 'Homepage' },
     { id: 'testimonials', label: 'Testimonials' },
   ]
 
@@ -94,7 +99,6 @@ export function AdminDashboard() {
           </div>
 
           <div className="flex items-center gap-2">
-            {/* Publish button */}
             <Button
               size="sm"
               onClick={handlePublish}
@@ -118,6 +122,11 @@ export function AdminDashboard() {
             {saveError}
           </div>
         )}
+        {saveState === 'saved' && (
+          <div className="bg-green-500/10 border-b border-green-500/20 px-4 py-1.5 text-xs text-green-700 text-center">
+            Changes committed to GitHub. Cloudflare Pages is rebuilding — live in ~1–2 min.
+          </div>
+        )}
       </header>
 
       {/* Content */}
@@ -132,6 +141,9 @@ export function AdminDashboard() {
         )}
         {tab === 'hero' && (
           <HeroManager slides={heroSlides} onChange={setHeroSlides} />
+        )}
+        {tab === 'homepage' && (
+          <HomepageManager projects={projects} onChange={setProjects} />
         )}
         {tab === 'testimonials' && (
           <TestimonialsManager testimonials={testimonials} onChange={setTestimonials} />

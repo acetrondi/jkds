@@ -68,8 +68,8 @@ export function TestimonialsManager({ testimonials, onChange }: TestimonialsMana
             </div>
 
             <div className="space-y-1.5">
-              <Label className="text-xs text-muted-foreground">Background Video URL</Label>
-              <Input value={t.videoUrl} onChange={(e) => update(idx, { videoUrl: e.target.value })} placeholder="https://..." />
+              <Label className="text-xs text-muted-foreground">YouTube Video URL</Label>
+              <Input value={t.videoUrl} onChange={(e) => update(idx, { videoUrl: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." />
             </div>
 
             <div className="space-y-1.5">
@@ -78,6 +78,7 @@ export function TestimonialsManager({ testimonials, onChange }: TestimonialsMana
                 url={t.image || undefined}
                 onUpload={(url) => update(idx, { image: url })}
                 onRemove={() => update(idx, { image: '' })}
+                folder="testimonials"
               />
             </div>
           </div>
