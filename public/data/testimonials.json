@@ -14,5 +14,13 @@
     "quote": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five cent",
     "image": "/uploads/testimonials/b379e8ad-pexels-brenda-holland-630596156-29270283.webp",
     "videoUrl": "https://www.youtube.com/watch?v=Z3PpyCpI0hw"
+  },
+  {
+    "id": 1775566612809,
+    "name": "Test xyz",
+    "designation": "testing",
+    "quote": "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+    "image": "/uploads/testimonials/8dc31fc1-pexels-asadphoto-1024965.webp",
+    "videoUrl": "https://www.youtube.com/watch?v=yGudQAF7TN0"
   }
 ]
