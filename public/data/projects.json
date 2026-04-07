@@ -244,5 +244,45 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "new-project",
+    "title": "New project",
+    "description": "descript",
+    "images": [
+      "/uploads/projects/new-project/a1126023-E_SZ89773.webp",
+      "/uploads/projects/new-project/647316db-E_SZ89785.webp",
+      "/uploads/projects/new-project/fe9f0c44-E_SZ89788.webp",
+      "/uploads/projects/new-project/a2a41651-E_SZ89800.webp",
+      "/uploads/projects/new-project/b0bb7a7f-E_SZ89807.webp",
+      "/uploads/projects/new-project/71b5cb45-E_SZ89815.webp",
+      "/uploads/projects/new-project/e4fd4757-E_SZ89825.webp",
+      "/uploads/projects/new-project/1329e63d-E_SZ89832.webp",
+      "/uploads/projects/new-project/45601f26-E_SZ89838a.webp",
+      "/uploads/projects/new-project/656c91d5-E_SZ89841.webp",
+      "/uploads/projects/new-project/879fdc73-E_SZ89844.webp",
+      "/uploads/projects/new-project/b96eb79c-E_SZ89857a.webp",
+      "/uploads/projects/new-project/6de66d8c-E_SZ89860.webp",
+      "/uploads/projects/new-project/4e6949a3-E_SZ89865.webp",
+      "/uploads/projects/new-project/f6b5f6aa-E_SZ89869.webp",
+      "/uploads/projects/new-project/ec6706c8-E_SZ89872.webp",
+      "/uploads/projects/new-project/c25d51a8-E_SZ89875.webp",
+      "/uploads/projects/new-project/8dde7a7a-E_SZ89877.webp",
+      "/uploads/projects/new-project/f6918a49-E_SZ89882.webp",
+      "/uploads/projects/new-project/e7a50eac-E_SZ89885.webp",
+      "/uploads/projects/new-project/c0bd5dd0-E_SZ89891.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/new-project/67a3dc6b-E_SZ89773.webp"
+    ],
+    "is_hero_project": true,
+    "area": "450",
+    "style": "Modern",
+    "date": "2025",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
