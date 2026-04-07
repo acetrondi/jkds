@@ -1,37 +1,5 @@
 [
   {
-    "id": "aphrodite-foods",
-    "title": "Aphrodite Foods",
-    "description": "A sophisticated culinary space designed with a focus on elegant aesthetics and ambient lighting.",
-    "images": [
-      "/src/assets/projects/aphrodite-foods/1.avif",
-      "/src/assets/projects/aphrodite-foods/10.avif",
-      "/src/assets/projects/aphrodite-foods/11.avif",
-      "/src/assets/projects/aphrodite-foods/12.avif",
-      "/src/assets/projects/aphrodite-foods/2.avif",
-      "/src/assets/projects/aphrodite-foods/3.avif",
-      "/src/assets/projects/aphrodite-foods/4.avif",
-      "/src/assets/projects/aphrodite-foods/5.avif",
-      "/src/assets/projects/aphrodite-foods/6.avif",
-      "/src/assets/projects/aphrodite-foods/7.avif",
-      "/src/assets/projects/aphrodite-foods/8.avif",
-      "/src/assets/projects/aphrodite-foods/9.avif"
-    ],
-    "cover_images": [
-      "/src/assets/projects/aphrodite-foods/1.avif",
-      "/src/assets/projects/aphrodite-foods/10.avif"
-    ],
-    "testimonial": {
-      "text": "The design perfectly captures the essence of our brand. The play of light and shadow is masterfully executed.",
-      "image": "/src/assets/projects/aphrodite-foods/11.avif",
-      "video": ""
-    },
-    "is_hero_project": true,
-    "area": "180m²",
-    "style": "Modern Luxury",
-    "date": "2024"
-  },
-  {
     "id": "dr-dimple",
     "title": "Chudgar Residence",
     "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
