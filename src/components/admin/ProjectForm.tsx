@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import {
   Dialog,
   DialogContent,
@@ -11,8 +11,10 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { Checkbox } from '@/components/ui/checkbox'
-import { ImageUploader } from './ImageUploader'
-import { Plus, X } from 'lucide-react'
+import { ImageUploader, validateImage, convertToWebP } from './ImageUploader'
+import { stageUpload } from '@/lib/uploadStore'
+import { setBlobUrl } from '@/lib/blobCache'
+import { Loader2, Plus } from 'lucide-react'
 import type { Project } from '@/types/project'
 
 interface ProjectFormProps {
@@ -45,6 +47,8 @@ function slugify(str: string) {
 
 export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps) {
   const [form, setForm] = useState<Project>(emptyProject())
+  const [galleryUploading, setGalleryUploading] = useState(false)
+  const galleryInputRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     setForm(project ? { ...project } : emptyProject())
@@ -61,6 +65,29 @@ export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onSave(form)
+  }
+
+  const handleGalleryFiles = async (files: FileList) => {
+    setGalleryUploading(true)
+    const results: string[] = []
+    const folder = `projects/${form.id || 'misc'}`
+    for (const file of Array.from(files)) {
+      try {
+        await validateImage(file)
+        const { blobUrl, base64, filename } = await convertToWebP(file)
+        const uid = crypto.randomUUID().slice(0, 8)
+        const safeName = filename.replace(/[^a-zA-Z0-9._-]/g, '-')
+        const githubPath = `public/uploads/${folder}/${uid}-${safeName}`
+        const publicUrl = `/uploads/${folder}/${uid}-${safeName}`
+        stageUpload(githubPath, base64)
+        setBlobUrl(publicUrl, blobUrl)
+        results.push(publicUrl)
+      } catch {
+        // skip invalid files silently
+      }
+    }
+    setForm((f) => ({ ...f, images: [...f.images.filter(Boolean), ...results] }))
+    setGalleryUploading(false)
   }
 
   return (
@@ -147,12 +174,30 @@ export function ProjectForm({ open, project, onSave, onClose }: ProjectFormProps
               ))}
               <button
                 type="button"
-                onClick={() => set('images', [...form.images, ''])}
-                className="w-24 h-24 rounded-md border-2 border-dashed border-border flex flex-col items-center justify-center gap-1 hover:border-primary transition-colors"
+                onClick={() => galleryInputRef.current?.click()}
+                disabled={galleryUploading}
+                className="w-24 h-24 rounded-md border-2 border-dashed border-border flex flex-col items-center justify-center gap-1 hover:border-primary transition-colors disabled:opacity-50"
               >
-                <Plus className="w-5 h-5 text-muted-foreground" />
-                <span className="text-[10px] text-muted-foreground">Add</span>
+                {galleryUploading ? (
+                  <Loader2 className="w-5 h-5 animate-spin text-muted-foreground" />
+                ) : (
+                  <>
+                    <Plus className="w-5 h-5 text-muted-foreground" />
+                    <span className="text-[10px] text-muted-foreground">Add</span>
+                  </>
+                )}
               </button>
+              <input
+                ref={galleryInputRef}
+                type="file"
+                accept="image/*"
+                multiple
+                className="hidden"
+                onChange={(e) => {
+                  if (e.target.files?.length) handleGalleryFiles(e.target.files)
+                  e.target.value = ''
+                }}
+              />
             </div>
           </div>
 

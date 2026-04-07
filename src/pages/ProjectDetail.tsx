@@ -122,42 +122,44 @@ const ProjectDetail = () => {
                 </div>
             </section>
 
-            {/* Testimonial Section */}
-            <section className="bg-neutral-50 py-32 border-y border-black/5">
-                <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                    <div className="relative">
-                        <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-black/10">
-                            <img
-                                src={ikSrc(project.testimonial.image, 'f-webp,q-80,w-800')}
-                                alt="Client"
-                                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
-                            />
+            {/* Testimonial Section — only shown if the project has a testimonial */}
+            {project.testimonial?.text && (
+                <section className="bg-neutral-50 py-32 border-y border-black/5">
+                    <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                        <div className="relative">
+                            <div className="aspect-[4/5] rounded-[2rem] overflow-hidden border border-black/10">
+                                <img
+                                    src={ikSrc(project.testimonial.image, 'f-webp,q-80,w-800')}
+                                    alt="Client"
+                                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                                />
+                            </div>
+                            {/* Play Button Overlay if video exists */}
+                            {project.testimonial.video && (
+                                <button className="absolute inset-0 flex items-center justify-center group">
+                                    <div className="w-24 h-24 rounded-full bg-primary/20 backdrop-blur-md border border-primary/30 flex items-center justify-center group-hover:bg-primary/40 transition-all">
+                                        <Play className="text-primary fill-primary w-8 h-8" />
+                                    </div>
+                                </button>
+                            )}
                         </div>
-                        {/* Play Button Overlay if video exists */}
-                        {project.testimonial.video && (
-                            <button className="absolute inset-0 flex items-center justify-center group">
-                                <div className="w-24 h-24 rounded-full bg-primary/20 backdrop-blur-md border border-primary/30 flex items-center justify-center group-hover:bg-primary/40 transition-all">
-                                    <Play className="text-primary fill-primary w-8 h-8" />
-                                </div>
-                            </button>
-                        )}
-                    </div>
 
-                    <div className="space-y-12">
-                        <span className="text-primary font-black uppercase tracking-[0.5em] text-xs underline underline-offset-[12px] decoration-primary/30">Client Experience</span>
-                        <blockquote className="text-3xl md:text-5xl font-serif italic text-black/90 leading-tight">
-                            "{project.testimonial.text}"
-                        </blockquote>
-                        <div className="pt-8 flex items-center gap-6">
-                            <div className="w-16 h-px bg-primary" />
-                            <div>
-                                <p className="font-bold uppercase tracking-widest text-black">Satisfied Client</p>
-                                <p className="text-xs text-black/40 uppercase tracking-widest mt-1">Verified Owner</p>
+                        <div className="space-y-12">
+                            <span className="text-primary font-black uppercase tracking-[0.5em] text-xs underline underline-offset-[12px] decoration-primary/30">Client Experience</span>
+                            <blockquote className="text-3xl md:text-5xl font-serif italic text-black/90 leading-tight">
+                                "{project.testimonial.text}"
+                            </blockquote>
+                            <div className="pt-8 flex items-center gap-6">
+                                <div className="w-16 h-px bg-primary" />
+                                <div>
+                                    <p className="font-bold uppercase tracking-widest text-black">Satisfied Client</p>
+                                    <p className="text-xs text-black/40 uppercase tracking-widest mt-1">Verified Owner</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            )}
 
             {/* CTA Section */}
             <section className="py-32 bg-neutral-50 overflow-hidden relative">

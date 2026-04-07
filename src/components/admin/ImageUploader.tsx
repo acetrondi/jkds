@@ -7,7 +7,7 @@ const MAX_SIZE_MB = 20
 const WEBP_QUALITY = 0.85
 const MAX_DIMENSION = 1920
 
-async function validateImage(file: File): Promise<void> {
+export async function validateImage(file: File): Promise<void> {
   if (!file.type.startsWith('image/')) throw new Error('File must be an image')
   if (file.size > MAX_SIZE_MB * 1024 * 1024) throw new Error(`Image must be under ${MAX_SIZE_MB}MB`)
   await new Promise<void>((resolve, reject) => {
@@ -19,7 +19,7 @@ async function validateImage(file: File): Promise<void> {
   })
 }
 
-async function convertToWebP(file: File): Promise<{ blobUrl: string; base64: string; filename: string }> {
+export async function convertToWebP(file: File): Promise<{ blobUrl: string; base64: string; filename: string }> {
   return new Promise((resolve, reject) => {
     const img = new Image()
     const url = URL.createObjectURL(file)
