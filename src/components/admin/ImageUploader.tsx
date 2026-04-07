@@ -2,6 +2,7 @@ import { useRef, useState, useEffect } from 'react'
 import { Loader2, X, Upload, AlertCircle } from 'lucide-react'
 import { setBlobUrl } from '@/lib/blobCache'
 import { stageUpload } from '@/lib/uploadStore'
+import { ikSrc } from '@/lib/imagekit'
 
 const MAX_SIZE_MB = 20
 const WEBP_QUALITY = 0.85
@@ -124,7 +125,7 @@ export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageU
 
       {displayUrl ? (
         <div className="relative w-24 h-24 rounded-md overflow-hidden border border-border group">
-          <img src={displayUrl} alt="uploaded" className="w-full h-full object-cover" />
+          <img src={ikSrc(displayUrl ?? '')} alt="uploaded" className="w-full h-full object-cover" />
           {loading && (
             <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center gap-1">
               <Loader2 className="w-4 h-4 animate-spin text-white" />
