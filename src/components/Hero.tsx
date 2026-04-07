@@ -8,33 +8,19 @@ import img1 from "@/assets/Hero/IMG_6063.webp";
 import img2 from "@/assets/Hero/IMG_6064.webp";
 import img3 from "@/assets/Hero/IMG_6065.webp";
 import img4 from "@/assets/Hero/IMG_6066.webp";
+import { ikSrc } from "@/lib/imagekit";
 
 const localHeroImages = [img1, img2, img3, img4];
-
-const IK_ENDPOINT = import.meta.env.VITE_IMAGEKIT_URL_ENDPOINT as string | undefined
-
-/**
- * Returns an optimised src for the hero background:
- * - ImageKit URL  → append transformation params (WebP, 1920px wide, q-80)
- * - Local path    → use as-is (fallback)
- */
-function heroSrc(url: string): string {
-  if (!url) return ''
-  if (url.includes('ik.imagekit.io') || (IK_ENDPOINT && url.startsWith(IK_ENDPOINT))) {
-    return `${url}?tr=f-webp,q-80,w-1920`
-  }
-  return url
-}
 
 const Hero = () => {
   const navigate = useNavigate();
   const { heroSlides: originalSlides } = useData();
   const [current, setCurrent] = useState(0);
 
-  // Map the new local images overriding the default ones securely.
+  // Use slide.image from data if set, otherwise fall back to local bundled images
   const slides = originalSlides.map((slide, index) => ({
     ...slide,
-    image: localHeroImages[index % localHeroImages.length]
+    image: slide.image || localHeroImages[index % localHeroImages.length],
   }));
 
   useEffect(() => {
@@ -53,7 +39,7 @@ const Hero = () => {
         <AnimatePresence mode="wait">
           <motion.img
             key={current}
-            src={heroSrc(slides[current]?.image)}
+            src={ikSrc(slides[current]?.image)}
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.95, opacity: 0 }}
