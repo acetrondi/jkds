@@ -255,5 +255,26 @@
     "area": "500m²",
     "style": "Modern Architecture",
     "date": "2025"
+  },
+  {
+    "id": "aphrodite-foods",
+    "title": "Aphrodite Foods",
+    "description": "A sophisticated culinary space designed with a focus on elegant aesthetics and ambient lighting.",
+    "images": [
+      "/uploads/projects/aphrodite-foods/3ca61f01-1.webp",
+      ""
+    ],
+    "cover_images": [
+      "/uploads/projects/aphrodite-foods/77605ed6-12.webp"
+    ],
+    "is_hero_project": true,
+    "area": "180m²",
+    "style": "Modern Luxury",
+    "date": "2024",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
