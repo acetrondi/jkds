@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { Loader2, X, Upload, AlertCircle } from 'lucide-react'
 import { uploadToGitHub } from '@/lib/github'
+import { setBlobUrl } from '@/lib/blobCache'
 
 const MAX_SIZE_MB = 20
 const WEBP_QUALITY = 0.85
@@ -104,6 +105,8 @@ export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageU
 
       setStage('uploading')
       const uploadedUrl = await uploadToGitHub(webpFile, folder)
+      // Cache blob URL so ikSrc can resolve this path anywhere in the app
+      setBlobUrl(uploadedUrl, blobUrl)
       onUpload(uploadedUrl)
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Upload failed')
