@@ -1,46 +1,5 @@
 [
   {
-    "id": "kanakias",
-    "title": "Kanakia House",
-    "description": "A spacious family home designed for comfort and elegance, featuring light-filled passages and living spaces.",
-    "images": [
-      "/src/assets/projects/kanakias/E_SZ89773.avif",
-      "/src/assets/projects/kanakias/E_SZ89785.avif",
-      "/src/assets/projects/kanakias/E_SZ89788.avif",
-      "/src/assets/projects/kanakias/E_SZ89800.avif",
-      "/src/assets/projects/kanakias/E_SZ89807.avif",
-      "/src/assets/projects/kanakias/E_SZ89815.avif",
-      "/src/assets/projects/kanakias/E_SZ89825.avif",
-      "/src/assets/projects/kanakias/E_SZ89832.avif",
-      "/src/assets/projects/kanakias/E_SZ89838a.avif",
-      "/src/assets/projects/kanakias/E_SZ89841.avif",
-      "/src/assets/projects/kanakias/E_SZ89844.avif",
-      "/src/assets/projects/kanakias/E_SZ89857a.avif",
-      "/src/assets/projects/kanakias/E_SZ89860.avif",
-      "/src/assets/projects/kanakias/E_SZ89865.avif",
-      "/src/assets/projects/kanakias/E_SZ89869.avif",
-      "/src/assets/projects/kanakias/E_SZ89872.avif",
-      "/src/assets/projects/kanakias/E_SZ89875.avif",
-      "/src/assets/projects/kanakias/E_SZ89877.avif",
-      "/src/assets/projects/kanakias/E_SZ89882.avif",
-      "/src/assets/projects/kanakias/E_SZ89885.avif",
-      "/src/assets/projects/kanakias/E_SZ89891.avif"
-    ],
-    "cover_images": [
-      "/src/assets/projects/kanakias/E_SZ89773.avif",
-      "/src/assets/projects/kanakias/E_SZ89785.avif"
-    ],
-    "testimonial": {
-      "text": "The way the light travels through the house is beautiful. It's a perfect blend of space and intimacy.",
-      "image": "/src/assets/projects/kanakias/E_SZ89788.avif",
-      "video": ""
-    },
-    "is_hero_project": true,
-    "area": "400m²",
-    "style": "Elegant Modern",
-    "date": "2023"
-  },
-  {
     "id": "mehul-mehta",
     "title": "Mehta House",
     "description": "A premium urban residence featuring high-end kitchen design, spacious living areas, and master suites.",
