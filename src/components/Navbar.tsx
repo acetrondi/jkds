@@ -20,8 +20,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "About", path: "/#about" },
     { name: "Services", path: "/#services" },
-    { name: "Portfolio", path: "/portfolio" },
-    { name: "Folders", path: "/portfolio-folders" }
+    { name: "Portfolio", path: "/portfolio-folders" }
   ];
 
   // Handle smooth scrolling for hash links
