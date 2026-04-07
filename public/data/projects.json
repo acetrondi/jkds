@@ -228,5 +228,62 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "dr-dimple",
+    "title": "Dr Dimple",
+    "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
+    "images": [
+      "/uploads/projects/dr-dimple/1c2cac92-DSC03344-b-cr2.webp",
+      "/uploads/projects/dr-dimple/f7421169-DSC03361-b-cr2.webp",
+      "/uploads/projects/dr-dimple/1fc69cf4-DSC03377-b.webp",
+      "/uploads/projects/dr-dimple/4b6a8106-DSC03389-b-cr2.webp",
+      "/uploads/projects/dr-dimple/eda985bd-DSC03399-b2.webp",
+      "/uploads/projects/dr-dimple/ebe1eb37-DSC03414-b.webp",
+      "/uploads/projects/dr-dimple/b6c97d5e-DSC03426-b2.webp",
+      "/uploads/projects/dr-dimple/a168923b-DSC03436-b2.webp",
+      "/uploads/projects/dr-dimple/3516e879-DSC03458-b.webp",
+      "/uploads/projects/dr-dimple/32136e72-DSC03478-b2.webp",
+      "/uploads/projects/dr-dimple/073c9f79-DSC03503-b2.webp",
+      "/uploads/projects/dr-dimple/c572b7f0-DSC03528-b2-bulb.webp",
+      "/uploads/projects/dr-dimple/cc754f55-DSC03546-b-bulb.webp",
+      "/uploads/projects/dr-dimple/1102a03e-DSC03557-b2.webp",
+      "/uploads/projects/dr-dimple/1fec12cd-DSC03573-bb2.webp",
+      "/uploads/projects/dr-dimple/eb42e73a-DSC03585-bb2.webp",
+      "/uploads/projects/dr-dimple/4905b851-DSC03610-b.webp",
+      "/uploads/projects/dr-dimple/ebf7df4c-DSC03625-b2.webp",
+      "/uploads/projects/dr-dimple/7aaf21d6-DSC03654-b2.webp",
+      "/uploads/projects/dr-dimple/6f64e3c9-DSC03671-b2.webp",
+      "/uploads/projects/dr-dimple/cafec988-DSC03684-b.webp",
+      "/uploads/projects/dr-dimple/39522426-DSC03696-b.webp",
+      "/uploads/projects/dr-dimple/8803d2de-DSC03711-b.webp",
+      "/uploads/projects/dr-dimple/74fbf5de-DSC03723-b.webp",
+      "/uploads/projects/dr-dimple/df4b7f10-DSC03738-b.webp",
+      "/uploads/projects/dr-dimple/1138135f-DSC03748-b.webp",
+      "/uploads/projects/dr-dimple/72c00b9a-DSC03764-b2.webp",
+      "/uploads/projects/dr-dimple/362867ce-DSC03777-b.webp",
+      "/uploads/projects/dr-dimple/0e839799-DSC03786-b.webp",
+      "/uploads/projects/dr-dimple/9870a1e4-DSC03790-b.webp",
+      "/uploads/projects/dr-dimple/f27cba17-DSC03802-b.webp",
+      "/uploads/projects/dr-dimple/1904dd2a-DSC03809-b.webp",
+      "/uploads/projects/dr-dimple/80d339f4-DSC03818-b.webp",
+      "/uploads/projects/dr-dimple/877f6bbb-DSC03826-b-switchboard.webp",
+      "/uploads/projects/dr-dimple/fc66c954-DSC03832-b-switchboard.webp",
+      "/uploads/projects/dr-dimple/93294342-DSC03842-b2.webp",
+      "/uploads/projects/dr-dimple/a55aaf10-DSC03853-b.webp",
+      "/uploads/projects/dr-dimple/f1435997-DSC03864-b.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/dr-dimple/59e851b4-DSC03478-b2.webp"
+    ],
+    "is_hero_project": false,
+    "area": "350m²",
+    "style": "Contemporary Luxury",
+    "date": "2023",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
