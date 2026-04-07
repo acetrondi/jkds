@@ -20,7 +20,7 @@ async function isValidToken(token: string, env: Env): Promise<boolean> {
 }
 
 export async function onRequestPost({ request, env }: { request: Request; env: Env }) {
-  let body: { projects: unknown; heroSlides: unknown; testimonials: unknown; token: string }
+  let body: { projects: unknown; heroSlides: unknown; testimonials: unknown; token: string; uploads?: { path: string; content: string }[] }
   try {
     body = await request.json()
   } catch {
@@ -57,11 +57,12 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
   const commitData = (await commitRes.json()) as { tree: { sha: string } }
   const baseTreeSha = commitData.tree.sha
 
-  // Create blobs for each JSON file
+  // JSON files + staged image uploads — all in one commit
   const files = [
-    { path: 'public/data/projects.json', content: JSON.stringify(body.projects, null, 2) },
-    { path: 'public/data/hero.json', content: JSON.stringify(body.heroSlides, null, 2) },
-    { path: 'public/data/testimonials.json', content: JSON.stringify(body.testimonials, null, 2) },
+    { path: 'public/data/projects.json', content: JSON.stringify(body.projects, null, 2), encoding: 'utf-8' },
+    { path: 'public/data/hero.json', content: JSON.stringify(body.heroSlides, null, 2), encoding: 'utf-8' },
+    { path: 'public/data/testimonials.json', content: JSON.stringify(body.testimonials, null, 2), encoding: 'utf-8' },
+    ...(body.uploads ?? []).map((u) => ({ path: u.path, content: u.content, encoding: 'base64' })),
   ]
 
   const blobs = await Promise.all(
@@ -69,7 +70,7 @@ export async function onRequestPost({ request, env }: { request: Request; env: E
       const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/blobs`, {
         method: 'POST',
         headers: ghHeaders,
-        body: JSON.stringify({ content: f.content, encoding: 'utf-8' }),
+        body: JSON.stringify({ content: f.content, encoding: f.encoding }),
       })
       if (!res.ok) throw new Error(`Blob creation failed for ${f.path}`)
       const { sha } = (await res.json()) as { sha: string }

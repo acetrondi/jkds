@@ -68,16 +68,17 @@ async function onRequestPost2({ request, env }) {
   const commitData = await commitRes.json();
   const baseTreeSha = commitData.tree.sha;
   const files = [
-    { path: "public/data/projects.json", content: JSON.stringify(body.projects, null, 2) },
-    { path: "public/data/hero.json", content: JSON.stringify(body.heroSlides, null, 2) },
-    { path: "public/data/testimonials.json", content: JSON.stringify(body.testimonials, null, 2) }
+    { path: "public/data/projects.json", content: JSON.stringify(body.projects, null, 2), encoding: "utf-8" },
+    { path: "public/data/hero.json", content: JSON.stringify(body.heroSlides, null, 2), encoding: "utf-8" },
+    { path: "public/data/testimonials.json", content: JSON.stringify(body.testimonials, null, 2), encoding: "utf-8" },
+    ...(body.uploads ?? []).map((u) => ({ path: u.path, content: u.content, encoding: "base64" }))
   ];
   const blobs = await Promise.all(
     files.map(async (f) => {
       const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/blobs`, {
         method: "POST",
         headers: ghHeaders,
-        body: JSON.stringify({ content: f.content, encoding: "utf-8" })
+        body: JSON.stringify({ content: f.content, encoding: f.encoding })
       });
       if (!res.ok) throw new Error(`Blob creation failed for ${f.path}`);
       const { sha } = await res.json();
@@ -678,7 +679,7 @@ var jsonError = /* @__PURE__ */ __name(async (request, env, _ctx, middlewareCtx)
 }, "jsonError");
 var middleware_miniflare3_json_error_default = jsonError;
 
-// ../.wrangler/tmp/bundle-4ueBsS/middleware-insertion-facade.js
+// ../.wrangler/tmp/bundle-8gIw92/middleware-insertion-facade.js
 var __INTERNAL_WRANGLER_MIDDLEWARE__ = [
   middleware_ensure_req_body_drained_default,
   middleware_miniflare3_json_error_default
@@ -710,7 +711,7 @@ function __facade_invoke__(request, env, ctx, dispatch, finalMiddleware) {
 }
 __name(__facade_invoke__, "__facade_invoke__");
 
-// ../.wrangler/tmp/bundle-4ueBsS/middleware-loader.entry.ts
+// ../.wrangler/tmp/bundle-8gIw92/middleware-loader.entry.ts
 var __Facade_ScheduledController__ = class ___Facade_ScheduledController__ {
   constructor(scheduledTime, cron, noRetry) {
     this.scheduledTime = scheduledTime;

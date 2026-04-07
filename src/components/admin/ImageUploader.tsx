@@ -1,37 +1,31 @@
 import { useRef, useState, useEffect } from 'react'
 import { Loader2, X, Upload, AlertCircle } from 'lucide-react'
-import { uploadToGitHub } from '@/lib/github'
 import { setBlobUrl } from '@/lib/blobCache'
+import { stageUpload } from '@/lib/uploadStore'
 
 const MAX_SIZE_MB = 20
 const WEBP_QUALITY = 0.85
 const MAX_DIMENSION = 1920
 
 async function validateImage(file: File): Promise<void> {
-  if (!file.type.startsWith('image/')) {
-    throw new Error('File must be an image')
-  }
-  if (file.size > MAX_SIZE_MB * 1024 * 1024) {
-    throw new Error(`Image must be under ${MAX_SIZE_MB}MB`)
-  }
+  if (!file.type.startsWith('image/')) throw new Error('File must be an image')
+  if (file.size > MAX_SIZE_MB * 1024 * 1024) throw new Error(`Image must be under ${MAX_SIZE_MB}MB`)
   await new Promise<void>((resolve, reject) => {
     const img = new Image()
-    const objectUrl = URL.createObjectURL(file)
-    img.onload = () => { URL.revokeObjectURL(objectUrl); resolve() }
-    img.onerror = () => { URL.revokeObjectURL(objectUrl); reject(new Error('File is not a valid image')) }
-    img.src = objectUrl
+    const url = URL.createObjectURL(file)
+    img.onload = () => { URL.revokeObjectURL(url); resolve() }
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Not a valid image')) }
+    img.src = url
   })
 }
 
-async function convertToWebP(file: File): Promise<{ file: File; blobUrl: string }> {
+async function convertToWebP(file: File): Promise<{ blobUrl: string; base64: string; filename: string }> {
   return new Promise((resolve, reject) => {
     const img = new Image()
-    const objectUrl = URL.createObjectURL(file)
+    const url = URL.createObjectURL(file)
     img.onload = () => {
-      URL.revokeObjectURL(objectUrl)
+      URL.revokeObjectURL(url)
       const canvas = document.createElement('canvas')
-
-      // Resize to max dimension while keeping aspect ratio
       let { naturalWidth: w, naturalHeight: h } = img
       if (w > MAX_DIMENSION || h > MAX_DIMENSION) {
         if (w > h) { h = Math.round((h / w) * MAX_DIMENSION); w = MAX_DIMENSION }
@@ -39,24 +33,25 @@ async function convertToWebP(file: File): Promise<{ file: File; blobUrl: string 
       }
       canvas.width = w
       canvas.height = h
-
       const ctx = canvas.getContext('2d')
       if (!ctx) return reject(new Error('Canvas not supported'))
       ctx.drawImage(img, 0, 0, w, h)
-      canvas.toBlob(
-        (blob) => {
-          if (!blob) return reject(new Error('WebP conversion failed'))
-          const name = file.name.replace(/\.[^.]+$/, '.webp')
-          const webpFile = new File([blob], name, { type: 'image/webp' })
-          const blobUrl = URL.createObjectURL(blob)
-          resolve({ file: webpFile, blobUrl })
-        },
-        'image/webp',
-        WEBP_QUALITY
-      )
+      canvas.toBlob((blob) => {
+        if (!blob) return reject(new Error('WebP conversion failed'))
+        const filename = file.name.replace(/\.[^.]+$/, '.webp')
+        const blobUrl = URL.createObjectURL(blob)
+        const reader = new FileReader()
+        reader.onload = () => resolve({
+          blobUrl,
+          base64: (reader.result as string).split(',')[1],
+          filename,
+        })
+        reader.onerror = reject
+        reader.readAsDataURL(blob)
+      }, 'image/webp', WEBP_QUALITY)
     }
-    img.onerror = () => { URL.revokeObjectURL(objectUrl); reject(new Error('Could not read image')) }
-    img.src = objectUrl
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Could not read image')) }
+    img.src = url
   })
 }
 
@@ -68,13 +63,12 @@ interface ImageUploaderProps {
   folder: string
 }
 
-type Stage = 'idle' | 'validating' | 'converting' | 'uploading'
+type Stage = 'idle' | 'validating' | 'converting'
 
 const stageLabel: Record<Stage, string> = {
   idle: '',
   validating: 'Validating…',
   converting: 'Converting…',
-  uploading: 'Uploading…',
 }
 
 export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageUploaderProps) {
@@ -83,13 +77,11 @@ export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageU
   const [previewUrl, setPreviewUrl] = useState<string | null>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const loading = stage !== 'idle'
+  const displayUrl = previewUrl || url
 
-  // Clean up blob URL when component unmounts or preview changes
   useEffect(() => {
     return () => { if (previewUrl) URL.revokeObjectURL(previewUrl) }
   }, [previewUrl])
-
-  const displayUrl = previewUrl || url
 
   const handleFile = async (file: File) => {
     setError(null)
@@ -98,18 +90,23 @@ export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageU
       await validateImage(file)
 
       setStage('converting')
-      const { file: webpFile, blobUrl } = await convertToWebP(file)
+      const { blobUrl, base64, filename } = await convertToWebP(file)
 
-      // Show preview immediately — don't wait for upload
+      // Generate stable path — same logic as before so data JSON is consistent
+      const uid = crypto.randomUUID().slice(0, 8)
+      const safeName = filename.replace(/[^a-zA-Z0-9._-]/g, '-')
+      const githubPath = `public/uploads/${folder}/${uid}-${safeName}`
+      const publicUrl = `/uploads/${folder}/${uid}-${safeName}`
+
+      // Stage for commit on Publish — no GitHub call here
+      stageUpload(githubPath, base64)
+      // Cache blob so ikSrc resolves this path everywhere in the app
+      setBlobUrl(publicUrl, blobUrl)
+
       setPreviewUrl(blobUrl)
-
-      setStage('uploading')
-      const uploadedUrl = await uploadToGitHub(webpFile, folder)
-      // Cache blob URL so ikSrc can resolve this path anywhere in the app
-      setBlobUrl(uploadedUrl, blobUrl)
-      onUpload(uploadedUrl)
+      onUpload(publicUrl)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Upload failed')
+      setError(err instanceof Error ? err.message : 'Failed')
       setPreviewUrl(null)
     } finally {
       setStage('idle')
@@ -154,9 +151,7 @@ export function ImageUploader({ url, onUpload, onRemove, label, folder }: ImageU
           {loading ? (
             <>
               <Loader2 className="w-5 h-5 animate-spin text-muted-foreground" />
-              <span className="text-[9px] text-muted-foreground text-center leading-tight px-1">
-                {stageLabel[stage]}
-              </span>
+              <span className="text-[9px] text-muted-foreground text-center leading-tight px-1">{stageLabel[stage]}</span>
             </>
           ) : (
             <>

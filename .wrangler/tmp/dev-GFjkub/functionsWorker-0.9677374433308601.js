@@ -72,16 +72,17 @@ async function onRequestPost2({ request, env }) {
   const commitData = await commitRes.json();
   const baseTreeSha = commitData.tree.sha;
   const files = [
-    { path: "public/data/projects.json", content: JSON.stringify(body.projects, null, 2) },
-    { path: "public/data/hero.json", content: JSON.stringify(body.heroSlides, null, 2) },
-    { path: "public/data/testimonials.json", content: JSON.stringify(body.testimonials, null, 2) }
+    { path: "public/data/projects.json", content: JSON.stringify(body.projects, null, 2), encoding: "utf-8" },
+    { path: "public/data/hero.json", content: JSON.stringify(body.heroSlides, null, 2), encoding: "utf-8" },
+    { path: "public/data/testimonials.json", content: JSON.stringify(body.testimonials, null, 2), encoding: "utf-8" },
+    ...(body.uploads ?? []).map((u) => ({ path: u.path, content: u.content, encoding: "base64" }))
   ];
   const blobs = await Promise.all(
     files.map(async (f) => {
       const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/git/blobs`, {
         method: "POST",
         headers: ghHeaders,
-        body: JSON.stringify({ content: f.content, encoding: "utf-8" })
+        body: JSON.stringify({ content: f.content, encoding: f.encoding })
       });
       if (!res.ok) throw new Error(`Blob creation failed for ${f.path}`);
       const { sha } = await res.json();
