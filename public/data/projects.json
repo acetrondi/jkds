@@ -1,7 +1,7 @@
 [
   {
     "id": "mehul-mehta",
-    "title": "Mehta House",
+    "title": "The Soft House",
     "description": "A premium urban residence featuring high-end kitchen design, spacious living areas, and master suites.",
     "images": [
       "/src/assets/projects/mehul-mehta/IMG_4262.avif",
@@ -42,18 +42,17 @@
       "/src/assets/projects/mehul-mehta/IMG_4650.avif"
     ],
     "cover_images": [
-      "/src/assets/projects/mehul-mehta/IMG_4262.avif",
-      "/src/assets/projects/mehul-mehta/IMG_4266.avif"
+      "/uploads/projects/mehul-mehta/acdfb871-IMG_4379.webp"
     ],
     "testimonial": {
       "text": "Every corner of our home feels curated and special. The design exceeded all our expectations.",
-      "image": "/src/assets/projects/mehul-mehta/IMG_4275.avif",
+      "image": "/uploads/projects/mehul-mehta/fa1eec75-IMG_4397.webp",
       "video": ""
     },
     "is_hero_project": true,
-    "area": "450m²",
-    "style": "Premium Urban",
-    "date": "2024"
+    "area": "850 sq.ft.",
+    "style": "Simply Calm",
+    "date": "2025"
   },
   {
     "id": "monil-bhala",
