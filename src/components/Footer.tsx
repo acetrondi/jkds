@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container-custom py-12 lg:py-16">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2">
             <img src={jkdsLogo} alt="jkds Logo" className="h-24 md:h-32 w-auto" />
           </a>
 

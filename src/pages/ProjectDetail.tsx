@@ -1,5 +1,5 @@
 import { useParams, useNavigate, Link } from "react-router-dom";
-import { ArrowLeft, Maximize2, MoveRight, Play } from "lucide-react";
+import { ArrowLeft, MoveRight, Play } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useEffect } from "react";
@@ -113,9 +113,7 @@ const ProjectDetail = () => {
                                     alt={`${project.title} showcase ${idx}`}
                                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center cursor-pointer">
-                                    <Maximize2 className="text-white w-8 h-8 opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-500" />
-                                </div>
+
                             </div>
                         ))}
                     </div>
