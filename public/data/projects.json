@@ -711,5 +711,46 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "beyond-alliance-experience-center---commercial",
+    "title": "Beyond Alliance Experience Center - Commercial",
+    "description": "",
+    "images": [
+      "/uploads/projects/kitchen-studio-andheri/2d0fade6-DSC05084.webp",
+      "/uploads/projects/kitchen-studio-andheri/c3d6eaa0-DSC05086.webp",
+      "/uploads/projects/kitchen-studio-andheri/be7b6263-DSC05087.webp",
+      "/uploads/projects/kitchen-studio-andheri/4135fa53-DSC05090.webp",
+      "/uploads/projects/kitchen-studio-andheri/8237a718-DSC05091.webp",
+      "/uploads/projects/kitchen-studio-andheri/065e035e-DSC05096.webp",
+      "/uploads/projects/kitchen-studio-andheri/b11143ae-DSC05111.webp",
+      "/uploads/projects/kitchen-studio-andheri/5620eb30-DSC05104.webp",
+      "/uploads/projects/kitchen-studio-andheri/07ec0358-DSC05100.webp",
+      "/uploads/projects/kitchen-studio-andheri/b39c7d7c-DSC05114.webp",
+      "/uploads/projects/kitchen-studio-andheri/24663241-DSC05116.webp",
+      "/uploads/projects/kitchen-studio-andheri/3d31d07d-DSC05120.webp",
+      "/uploads/projects/kitchen-studio-andheri/82a8194e-DSC05132.webp",
+      "/uploads/projects/kitchen-studio-andheri/74716cd6-DSC05121.webp",
+      "/uploads/projects/kitchen-studio-andheri/0fa285dd-DSC05123.webp",
+      "/uploads/projects/kitchen-studio-andheri/d700344f-DSC05138.webp",
+      "/uploads/projects/kitchen-studio-andheri/23505ae9-DSC05061.webp",
+      "/uploads/projects/kitchen-studio-andheri/e322e4f7-DSC05068.webp",
+      "/uploads/projects/kitchen-studio-andheri/103bc452-DSC05069.webp",
+      "/uploads/projects/kitchen-studio-andheri/38f90e32-DSC05070.webp",
+      "/uploads/projects/kitchen-studio-andheri/446f02a6-DSC05073.webp",
+      "/uploads/projects/kitchen-studio-andheri/ca23b2ec-DSC05075.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kitchen-studio-andheri/d4a7e930-DSC05096.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
