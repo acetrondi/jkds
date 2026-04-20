@@ -243,5 +243,31 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "heena-lobby",
+    "title": "Heena Lobby",
+    "description": "",
+    "images": [
+      "/uploads/projects/heena-lobby/239b9cec-ABCD0395--1-.webp",
+      "/uploads/projects/heena-lobby/02daeba3-IMG_6018--1-.webp",
+      "/uploads/projects/heena-lobby/409c4ba0-ABCD0402--1-.webp",
+      "/uploads/projects/heena-lobby/6c8c3679-ABCD0409--1-.webp",
+      "/uploads/projects/heena-lobby/6b997fc8-ABCD0434--1-.webp",
+      "/uploads/projects/heena-lobby/f37c0dcc-ABCD0416-Pano.webp",
+      "/uploads/projects/heena-lobby/34e6b20e-IMG_6024--1---3-.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/heena-lobby/6691ce8b-IMG_6024--1---3-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
