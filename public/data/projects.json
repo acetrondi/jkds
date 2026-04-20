@@ -714,5 +714,29 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "khandala-valley-one-bungalow",
+    "title": "Khandala Valley One Bungalow",
+    "description": "",
+    "images": [
+      "/uploads/projects/khandala-valley-one-bungalow/5e8df612-Cam-01_04_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/96a9b06d-Cam-02_02_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/44f4cb9a-Cam-03_03_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/bc140fa3-Cam-04_05_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/f18318f7-Cam-05_03_CRF.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/khandala-valley-one-bungalow/6ac778fb-Cam-02_02_CRF.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
