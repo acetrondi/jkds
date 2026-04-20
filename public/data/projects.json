@@ -684,5 +684,32 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "kitchen-studio-worli",
+    "title": "Kitchen Studio Worli",
+    "description": "",
+    "images": [
+      "/uploads/projects/kitchen-studio-worli/0908e79c-Kitchen-Studio-Shakti-Mills-11182023_140756--1-.webp",
+      "/uploads/projects/kitchen-studio-worli/ee54610a-Kitchen-Studio-Shakti-Mills-11182023_140055--1-.webp",
+      "/uploads/projects/kitchen-studio-worli/0e42b397-Kitchen-Studio-Shakti-Mills-11182023_140239.webp",
+      "/uploads/projects/kitchen-studio-worli/15234706-Kitchen-Studio-Shakti-Mills-11182023_140557.webp",
+      "/uploads/projects/kitchen-studio-worli/1f96fa8f-Kitchen-Studio-Shakti-Mills-11182023_140447.webp",
+      "/uploads/projects/kitchen-studio-worli/e4c13514-Kitchen-Studio-Shakti-Mills-11182023_140402.webp",
+      "/uploads/projects/kitchen-studio-worli/17a27d1e-Kitchen-Studio-Shakti-Mills-11182023_140924.webp",
+      "/uploads/projects/kitchen-studio-worli/f2ec16da-Kitchen-Studio-Shakti-Mills-Living-Room.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kitchen-studio-worli/e345f0b8-Kitchen-Studio-Shakti-Mills-11182023_140557.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2023",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
