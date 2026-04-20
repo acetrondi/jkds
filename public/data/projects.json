@@ -476,5 +476,34 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "dr-bhavsars-clinic",
+    "title": "Dr. Bhavsar's Clinic",
+    "description": "",
+    "images": [
+      "/uploads/projects/dr-bhavsars-clinic/6427c51d-DT-6_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9510b12c-DT-7_051222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9ad2d4de-DT-11_061222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/d335a851-DT-3_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9fc0ab5b-DT-5_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/25613701-DT-1_291122--1-.webp",
+      "/uploads/projects/dr-bhavsars-clinic/0415c279-DT-2_301122--1-.webp",
+      "/uploads/projects/dr-bhavsars-clinic/f2907773-DT-10_061222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/94136f19-DT-9_051222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/72a02adb-DT-8_051222.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/dr-bhavsars-clinic/33600194-DT-3_301122.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2022",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
