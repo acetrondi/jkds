@@ -567,5 +567,44 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "kanakia-house-2bhk",
+    "title": "Kanakia House 2bhk",
+    "description": "",
+    "images": [
+      "/uploads/projects/kanakia-house-2bhk/867c7ba0-E_SZ89885.webp",
+      "/uploads/projects/kanakia-house-2bhk/006060cd-E_SZ89891.webp",
+      "/uploads/projects/kanakia-house-2bhk/f003aa33-E_SZ89869.webp",
+      "/uploads/projects/kanakia-house-2bhk/07ea0f4b-E_SZ89844.webp",
+      "/uploads/projects/kanakia-house-2bhk/c6343cc0-E_SZ89841.webp",
+      "/uploads/projects/kanakia-house-2bhk/d42da078-E_SZ89838a.webp",
+      "/uploads/projects/kanakia-house-2bhk/77502404-E_SZ89857a.webp",
+      "/uploads/projects/kanakia-house-2bhk/75ddabc0-E_SZ89860.webp",
+      "/uploads/projects/kanakia-house-2bhk/3f2927c7-E_SZ89865.webp",
+      "/uploads/projects/kanakia-house-2bhk/73fc29e7-E_SZ89872.webp",
+      "/uploads/projects/kanakia-house-2bhk/2e530e8a-E_SZ89875.webp",
+      "/uploads/projects/kanakia-house-2bhk/d7c274bc-E_SZ89773.webp",
+      "/uploads/projects/kanakia-house-2bhk/0b63f4f5-E_SZ89785.webp",
+      "/uploads/projects/kanakia-house-2bhk/4680779f-E_SZ89807.webp",
+      "/uploads/projects/kanakia-house-2bhk/9b5c7840-E_SZ89800.webp",
+      "/uploads/projects/kanakia-house-2bhk/fb62a43a-E_SZ89788.webp",
+      "/uploads/projects/kanakia-house-2bhk/137734e4-E_SZ89815.webp",
+      "/uploads/projects/kanakia-house-2bhk/b3d09c74-E_SZ89825.webp",
+      "/uploads/projects/kanakia-house-2bhk/6200e5c2-E_SZ89877.webp",
+      "/uploads/projects/kanakia-house-2bhk/42925873-E_SZ89882.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kanakia-house-2bhk/7c333b03-E_SZ89841.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
