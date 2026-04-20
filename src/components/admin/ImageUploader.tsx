@@ -4,13 +4,13 @@ import { setBlobUrl } from '@/lib/blobCache'
 import { stageUpload } from '@/lib/uploadStore'
 import { ikSrc } from '@/lib/imagekit'
 
-const MAX_SIZE_MB = 20
+const MAX_SIZE_MB = 200
 const WEBP_QUALITY = 0.85
 const MAX_DIMENSION = 1920
 
 export async function validateImage(file: File): Promise<void> {
   if (!file.type.startsWith('image/')) throw new Error('File must be an image')
-  if (file.size > MAX_SIZE_MB * 1024 * 1024) throw new Error(`Image must be under ${MAX_SIZE_MB}MB`)
+  if (file.size > MAX_SIZE_MB * 1024 * 1024) throw new Error(`File is too large (max ${MAX_SIZE_MB}MB). Please compress it slightly before uploading.`)
   await new Promise<void>((resolve, reject) => {
     const img = new Image()
     const url = URL.createObjectURL(file)
