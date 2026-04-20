@@ -324,5 +324,55 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "purushottam-house",
+    "title": "Purushottam House",
+    "description": "",
+    "images": [
+      "/uploads/projects/purushottam-house/9a1a322e-IMG_5034.webp",
+      "/uploads/projects/purushottam-house/0487026d-IMG_5028.webp",
+      "/uploads/projects/purushottam-house/961f9d7d-IMG_5112.webp",
+      "/uploads/projects/purushottam-house/b8cd30de-IMG_5028.webp",
+      "/uploads/projects/purushottam-house/9a08bc8e-IMG_5033.webp",
+      "/uploads/projects/purushottam-house/674c4a52-IMG_5041.webp",
+      "/uploads/projects/purushottam-house/f25f870c-IMG_5048--1-.webp",
+      "/uploads/projects/purushottam-house/bae63430-IMG_5042.webp",
+      "/uploads/projects/purushottam-house/378bb6ce-IMG_5051.webp",
+      "/uploads/projects/purushottam-house/9c62610e-IMG_5061.webp",
+      "/uploads/projects/purushottam-house/5720e2b2-IMG_4770.webp",
+      "/uploads/projects/purushottam-house/bb2eeebd-IMG_4781.webp",
+      "/uploads/projects/purushottam-house/eadf6b4a-IMG_4804.webp",
+      "/uploads/projects/purushottam-house/76e8421e-IMG_4810.webp",
+      "/uploads/projects/purushottam-house/c2b49058-IMG_4812.webp",
+      "/uploads/projects/purushottam-house/d7442862-IMG_4822.webp",
+      "/uploads/projects/purushottam-house/7ba09a8b-IMG_4836.webp",
+      "/uploads/projects/purushottam-house/28dbb799-IMG_4838.webp",
+      "/uploads/projects/purushottam-house/8412c863-IMG_4839.webp",
+      "/uploads/projects/purushottam-house/b9b0cfe2-IMG_4840.webp",
+      "/uploads/projects/purushottam-house/81ee4358-IMG_4848.webp",
+      "/uploads/projects/purushottam-house/6a8e3bcf-IMG_5144.webp",
+      "/uploads/projects/purushottam-house/faab1c67-IMG_5127.webp",
+      "/uploads/projects/purushottam-house/2824afa3-IMG_5149.webp",
+      "/uploads/projects/purushottam-house/767ff801-IMG_4975.webp",
+      "/uploads/projects/purushottam-house/8a441a76-IMG_4978.webp",
+      "/uploads/projects/purushottam-house/4c4ae13d-IMG_4981.webp",
+      "/uploads/projects/purushottam-house/1d5bb1a7-IMG_4984.webp",
+      "/uploads/projects/purushottam-house/3da120ee-IMG_4927.webp",
+      "/uploads/projects/purushottam-house/fd6e04d7-IMG_4997.webp",
+      "/uploads/projects/purushottam-house/a26d6e36-IMG_4993.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/purushottam-house/20b5df7e-IMG_5048--1-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
