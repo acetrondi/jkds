@@ -530,5 +530,42 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "kunal-sheth-office",
+    "title": "Kunal Sheth Office",
+    "description": "",
+    "images": [
+      "/uploads/projects/kunal-sheth-office/76a7f202-Adjustments--6-.webp",
+      "/uploads/projects/kunal-sheth-office/88b0e0e5-Adjustments--7-.webp",
+      "/uploads/projects/kunal-sheth-office/a95960c5-IMG_1647.webp",
+      "/uploads/projects/kunal-sheth-office/629482a5-Adjustments--5-.webp",
+      "/uploads/projects/kunal-sheth-office/a06d6895-Adjustments--8-.webp",
+      "/uploads/projects/kunal-sheth-office/489acc83-IMG_1698.webp",
+      "/uploads/projects/kunal-sheth-office/c938c30d-IMG_1646.webp",
+      "/uploads/projects/kunal-sheth-office/70135b6c-IMG_1656.webp",
+      "/uploads/projects/kunal-sheth-office/3c9b0903-IMG_1650.webp",
+      "/uploads/projects/kunal-sheth-office/f8e932a0-IMG_1667.webp",
+      "/uploads/projects/kunal-sheth-office/a725dfad-Adjustments--1-.webp",
+      "/uploads/projects/kunal-sheth-office/abde57e8-IMG_1677.webp",
+      "/uploads/projects/kunal-sheth-office/a5a2e3b6-Adjustments--9-.webp",
+      "/uploads/projects/kunal-sheth-office/e3ef5987-Adjustments.webp",
+      "/uploads/projects/kunal-sheth-office/0776ab63-Adjustments--3-.webp",
+      "/uploads/projects/kunal-sheth-office/96302b96-IMG_1699.webp",
+      "/uploads/projects/kunal-sheth-office/2ef6a4c1-Adjustments--2-.webp",
+      "/uploads/projects/kunal-sheth-office/50f2d458-Adjustments--4-.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kunal-sheth-office/ab07b9a6-Adjustments--8-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
