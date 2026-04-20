@@ -505,5 +505,30 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "maulik-unadkat",
+    "title": "Maulik Unadkat",
+    "description": "",
+    "images": [
+      "/uploads/projects/maulik-unadkat/c3b242dc-IMG_8347--1-.webp",
+      "/uploads/projects/maulik-unadkat/54b32e85-IMG_8348--1-.webp",
+      "/uploads/projects/maulik-unadkat/b3770648-IMG_8341--1-.webp",
+      "/uploads/projects/maulik-unadkat/848e1ee5-IMG_8351--1-.webp",
+      "/uploads/projects/maulik-unadkat/86cbeb9b-IMG_8356--1-.webp",
+      "/uploads/projects/maulik-unadkat/754f38c5-IMG_8362--1-.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/maulik-unadkat/eb8fe4a2-IMG_8356--1-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "2020",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
