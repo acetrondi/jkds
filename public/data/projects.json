@@ -55,42 +55,8 @@
     "date": "2025"
   },
   {
-    "id": "monil-bhala",
-    "title": "Monil Bhala",
-    "description": "A stunning architectural showcase of premium design and luxurious details.",
-    "images": [
-      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
-      "/src/assets/projects/monil-bhala/DSC09740+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09761+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09782+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09806+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09823+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09833+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09850+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09881+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09897+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09922+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09949+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09978+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09988+b cr.avif"
-    ],
-    "cover_images": [
-      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
-      "/src/assets/projects/monil-bhala/DSC09740+b.avif"
-    ],
-    "testimonial": {
-      "text": "An exemplary execution that flawlessly blended creativity with precision.",
-      "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
-      "video": ""
-    },
-    "is_hero_project": false,
-    "area": "1400 sq.ft.",
-    "style": "Modern Architecture",
-    "date": "2025"
-  },
-  {
     "id": "nirmaan-heena",
-    "title": "Heena Building",
+    "title": "Nirmaan Heena",
     "description": "An architectural landmark showcasing modern structure and lighting design for urban environments.",
     "images": [
       "/uploads/projects/nirmaan-heena/8fd45a6e-ABCD0359.webp",
@@ -194,63 +160,6 @@
     }
   },
   {
-    "id": "dr-dimple",
-    "title": "Dr Dimple",
-    "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
-    "images": [
-      "/uploads/projects/dr-dimple/1c2cac92-DSC03344-b-cr2.webp",
-      "/uploads/projects/dr-dimple/f7421169-DSC03361-b-cr2.webp",
-      "/uploads/projects/dr-dimple/1fc69cf4-DSC03377-b.webp",
-      "/uploads/projects/dr-dimple/4b6a8106-DSC03389-b-cr2.webp",
-      "/uploads/projects/dr-dimple/eda985bd-DSC03399-b2.webp",
-      "/uploads/projects/dr-dimple/ebe1eb37-DSC03414-b.webp",
-      "/uploads/projects/dr-dimple/b6c97d5e-DSC03426-b2.webp",
-      "/uploads/projects/dr-dimple/a168923b-DSC03436-b2.webp",
-      "/uploads/projects/dr-dimple/3516e879-DSC03458-b.webp",
-      "/uploads/projects/dr-dimple/32136e72-DSC03478-b2.webp",
-      "/uploads/projects/dr-dimple/073c9f79-DSC03503-b2.webp",
-      "/uploads/projects/dr-dimple/c572b7f0-DSC03528-b2-bulb.webp",
-      "/uploads/projects/dr-dimple/cc754f55-DSC03546-b-bulb.webp",
-      "/uploads/projects/dr-dimple/1102a03e-DSC03557-b2.webp",
-      "/uploads/projects/dr-dimple/1fec12cd-DSC03573-bb2.webp",
-      "/uploads/projects/dr-dimple/eb42e73a-DSC03585-bb2.webp",
-      "/uploads/projects/dr-dimple/4905b851-DSC03610-b.webp",
-      "/uploads/projects/dr-dimple/ebf7df4c-DSC03625-b2.webp",
-      "/uploads/projects/dr-dimple/7aaf21d6-DSC03654-b2.webp",
-      "/uploads/projects/dr-dimple/6f64e3c9-DSC03671-b2.webp",
-      "/uploads/projects/dr-dimple/cafec988-DSC03684-b.webp",
-      "/uploads/projects/dr-dimple/39522426-DSC03696-b.webp",
-      "/uploads/projects/dr-dimple/8803d2de-DSC03711-b.webp",
-      "/uploads/projects/dr-dimple/74fbf5de-DSC03723-b.webp",
-      "/uploads/projects/dr-dimple/df4b7f10-DSC03738-b.webp",
-      "/uploads/projects/dr-dimple/1138135f-DSC03748-b.webp",
-      "/uploads/projects/dr-dimple/72c00b9a-DSC03764-b2.webp",
-      "/uploads/projects/dr-dimple/362867ce-DSC03777-b.webp",
-      "/uploads/projects/dr-dimple/0e839799-DSC03786-b.webp",
-      "/uploads/projects/dr-dimple/9870a1e4-DSC03790-b.webp",
-      "/uploads/projects/dr-dimple/f27cba17-DSC03802-b.webp",
-      "/uploads/projects/dr-dimple/1904dd2a-DSC03809-b.webp",
-      "/uploads/projects/dr-dimple/80d339f4-DSC03818-b.webp",
-      "/uploads/projects/dr-dimple/877f6bbb-DSC03826-b-switchboard.webp",
-      "/uploads/projects/dr-dimple/fc66c954-DSC03832-b-switchboard.webp",
-      "/uploads/projects/dr-dimple/93294342-DSC03842-b2.webp",
-      "/uploads/projects/dr-dimple/a55aaf10-DSC03853-b.webp",
-      "/uploads/projects/dr-dimple/f1435997-DSC03864-b.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/dr-dimple/59e851b4-DSC03478-b2.webp"
-    ],
-    "is_hero_project": false,
-    "area": "1500 sq.ft.",
-    "style": "Contemporary Luxury",
-    "date": "2025",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
     "id": "heena-lobby",
     "title": "Heena Lobby",
     "description": "",
@@ -270,61 +179,6 @@
     "area": "350 sq.ft.",
     "style": "Contemporary",
     "date": "2026",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "hiten-naik-4bhk",
-    "title": "Hiten Naik-4bhk",
-    "description": "",
-    "images": [
-      "/uploads/projects/hiten-naik-4bhk/144ad2df-DSC01489-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/01c09425-DSC01514-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/fbbed63a-DSC01472-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/6b6b2999-DSC01498-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/39f7874d-DSC01480-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/bfd110b3-DSC01496-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/d9cbc621-DSC01471-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/c7833a8d-DSC01521-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/7a85f191-DSC01520-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/96940c1e-DSC01484-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/8c9a31bd-DSC01464-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/fd29a9c9-DSC01404-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/ad5b4ea0-DSC01350.webp",
-      "/uploads/projects/hiten-naik-4bhk/8244df27-DSC01328-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/60c81399-DSC01345-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/40c1a974-DSC01353-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/ebe55f39-DSC01247-2.webp",
-      "/uploads/projects/hiten-naik-4bhk/9f6b5126-DSC01312-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/5873c048-DSC01236-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/e6face91-DSC01389-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/8cca14de-DSC01308-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/4b632943-DSC01260-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/98f57045-DSC01232-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/3579851c-DSC01316-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/541dd63e-DSC01425-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/60a41476-DSC01436-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/bc4fee61-DSC01265-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/516a2c70-DSC01276-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/06fa2659-DSC01326-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/67eb2396-DSC01229-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/6d44983d-DSC01299-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/3d4b63f2-DSC01379.webp",
-      "/uploads/projects/hiten-naik-4bhk/6d7b798f-DSC01367-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/780ff20b-DSC01382-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/073e19a7-DSC01370-1.webp",
-      "/uploads/projects/hiten-naik-4bhk/223d49b1-DSC01333-1.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/hiten-naik-4bhk/37c8defb-DSC01514-1.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2025",
     "testimonial": {
       "text": "",
       "image": "",
@@ -406,7 +260,7 @@
     "cover_images": [
       "/uploads/projects/gaurav-joshi/6bc8e7b2-IMG_2444.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2024",
@@ -448,7 +302,7 @@
     "cover_images": [
       "/uploads/projects/rohit-kadakia/76311988-d5c31665-1005-4368-b435-6ad7304d6495.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2023",
@@ -473,7 +327,7 @@
     "cover_images": [
       "/uploads/projects/niraj-ved/51c5dfc7-NV2.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2021",
@@ -502,7 +356,7 @@
     "cover_images": [
       "/uploads/projects/dr-bhavsars-clinic/33600194-DT-3_301122.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2022",
@@ -527,7 +381,7 @@
     "cover_images": [
       "/uploads/projects/maulik-unadkat/eb8fe4a2-IMG_8356--1-.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2020",
@@ -564,7 +418,7 @@
     "cover_images": [
       "/uploads/projects/kunal-sheth-office/ab07b9a6-Adjustments--8-.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2019",
@@ -657,7 +511,7 @@
     "cover_images": [
       "/uploads/projects/santosh/a2d1a94b-HB_19868.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2022",
@@ -749,7 +603,7 @@
     "cover_images": [
       "/uploads/projects/kitchen-studio-andheri/d4a7e930-DSC05096.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "",
     "style": "",
     "date": "2019",
@@ -838,40 +692,6 @@
     ],
     "cover_images": [
       "/uploads/projects/the-quiet-house/46ad9cb7-DSC09850-b.webp"
-    ],
-    "testimonial": {
-      "text": "An exemplary execution that flawlessly blended creativity with precision.",
-      "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
-      "video": ""
-    },
-    "is_hero_project": true,
-    "area": "1400 sq.ft.",
-    "style": "Modern Architecture",
-    "date": "2025"
-  },
-  {
-    "id": "the-quiet-frame",
-    "title": "The Quiet Frame",
-    "description": "A stunning architectural showcase of premium design and luxurious details.",
-    "images": [
-      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
-      "/src/assets/projects/monil-bhala/DSC09740+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09761+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09782+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09806+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09823+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09833+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09850+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09881+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09897+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09922+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09949+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09978+b.avif",
-      "/src/assets/projects/monil-bhala/DSC09988+b cr.avif"
-    ],
-    "cover_images": [
-      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
-      "/src/assets/projects/monil-bhala/DSC09740+b.avif"
     ],
     "testimonial": {
       "text": "An exemplary execution that flawlessly blended creativity with precision.",
