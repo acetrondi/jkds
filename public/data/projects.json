@@ -882,5 +882,60 @@
     "area": "1400 sq.ft.",
     "style": "Modern Architecture",
     "date": "2025"
+  },
+  {
+    "id": "the-contempo-nest",
+    "title": "The Contempo Nest",
+    "description": "",
+    "images": [
+      "/uploads/projects/hiten-naik-4bhk/144ad2df-DSC01489-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/01c09425-DSC01514-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/fbbed63a-DSC01472-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/6b6b2999-DSC01498-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/39f7874d-DSC01480-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/bfd110b3-DSC01496-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/d9cbc621-DSC01471-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/c7833a8d-DSC01521-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/7a85f191-DSC01520-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/96940c1e-DSC01484-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/8c9a31bd-DSC01464-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/fd29a9c9-DSC01404-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/ad5b4ea0-DSC01350.webp",
+      "/uploads/projects/hiten-naik-4bhk/8244df27-DSC01328-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/60c81399-DSC01345-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/40c1a974-DSC01353-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/ebe55f39-DSC01247-2.webp",
+      "/uploads/projects/hiten-naik-4bhk/9f6b5126-DSC01312-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/5873c048-DSC01236-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/e6face91-DSC01389-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/8cca14de-DSC01308-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/4b632943-DSC01260-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/98f57045-DSC01232-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/3579851c-DSC01316-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/541dd63e-DSC01425-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/60a41476-DSC01436-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/bc4fee61-DSC01265-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/516a2c70-DSC01276-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/06fa2659-DSC01326-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/67eb2396-DSC01229-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/6d44983d-DSC01299-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/3d4b63f2-DSC01379.webp",
+      "/uploads/projects/hiten-naik-4bhk/6d7b798f-DSC01367-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/780ff20b-DSC01382-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/073e19a7-DSC01370-1.webp",
+      "/uploads/projects/hiten-naik-4bhk/223d49b1-DSC01333-1.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/the-contempo-nest/f5689ed4-DSC01328-1.webp"
+    ],
+    "is_hero_project": false,
+    "area": "1500",
+    "style": "",
+    "date": "2025",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
