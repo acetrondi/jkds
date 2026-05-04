@@ -84,7 +84,7 @@
       "video": ""
     },
     "is_hero_project": true,
-    "area": "500m²",
+    "area": "1400 sq.ft.",
     "style": "Modern Architecture",
     "date": "2025"
   },
@@ -93,24 +93,31 @@
     "title": "Heena Building",
     "description": "An architectural landmark showcasing modern structure and lighting design for urban environments.",
     "images": [
-      "/src/assets/projects/nirmaan-heena/1.avif",
-      "/src/assets/projects/nirmaan-heena/2.avif",
-      "/src/assets/projects/nirmaan-heena/3.avif",
-      "/src/assets/projects/nirmaan-heena/4.avif"
+      "/uploads/projects/nirmaan-heena/8fd45a6e-ABCD0359.webp",
+      "/uploads/projects/nirmaan-heena/6724e5bf-ABCD0461.webp",
+      "/uploads/projects/nirmaan-heena/51c36a19-ABCD0482.webp",
+      "/uploads/projects/nirmaan-heena/79ed8698-ABCD0499.jpg.webp",
+      "/uploads/projects/nirmaan-heena/c2890704-ABCD0211.webp",
+      "/uploads/projects/nirmaan-heena/497d215f-ABCD0239.webp",
+      "/uploads/projects/nirmaan-heena/4b34f520-ABCD0288.webp",
+      "/uploads/projects/nirmaan-heena/d451df9c-ABCD0295.webp",
+      "/uploads/projects/nirmaan-heena/bdade25b-ABCD0306.webp",
+      "/uploads/projects/nirmaan-heena/3802b4f9-ABCD0331-cOPY.webp",
+      "/uploads/projects/nirmaan-heena/b13970a9-ABCD0335.webp",
+      "/uploads/projects/nirmaan-heena/bc69c86b-ABCD0336.webp"
     ],
     "cover_images": [
-      "/src/assets/projects/nirmaan-heena/1.avif",
-      "/src/assets/projects/nirmaan-heena/2.avif"
+      "/uploads/projects/nirmaan-heena/af6e6a2a-ABCD0482.webp"
     ],
     "testimonial": {
       "text": "The transition from day to night lighting is seamless. The building has become a true icon in the city.",
-      "image": "/src/assets/projects/nirmaan-heena/3.avif",
+      "image": "",
       "video": ""
     },
     "is_hero_project": true,
-    "area": "1200m²",
+    "area": "",
     "style": "Modern Architectural",
-    "date": "2024"
+    "date": "2026"
   },
   {
     "id": "rakyan-infra",
@@ -143,8 +150,7 @@
       "/src/assets/projects/rakyan-infra/NOW_8657.avif"
     ],
     "cover_images": [
-      "/src/assets/projects/rakyan-infra/NOW_8563.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8564.avif"
+      "/uploads/projects/rakyan-infra/af822430-NOW_8611.webp"
     ],
     "testimonial": {
       "text": "An exemplary execution that flawlessly blended creativity with precision.",
@@ -152,9 +158,9 @@
       "video": ""
     },
     "is_hero_project": true,
-    "area": "500m²",
-    "style": "Modern Architecture",
-    "date": "2025"
+    "area": "600 sq.ft.",
+    "style": "Neo Contemporary",
+    "date": "2024"
   },
   {
     "id": "aphrodite-foods",
@@ -178,9 +184,9 @@
       "/uploads/projects/aphrodite-foods/77605ed6-12.webp"
     ],
     "is_hero_project": true,
-    "area": "180m²",
-    "style": "Modern Luxury",
-    "date": "2024",
+    "area": "650 sq.ft.",
+    "style": "Contemporary",
+    "date": "2022",
     "testimonial": {
       "text": "",
       "image": "",
@@ -235,9 +241,9 @@
       "/uploads/projects/dr-dimple/59e851b4-DSC03478-b2.webp"
     ],
     "is_hero_project": true,
-    "area": "350m²",
+    "area": "1500 sq.ft.",
     "style": "Contemporary Luxury",
-    "date": "2023",
+    "date": "2025",
     "testimonial": {
       "text": "",
       "image": "",
@@ -261,8 +267,8 @@
       "/uploads/projects/heena-lobby/6691ce8b-IMG_6024--1---3-.webp"
     ],
     "is_hero_project": false,
-    "area": "",
-    "style": "",
+    "area": "350 sq.ft.",
+    "style": "Contemporary",
     "date": "2026",
     "testimonial": {
       "text": "",
@@ -752,5 +758,130 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "the-volume-house",
+    "title": "The Volume House",
+    "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
+    "images": [
+      "/uploads/projects/dr-dimple/1c2cac92-DSC03344-b-cr2.webp",
+      "/uploads/projects/dr-dimple/f7421169-DSC03361-b-cr2.webp",
+      "/uploads/projects/dr-dimple/1fc69cf4-DSC03377-b.webp",
+      "/uploads/projects/dr-dimple/4b6a8106-DSC03389-b-cr2.webp",
+      "/uploads/projects/dr-dimple/eda985bd-DSC03399-b2.webp",
+      "/uploads/projects/dr-dimple/ebe1eb37-DSC03414-b.webp",
+      "/uploads/projects/dr-dimple/b6c97d5e-DSC03426-b2.webp",
+      "/uploads/projects/dr-dimple/a168923b-DSC03436-b2.webp",
+      "/uploads/projects/dr-dimple/3516e879-DSC03458-b.webp",
+      "/uploads/projects/dr-dimple/32136e72-DSC03478-b2.webp",
+      "/uploads/projects/dr-dimple/073c9f79-DSC03503-b2.webp",
+      "/uploads/projects/dr-dimple/c572b7f0-DSC03528-b2-bulb.webp",
+      "/uploads/projects/dr-dimple/cc754f55-DSC03546-b-bulb.webp",
+      "/uploads/projects/dr-dimple/1102a03e-DSC03557-b2.webp",
+      "/uploads/projects/dr-dimple/1fec12cd-DSC03573-bb2.webp",
+      "/uploads/projects/dr-dimple/eb42e73a-DSC03585-bb2.webp",
+      "/uploads/projects/dr-dimple/4905b851-DSC03610-b.webp",
+      "/uploads/projects/dr-dimple/ebf7df4c-DSC03625-b2.webp",
+      "/uploads/projects/dr-dimple/7aaf21d6-DSC03654-b2.webp",
+      "/uploads/projects/dr-dimple/6f64e3c9-DSC03671-b2.webp",
+      "/uploads/projects/dr-dimple/cafec988-DSC03684-b.webp",
+      "/uploads/projects/dr-dimple/39522426-DSC03696-b.webp",
+      "/uploads/projects/dr-dimple/8803d2de-DSC03711-b.webp",
+      "/uploads/projects/dr-dimple/74fbf5de-DSC03723-b.webp",
+      "/uploads/projects/dr-dimple/df4b7f10-DSC03738-b.webp",
+      "/uploads/projects/dr-dimple/1138135f-DSC03748-b.webp",
+      "/uploads/projects/dr-dimple/72c00b9a-DSC03764-b2.webp",
+      "/uploads/projects/dr-dimple/362867ce-DSC03777-b.webp",
+      "/uploads/projects/dr-dimple/0e839799-DSC03786-b.webp",
+      "/uploads/projects/dr-dimple/9870a1e4-DSC03790-b.webp",
+      "/uploads/projects/dr-dimple/f27cba17-DSC03802-b.webp",
+      "/uploads/projects/dr-dimple/1904dd2a-DSC03809-b.webp",
+      "/uploads/projects/dr-dimple/80d339f4-DSC03818-b.webp",
+      "/uploads/projects/dr-dimple/877f6bbb-DSC03826-b-switchboard.webp",
+      "/uploads/projects/dr-dimple/fc66c954-DSC03832-b-switchboard.webp",
+      "/uploads/projects/dr-dimple/93294342-DSC03842-b2.webp",
+      "/uploads/projects/dr-dimple/a55aaf10-DSC03853-b.webp",
+      "/uploads/projects/dr-dimple/f1435997-DSC03864-b.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/dr-dimple/59e851b4-DSC03478-b2.webp"
+    ],
+    "is_hero_project": true,
+    "area": "1500 sq.ft.",
+    "style": "Contemporary Luxury",
+    "date": "2023",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "the-quiet-house",
+    "title": "The Quiet House",
+    "description": "A stunning architectural showcase of premium design and luxurious details.",
+    "images": [
+      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+      "/src/assets/projects/monil-bhala/DSC09740+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09782+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09806+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09823+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09833+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09850+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09881+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09897+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09922+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09949+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09978+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09988+b cr.avif"
+    ],
+    "cover_images": [
+      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+      "/src/assets/projects/monil-bhala/DSC09740+b.avif"
+    ],
+    "testimonial": {
+      "text": "An exemplary execution that flawlessly blended creativity with precision.",
+      "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+      "video": ""
+    },
+    "is_hero_project": true,
+    "area": "1400 sq.ft.",
+    "style": "Modern Architecture",
+    "date": "2025"
+  },
+  {
+    "id": "the-quiet-frame",
+    "title": "The Quiet Frame",
+    "description": "A stunning architectural showcase of premium design and luxurious details.",
+    "images": [
+      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+      "/src/assets/projects/monil-bhala/DSC09740+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09782+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09806+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09823+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09833+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09850+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09881+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09897+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09922+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09949+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09978+b.avif",
+      "/src/assets/projects/monil-bhala/DSC09988+b cr.avif"
+    ],
+    "cover_images": [
+      "/src/assets/projects/monil-bhala/DSC09719+ copy.avif",
+      "/src/assets/projects/monil-bhala/DSC09740+b.avif"
+    ],
+    "testimonial": {
+      "text": "An exemplary execution that flawlessly blended creativity with precision.",
+      "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
+      "video": ""
+    },
+    "is_hero_project": true,
+    "area": "1400 sq.ft.",
+    "style": "Modern Architecture",
+    "date": "2025"
   }
 ]
