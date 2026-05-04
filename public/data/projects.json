@@ -83,7 +83,7 @@
       "image": "/src/assets/projects/monil-bhala/DSC09761+b.avif",
       "video": ""
     },
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "1400 sq.ft.",
     "style": "Modern Architecture",
     "date": "2025"
@@ -240,7 +240,7 @@
     "cover_images": [
       "/uploads/projects/dr-dimple/59e851b4-DSC03478-b2.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "1500 sq.ft.",
     "style": "Contemporary Luxury",
     "date": "2025",
@@ -266,7 +266,7 @@
     "cover_images": [
       "/uploads/projects/heena-lobby/6691ce8b-IMG_6024--1---3-.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "350 sq.ft.",
     "style": "Contemporary",
     "date": "2026",
@@ -371,7 +371,7 @@
     "cover_images": [
       "/uploads/projects/purushottam-house/20b5df7e-IMG_5048--1-.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2026",
@@ -406,7 +406,7 @@
     "cover_images": [
       "/uploads/projects/gaurav-joshi/6bc8e7b2-IMG_2444.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2024",
@@ -448,7 +448,7 @@
     "cover_images": [
       "/uploads/projects/rohit-kadakia/76311988-d5c31665-1005-4368-b435-6ad7304d6495.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2023",
@@ -473,7 +473,7 @@
     "cover_images": [
       "/uploads/projects/niraj-ved/51c5dfc7-NV2.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2021",
@@ -502,7 +502,7 @@
     "cover_images": [
       "/uploads/projects/dr-bhavsars-clinic/33600194-DT-3_301122.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2022",
@@ -527,7 +527,7 @@
     "cover_images": [
       "/uploads/projects/maulik-unadkat/eb8fe4a2-IMG_8356--1-.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2020",
@@ -564,7 +564,7 @@
     "cover_images": [
       "/uploads/projects/kunal-sheth-office/ab07b9a6-Adjustments--8-.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2019",
@@ -603,7 +603,7 @@
     "cover_images": [
       "/uploads/projects/kanakia-house-2bhk/7c333b03-E_SZ89841.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2019",
@@ -657,7 +657,7 @@
     "cover_images": [
       "/uploads/projects/santosh/a2d1a94b-HB_19868.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2022",
@@ -681,7 +681,7 @@
     "cover_images": [
       "/uploads/projects/khandala-valley-one-bungalow/6ac778fb-Cam-02_02_CRF.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2026",
@@ -708,7 +708,7 @@
     "cover_images": [
       "/uploads/projects/kitchen-studio-worli/e345f0b8-Kitchen-Studio-Shakti-Mills-11182023_140557.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2023",
@@ -749,7 +749,7 @@
     "cover_images": [
       "/uploads/projects/kitchen-studio-andheri/d4a7e930-DSC05096.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "",
     "style": "",
     "date": "2019",
@@ -928,7 +928,7 @@
     "cover_images": [
       "/uploads/projects/the-contempo-nest/f5689ed4-DSC01328-1.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "1500",
     "style": "",
     "date": "2025",
