@@ -86,49 +86,6 @@
     "date": "2026"
   },
   {
-    "id": "rakyan-infra",
-    "title": "Rakyan Infra",
-    "description": "A stunning architectural showcase of premium design and luxurious details.",
-    "images": [
-      "/src/assets/projects/rakyan-infra/NOW_8563.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8564.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8569.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8574.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8595.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8597.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8601.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8604.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8609.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8611.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8615.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8619.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8623.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8625.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8627.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8629.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8631.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8635.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8641.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8644.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8647.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8651.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8654.avif",
-      "/src/assets/projects/rakyan-infra/NOW_8657.avif"
-    ],
-    "cover_images": [
-      "/uploads/projects/rakyan-infra/af822430-NOW_8611.webp"
-    ],
-    "testimonial": {
-      "text": "An exemplary execution that flawlessly blended creativity with precision.",
-      "image": "/src/assets/projects/rakyan-infra/NOW_8569.avif",
-      "video": ""
-    },
-    "is_hero_project": true,
-    "area": "600 sq.ft.",
-    "style": "Neo Contemporary",
-    "date": "2024"
-  },
-  {
     "id": "aphrodite-foods",
     "title": "Aphrodite Foods",
     "description": "A sophisticated culinary space designed with a focus on elegant aesthetics and ambient lighting.",
@@ -186,56 +143,6 @@
     }
   },
   {
-    "id": "purushottam-house",
-    "title": "Purushottam House",
-    "description": "",
-    "images": [
-      "/uploads/projects/purushottam-house/9a1a322e-IMG_5034.webp",
-      "/uploads/projects/purushottam-house/0487026d-IMG_5028.webp",
-      "/uploads/projects/purushottam-house/961f9d7d-IMG_5112.webp",
-      "/uploads/projects/purushottam-house/b8cd30de-IMG_5028.webp",
-      "/uploads/projects/purushottam-house/9a08bc8e-IMG_5033.webp",
-      "/uploads/projects/purushottam-house/674c4a52-IMG_5041.webp",
-      "/uploads/projects/purushottam-house/f25f870c-IMG_5048--1-.webp",
-      "/uploads/projects/purushottam-house/bae63430-IMG_5042.webp",
-      "/uploads/projects/purushottam-house/378bb6ce-IMG_5051.webp",
-      "/uploads/projects/purushottam-house/9c62610e-IMG_5061.webp",
-      "/uploads/projects/purushottam-house/5720e2b2-IMG_4770.webp",
-      "/uploads/projects/purushottam-house/bb2eeebd-IMG_4781.webp",
-      "/uploads/projects/purushottam-house/eadf6b4a-IMG_4804.webp",
-      "/uploads/projects/purushottam-house/76e8421e-IMG_4810.webp",
-      "/uploads/projects/purushottam-house/c2b49058-IMG_4812.webp",
-      "/uploads/projects/purushottam-house/d7442862-IMG_4822.webp",
-      "/uploads/projects/purushottam-house/7ba09a8b-IMG_4836.webp",
-      "/uploads/projects/purushottam-house/28dbb799-IMG_4838.webp",
-      "/uploads/projects/purushottam-house/8412c863-IMG_4839.webp",
-      "/uploads/projects/purushottam-house/b9b0cfe2-IMG_4840.webp",
-      "/uploads/projects/purushottam-house/81ee4358-IMG_4848.webp",
-      "/uploads/projects/purushottam-house/6a8e3bcf-IMG_5144.webp",
-      "/uploads/projects/purushottam-house/faab1c67-IMG_5127.webp",
-      "/uploads/projects/purushottam-house/2824afa3-IMG_5149.webp",
-      "/uploads/projects/purushottam-house/767ff801-IMG_4975.webp",
-      "/uploads/projects/purushottam-house/8a441a76-IMG_4978.webp",
-      "/uploads/projects/purushottam-house/4c4ae13d-IMG_4981.webp",
-      "/uploads/projects/purushottam-house/1d5bb1a7-IMG_4984.webp",
-      "/uploads/projects/purushottam-house/3da120ee-IMG_4927.webp",
-      "/uploads/projects/purushottam-house/fd6e04d7-IMG_4997.webp",
-      "/uploads/projects/purushottam-house/a26d6e36-IMG_4993.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/purushottam-house/20b5df7e-IMG_5048--1-.webp"
-    ],
-    "is_hero_project": true,
-    "area": "",
-    "style": "",
-    "date": "2026",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
     "id": "gaurav-joshi",
     "title": "Gaurav Joshi ",
     "description": "",
@@ -261,352 +168,9 @@
       "/uploads/projects/gaurav-joshi/6bc8e7b2-IMG_2444.webp"
     ],
     "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2024",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "rohit-kadakia",
-    "title": "Rohit Kadakia",
-    "description": "",
-    "images": [
-      "/uploads/projects/rohit-kadakia/6ff2e5a7-2bad6948-a109-4569-9810-adea7f140618.webp",
-      "/uploads/projects/rohit-kadakia/d2518776-5ace982d-8dc8-4d51-869d-5b06e320f565.webp",
-      "/uploads/projects/rohit-kadakia/3ea671d9-5aead073-03a1-442d-9210-147d094eb294.webp",
-      "/uploads/projects/rohit-kadakia/ab828bbb-7e817e28-1506-4814-bea0-2b7757db3986.webp",
-      "/uploads/projects/rohit-kadakia/ea12db81-8c1c8de6-add2-445d-ba8e-e6108ed5fea7.webp",
-      "/uploads/projects/rohit-kadakia/1d02ee5b-8c79d9ff-acde-4bb1-b89c-19dfd4d350e5.webp",
-      "/uploads/projects/rohit-kadakia/1d2a2201-9b31706b-2bc9-4177-94a7-ac8fb6f1f12c.webp",
-      "/uploads/projects/rohit-kadakia/a0dde7cc-9be9d2ea-56e6-455b-8052-595a9730a1a9.webp",
-      "/uploads/projects/rohit-kadakia/3ec8f22c-9f7ee128-1f63-49d6-ac24-3e6e8af70096.webp",
-      "/uploads/projects/rohit-kadakia/37acd7b7-22da5b75-98f8-45b0-998f-86f92e1e827d.webp",
-      "/uploads/projects/rohit-kadakia/95aecfbb-39ad06dc-d65a-4256-925d-64af004bf69e.webp",
-      "/uploads/projects/rohit-kadakia/07af849e-53e13e7c-94d3-410f-a130-f2b73be3d862.webp",
-      "/uploads/projects/rohit-kadakia/d5964a13-902c358f-6cd8-4890-b797-f2aa64bea44b.webp",
-      "/uploads/projects/rohit-kadakia/63eb0a75-72319d23-b787-4d5c-9273-b51fad9e6d6f.webp",
-      "/uploads/projects/rohit-kadakia/c944fe41-396077e5-80d3-4710-b757-b3f689dccd56.webp",
-      "/uploads/projects/rohit-kadakia/fb8ab447-456307fe-abda-4fe0-a668-ef3200cb55c7.webp",
-      "/uploads/projects/rohit-kadakia/5bf61590-495539c8-678e-4e39-9a53-9d55cadd8c44.webp",
-      "/uploads/projects/rohit-kadakia/6c4712c9-9899694d-8a85-41d8-b39b-a83fd2a735cd.webp",
-      "/uploads/projects/rohit-kadakia/8ca155e7-a236ed82-5aab-4e9c-a11e-f43c01083c58.webp",
-      "/uploads/projects/rohit-kadakia/4d59fb78-aaf79595-4d87-43bb-950d-778013d2a890.webp",
-      "/uploads/projects/rohit-kadakia/8b7fdac9-c15fa47a-1b1e-469c-b9dd-19400d99a1c8.webp",
-      "/uploads/projects/rohit-kadakia/91e59030-cc169f4d-5df9-492e-8521-684aab50c4ee.webp",
-      "/uploads/projects/rohit-kadakia/5e68c650-d5c31665-1005-4368-b435-6ad7304d6495.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/rohit-kadakia/76311988-d5c31665-1005-4368-b435-6ad7304d6495.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2023",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "niraj-ved",
-    "title": "Niraj Ved",
-    "description": "",
-    "images": [
-      "/uploads/projects/niraj-ved/52b8ca3c-NV1.webp",
-      "/uploads/projects/niraj-ved/cc296a42-NV4.webp",
-      "/uploads/projects/niraj-ved/e867e50c-NV5.webp",
-      "/uploads/projects/niraj-ved/0dcc826f-NV6.webp",
-      "/uploads/projects/niraj-ved/23bda9c9-NV3.webp",
-      "/uploads/projects/niraj-ved/54ca0871-NV2.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/niraj-ved/51c5dfc7-NV2.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
+    "area": "500 sq.ft.",
+    "style": "Minimal is Maximum",
     "date": "2021",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "dr-bhavsars-clinic",
-    "title": "Dr. Bhavsar's Clinic",
-    "description": "",
-    "images": [
-      "/uploads/projects/dr-bhavsars-clinic/6427c51d-DT-6_301122.webp",
-      "/uploads/projects/dr-bhavsars-clinic/9510b12c-DT-7_051222.webp",
-      "/uploads/projects/dr-bhavsars-clinic/9ad2d4de-DT-11_061222.webp",
-      "/uploads/projects/dr-bhavsars-clinic/d335a851-DT-3_301122.webp",
-      "/uploads/projects/dr-bhavsars-clinic/9fc0ab5b-DT-5_301122.webp",
-      "/uploads/projects/dr-bhavsars-clinic/25613701-DT-1_291122--1-.webp",
-      "/uploads/projects/dr-bhavsars-clinic/0415c279-DT-2_301122--1-.webp",
-      "/uploads/projects/dr-bhavsars-clinic/f2907773-DT-10_061222.webp",
-      "/uploads/projects/dr-bhavsars-clinic/94136f19-DT-9_051222.webp",
-      "/uploads/projects/dr-bhavsars-clinic/72a02adb-DT-8_051222.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/dr-bhavsars-clinic/33600194-DT-3_301122.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2022",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "maulik-unadkat",
-    "title": "Maulik Unadkat",
-    "description": "",
-    "images": [
-      "/uploads/projects/maulik-unadkat/c3b242dc-IMG_8347--1-.webp",
-      "/uploads/projects/maulik-unadkat/54b32e85-IMG_8348--1-.webp",
-      "/uploads/projects/maulik-unadkat/b3770648-IMG_8341--1-.webp",
-      "/uploads/projects/maulik-unadkat/848e1ee5-IMG_8351--1-.webp",
-      "/uploads/projects/maulik-unadkat/86cbeb9b-IMG_8356--1-.webp",
-      "/uploads/projects/maulik-unadkat/754f38c5-IMG_8362--1-.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/maulik-unadkat/eb8fe4a2-IMG_8356--1-.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2020",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "kunal-sheth-office",
-    "title": "Kunal Sheth Office",
-    "description": "",
-    "images": [
-      "/uploads/projects/kunal-sheth-office/76a7f202-Adjustments--6-.webp",
-      "/uploads/projects/kunal-sheth-office/88b0e0e5-Adjustments--7-.webp",
-      "/uploads/projects/kunal-sheth-office/a95960c5-IMG_1647.webp",
-      "/uploads/projects/kunal-sheth-office/629482a5-Adjustments--5-.webp",
-      "/uploads/projects/kunal-sheth-office/a06d6895-Adjustments--8-.webp",
-      "/uploads/projects/kunal-sheth-office/489acc83-IMG_1698.webp",
-      "/uploads/projects/kunal-sheth-office/c938c30d-IMG_1646.webp",
-      "/uploads/projects/kunal-sheth-office/70135b6c-IMG_1656.webp",
-      "/uploads/projects/kunal-sheth-office/3c9b0903-IMG_1650.webp",
-      "/uploads/projects/kunal-sheth-office/f8e932a0-IMG_1667.webp",
-      "/uploads/projects/kunal-sheth-office/a725dfad-Adjustments--1-.webp",
-      "/uploads/projects/kunal-sheth-office/abde57e8-IMG_1677.webp",
-      "/uploads/projects/kunal-sheth-office/a5a2e3b6-Adjustments--9-.webp",
-      "/uploads/projects/kunal-sheth-office/e3ef5987-Adjustments.webp",
-      "/uploads/projects/kunal-sheth-office/0776ab63-Adjustments--3-.webp",
-      "/uploads/projects/kunal-sheth-office/96302b96-IMG_1699.webp",
-      "/uploads/projects/kunal-sheth-office/2ef6a4c1-Adjustments--2-.webp",
-      "/uploads/projects/kunal-sheth-office/50f2d458-Adjustments--4-.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/kunal-sheth-office/ab07b9a6-Adjustments--8-.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2019",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "kanakia-house-2bhk",
-    "title": "Kanakia House 2bhk",
-    "description": "",
-    "images": [
-      "/uploads/projects/kanakia-house-2bhk/867c7ba0-E_SZ89885.webp",
-      "/uploads/projects/kanakia-house-2bhk/006060cd-E_SZ89891.webp",
-      "/uploads/projects/kanakia-house-2bhk/f003aa33-E_SZ89869.webp",
-      "/uploads/projects/kanakia-house-2bhk/07ea0f4b-E_SZ89844.webp",
-      "/uploads/projects/kanakia-house-2bhk/c6343cc0-E_SZ89841.webp",
-      "/uploads/projects/kanakia-house-2bhk/d42da078-E_SZ89838a.webp",
-      "/uploads/projects/kanakia-house-2bhk/77502404-E_SZ89857a.webp",
-      "/uploads/projects/kanakia-house-2bhk/75ddabc0-E_SZ89860.webp",
-      "/uploads/projects/kanakia-house-2bhk/3f2927c7-E_SZ89865.webp",
-      "/uploads/projects/kanakia-house-2bhk/73fc29e7-E_SZ89872.webp",
-      "/uploads/projects/kanakia-house-2bhk/2e530e8a-E_SZ89875.webp",
-      "/uploads/projects/kanakia-house-2bhk/d7c274bc-E_SZ89773.webp",
-      "/uploads/projects/kanakia-house-2bhk/0b63f4f5-E_SZ89785.webp",
-      "/uploads/projects/kanakia-house-2bhk/4680779f-E_SZ89807.webp",
-      "/uploads/projects/kanakia-house-2bhk/9b5c7840-E_SZ89800.webp",
-      "/uploads/projects/kanakia-house-2bhk/fb62a43a-E_SZ89788.webp",
-      "/uploads/projects/kanakia-house-2bhk/137734e4-E_SZ89815.webp",
-      "/uploads/projects/kanakia-house-2bhk/b3d09c74-E_SZ89825.webp",
-      "/uploads/projects/kanakia-house-2bhk/6200e5c2-E_SZ89877.webp",
-      "/uploads/projects/kanakia-house-2bhk/42925873-E_SZ89882.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/kanakia-house-2bhk/7c333b03-E_SZ89841.webp"
-    ],
-    "is_hero_project": true,
-    "area": "",
-    "style": "",
-    "date": "2019",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "santosh-nair",
-    "title": "Santosh Nair",
-    "description": "",
-    "images": [
-      "/uploads/projects/santosh/79180db3-HB_19759.webp",
-      "/uploads/projects/santosh/9d7f015a-HB_19763.webp",
-      "/uploads/projects/santosh/834a5238-HB_19770.webp",
-      "/uploads/projects/santosh/b7628588-HB_19780.webp",
-      "/uploads/projects/santosh/f511f02d-HB_19823.webp",
-      "/uploads/projects/santosh/08427106-HB_19820.webp",
-      "/uploads/projects/santosh/45ac251c-HB_19786.webp",
-      "/uploads/projects/santosh/2805af89-HB_19830.webp",
-      "/uploads/projects/santosh/cb6aa685-HB_19832.webp",
-      "/uploads/projects/santosh/d2d1719d-HB_19834.webp",
-      "/uploads/projects/santosh/b82e5345-HB_19845.webp",
-      "/uploads/projects/santosh/27bc28a8-HB_19853.webp",
-      "/uploads/projects/santosh/6b26734e-HB_19859.webp",
-      "/uploads/projects/santosh/dc36e338-HB_19861.webp",
-      "/uploads/projects/santosh/fa368cb2-HB_19867.webp",
-      "/uploads/projects/santosh/b37b9a21-HB_19869.webp",
-      "/uploads/projects/santosh/2d9625c8-HB_19868.webp",
-      "/uploads/projects/santosh/a6b2f518-HB_19873.webp",
-      "/uploads/projects/santosh/3af1ef28-HB_19910.webp",
-      "/uploads/projects/santosh/b594e6d0-HB_19917.webp",
-      "/uploads/projects/santosh/527d42aa-HB_19924.webp",
-      "/uploads/projects/santosh/e96c7882-HB_19928.webp",
-      "/uploads/projects/santosh/6a2083ad-HB_19941.webp",
-      "/uploads/projects/santosh/d407378b-HB_20008.webp",
-      "/uploads/projects/santosh/a272b9d9-HB_19948.webp",
-      "/uploads/projects/santosh/66aa7bd0-HB_19944.webp",
-      "/uploads/projects/santosh/ca093e0b-HB_29824.webp",
-      "/uploads/projects/santosh/af875845-HB_29850.webp",
-      "/uploads/projects/santosh/b3b9532b-HB_29866.webp",
-      "/uploads/projects/santosh/1225cd3e-HB_29876.webp",
-      "/uploads/projects/santosh/30428593-HB_29976.webp",
-      "/uploads/projects/santosh/473392f1-HB_29990.webp",
-      "/uploads/projects/santosh/712a0386-HB_19831.webp",
-      "/uploads/projects/santosh/59e6a77c-PHOTO-2022-01-13-19-43-17_1.webp",
-      "/uploads/projects/santosh/6ce4b9fa-PHOTO-2022-01-13-19-43-17.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/santosh/a2d1a94b-HB_19868.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2022",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "khandala-valley-one-bungalow",
-    "title": "Khandala Valley One Bungalow",
-    "description": "",
-    "images": [
-      "/uploads/projects/khandala-valley-one-bungalow/5e8df612-Cam-01_04_CRF.webp",
-      "/uploads/projects/khandala-valley-one-bungalow/96a9b06d-Cam-02_02_CRF.webp",
-      "/uploads/projects/khandala-valley-one-bungalow/44f4cb9a-Cam-03_03_CRF.webp",
-      "/uploads/projects/khandala-valley-one-bungalow/bc140fa3-Cam-04_05_CRF.webp",
-      "/uploads/projects/khandala-valley-one-bungalow/f18318f7-Cam-05_03_CRF.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/khandala-valley-one-bungalow/6ac778fb-Cam-02_02_CRF.webp"
-    ],
-    "is_hero_project": true,
-    "area": "",
-    "style": "",
-    "date": "2026",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "kitchen-studio-worli",
-    "title": "Kitchen Studio Worli",
-    "description": "",
-    "images": [
-      "/uploads/projects/kitchen-studio-worli/0908e79c-Kitchen-Studio-Shakti-Mills-11182023_140756--1-.webp",
-      "/uploads/projects/kitchen-studio-worli/ee54610a-Kitchen-Studio-Shakti-Mills-11182023_140055--1-.webp",
-      "/uploads/projects/kitchen-studio-worli/0e42b397-Kitchen-Studio-Shakti-Mills-11182023_140239.webp",
-      "/uploads/projects/kitchen-studio-worli/15234706-Kitchen-Studio-Shakti-Mills-11182023_140557.webp",
-      "/uploads/projects/kitchen-studio-worli/1f96fa8f-Kitchen-Studio-Shakti-Mills-11182023_140447.webp",
-      "/uploads/projects/kitchen-studio-worli/e4c13514-Kitchen-Studio-Shakti-Mills-11182023_140402.webp",
-      "/uploads/projects/kitchen-studio-worli/17a27d1e-Kitchen-Studio-Shakti-Mills-11182023_140924.webp",
-      "/uploads/projects/kitchen-studio-worli/f2ec16da-Kitchen-Studio-Shakti-Mills-Living-Room.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/kitchen-studio-worli/e345f0b8-Kitchen-Studio-Shakti-Mills-11182023_140557.webp"
-    ],
-    "is_hero_project": true,
-    "area": "",
-    "style": "",
-    "date": "2023",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
-    "id": "beyond-alliance-experience-center---commercial",
-    "title": "Beyond Alliance Experience Center - Commercial",
-    "description": "",
-    "images": [
-      "/uploads/projects/kitchen-studio-andheri/2d0fade6-DSC05084.webp",
-      "/uploads/projects/kitchen-studio-andheri/c3d6eaa0-DSC05086.webp",
-      "/uploads/projects/kitchen-studio-andheri/be7b6263-DSC05087.webp",
-      "/uploads/projects/kitchen-studio-andheri/4135fa53-DSC05090.webp",
-      "/uploads/projects/kitchen-studio-andheri/8237a718-DSC05091.webp",
-      "/uploads/projects/kitchen-studio-andheri/065e035e-DSC05096.webp",
-      "/uploads/projects/kitchen-studio-andheri/b11143ae-DSC05111.webp",
-      "/uploads/projects/kitchen-studio-andheri/5620eb30-DSC05104.webp",
-      "/uploads/projects/kitchen-studio-andheri/07ec0358-DSC05100.webp",
-      "/uploads/projects/kitchen-studio-andheri/b39c7d7c-DSC05114.webp",
-      "/uploads/projects/kitchen-studio-andheri/24663241-DSC05116.webp",
-      "/uploads/projects/kitchen-studio-andheri/3d31d07d-DSC05120.webp",
-      "/uploads/projects/kitchen-studio-andheri/82a8194e-DSC05132.webp",
-      "/uploads/projects/kitchen-studio-andheri/74716cd6-DSC05121.webp",
-      "/uploads/projects/kitchen-studio-andheri/0fa285dd-DSC05123.webp",
-      "/uploads/projects/kitchen-studio-andheri/d700344f-DSC05138.webp",
-      "/uploads/projects/kitchen-studio-andheri/23505ae9-DSC05061.webp",
-      "/uploads/projects/kitchen-studio-andheri/e322e4f7-DSC05068.webp",
-      "/uploads/projects/kitchen-studio-andheri/103bc452-DSC05069.webp",
-      "/uploads/projects/kitchen-studio-andheri/38f90e32-DSC05070.webp",
-      "/uploads/projects/kitchen-studio-andheri/446f02a6-DSC05073.webp",
-      "/uploads/projects/kitchen-studio-andheri/ca23b2ec-DSC05075.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/kitchen-studio-andheri/d4a7e930-DSC05096.webp"
-    ],
-    "is_hero_project": false,
-    "area": "",
-    "style": "",
-    "date": "2019",
     "testimonial": {
       "text": "",
       "image": "",
@@ -749,9 +313,445 @@
       "/uploads/projects/the-contempo-nest/f5689ed4-DSC01328-1.webp"
     ],
     "is_hero_project": true,
-    "area": "1500",
-    "style": "",
+    "area": "1500 sq.ft.",
+    "style": "Centemporary",
     "date": "2025",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "white-grey",
+    "title": "White & Grey",
+    "description": "",
+    "images": [
+      "/uploads/projects/rohit-kadakia/6ff2e5a7-2bad6948-a109-4569-9810-adea7f140618.webp",
+      "/uploads/projects/rohit-kadakia/d2518776-5ace982d-8dc8-4d51-869d-5b06e320f565.webp",
+      "/uploads/projects/rohit-kadakia/3ea671d9-5aead073-03a1-442d-9210-147d094eb294.webp",
+      "/uploads/projects/rohit-kadakia/ab828bbb-7e817e28-1506-4814-bea0-2b7757db3986.webp",
+      "/uploads/projects/rohit-kadakia/ea12db81-8c1c8de6-add2-445d-ba8e-e6108ed5fea7.webp",
+      "/uploads/projects/rohit-kadakia/1d02ee5b-8c79d9ff-acde-4bb1-b89c-19dfd4d350e5.webp",
+      "/uploads/projects/rohit-kadakia/1d2a2201-9b31706b-2bc9-4177-94a7-ac8fb6f1f12c.webp",
+      "/uploads/projects/rohit-kadakia/a0dde7cc-9be9d2ea-56e6-455b-8052-595a9730a1a9.webp",
+      "/uploads/projects/rohit-kadakia/3ec8f22c-9f7ee128-1f63-49d6-ac24-3e6e8af70096.webp",
+      "/uploads/projects/rohit-kadakia/37acd7b7-22da5b75-98f8-45b0-998f-86f92e1e827d.webp",
+      "/uploads/projects/rohit-kadakia/95aecfbb-39ad06dc-d65a-4256-925d-64af004bf69e.webp",
+      "/uploads/projects/rohit-kadakia/07af849e-53e13e7c-94d3-410f-a130-f2b73be3d862.webp",
+      "/uploads/projects/rohit-kadakia/d5964a13-902c358f-6cd8-4890-b797-f2aa64bea44b.webp",
+      "/uploads/projects/rohit-kadakia/63eb0a75-72319d23-b787-4d5c-9273-b51fad9e6d6f.webp",
+      "/uploads/projects/rohit-kadakia/c944fe41-396077e5-80d3-4710-b757-b3f689dccd56.webp",
+      "/uploads/projects/rohit-kadakia/fb8ab447-456307fe-abda-4fe0-a668-ef3200cb55c7.webp",
+      "/uploads/projects/rohit-kadakia/5bf61590-495539c8-678e-4e39-9a53-9d55cadd8c44.webp",
+      "/uploads/projects/rohit-kadakia/6c4712c9-9899694d-8a85-41d8-b39b-a83fd2a735cd.webp",
+      "/uploads/projects/rohit-kadakia/8ca155e7-a236ed82-5aab-4e9c-a11e-f43c01083c58.webp",
+      "/uploads/projects/rohit-kadakia/4d59fb78-aaf79595-4d87-43bb-950d-778013d2a890.webp",
+      "/uploads/projects/rohit-kadakia/8b7fdac9-c15fa47a-1b1e-469c-b9dd-19400d99a1c8.webp",
+      "/uploads/projects/rohit-kadakia/91e59030-cc169f4d-5df9-492e-8521-684aab50c4ee.webp",
+      "/uploads/projects/rohit-kadakia/5e68c650-d5c31665-1005-4368-b435-6ad7304d6495.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/rohit-kadakia/76311988-d5c31665-1005-4368-b435-6ad7304d6495.webp"
+    ],
+    "is_hero_project": false,
+    "area": "750 sq.ft.",
+    "style": "Contemporary",
+    "date": "2023",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "the-kerala-house",
+    "title": "The Kerala House",
+    "description": "",
+    "images": [
+      "/uploads/projects/purushottam-house/9a1a322e-IMG_5034.webp",
+      "/uploads/projects/purushottam-house/0487026d-IMG_5028.webp",
+      "/uploads/projects/purushottam-house/961f9d7d-IMG_5112.webp",
+      "/uploads/projects/purushottam-house/b8cd30de-IMG_5028.webp",
+      "/uploads/projects/purushottam-house/9a08bc8e-IMG_5033.webp",
+      "/uploads/projects/purushottam-house/674c4a52-IMG_5041.webp",
+      "/uploads/projects/purushottam-house/f25f870c-IMG_5048--1-.webp",
+      "/uploads/projects/purushottam-house/bae63430-IMG_5042.webp",
+      "/uploads/projects/purushottam-house/378bb6ce-IMG_5051.webp",
+      "/uploads/projects/purushottam-house/9c62610e-IMG_5061.webp",
+      "/uploads/projects/purushottam-house/5720e2b2-IMG_4770.webp",
+      "/uploads/projects/purushottam-house/bb2eeebd-IMG_4781.webp",
+      "/uploads/projects/purushottam-house/eadf6b4a-IMG_4804.webp",
+      "/uploads/projects/purushottam-house/76e8421e-IMG_4810.webp",
+      "/uploads/projects/purushottam-house/c2b49058-IMG_4812.webp",
+      "/uploads/projects/purushottam-house/d7442862-IMG_4822.webp",
+      "/uploads/projects/purushottam-house/7ba09a8b-IMG_4836.webp",
+      "/uploads/projects/purushottam-house/28dbb799-IMG_4838.webp",
+      "/uploads/projects/purushottam-house/8412c863-IMG_4839.webp",
+      "/uploads/projects/purushottam-house/b9b0cfe2-IMG_4840.webp",
+      "/uploads/projects/purushottam-house/81ee4358-IMG_4848.webp",
+      "/uploads/projects/purushottam-house/6a8e3bcf-IMG_5144.webp",
+      "/uploads/projects/purushottam-house/faab1c67-IMG_5127.webp",
+      "/uploads/projects/purushottam-house/2824afa3-IMG_5149.webp",
+      "/uploads/projects/purushottam-house/767ff801-IMG_4975.webp",
+      "/uploads/projects/purushottam-house/8a441a76-IMG_4978.webp",
+      "/uploads/projects/purushottam-house/4c4ae13d-IMG_4981.webp",
+      "/uploads/projects/purushottam-house/1d5bb1a7-IMG_4984.webp",
+      "/uploads/projects/purushottam-house/3da120ee-IMG_4927.webp",
+      "/uploads/projects/purushottam-house/fd6e04d7-IMG_4997.webp",
+      "/uploads/projects/purushottam-house/a26d6e36-IMG_4993.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/purushottam-house/20b5df7e-IMG_5048--1-.webp"
+    ],
+    "is_hero_project": true,
+    "area": "750 sq.ft.",
+    "style": "Kerala House",
+    "date": "2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "neoclassical-office",
+    "title": "Neoclassical Office",
+    "description": "A stunning architectural showcase of premium design and luxurious details.",
+    "images": [
+      "/src/assets/projects/rakyan-infra/NOW_8563.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8564.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8569.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8574.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8595.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8597.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8601.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8604.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8609.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8611.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8615.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8619.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8623.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8625.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8627.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8629.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8631.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8635.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8641.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8644.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8647.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8651.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8654.avif",
+      "/src/assets/projects/rakyan-infra/NOW_8657.avif"
+    ],
+    "cover_images": [
+      "/uploads/projects/rakyan-infra/af822430-NOW_8611.webp"
+    ],
+    "testimonial": {
+      "text": "An exemplary execution that flawlessly blended creativity with precision.",
+      "image": "/src/assets/projects/rakyan-infra/NOW_8569.avif",
+      "video": ""
+    },
+    "is_hero_project": true,
+    "area": "600 sq.ft.",
+    "style": "Neo Contemporary",
+    "date": "2024"
+  },
+  {
+    "id": "beyond-alliance-demo-center",
+    "title": "Beyond Alliance Demo Center",
+    "description": "",
+    "images": [
+      "/uploads/projects/kitchen-studio-andheri/2d0fade6-DSC05084.webp",
+      "/uploads/projects/kitchen-studio-andheri/c3d6eaa0-DSC05086.webp",
+      "/uploads/projects/kitchen-studio-andheri/be7b6263-DSC05087.webp",
+      "/uploads/projects/kitchen-studio-andheri/4135fa53-DSC05090.webp",
+      "/uploads/projects/kitchen-studio-andheri/8237a718-DSC05091.webp",
+      "/uploads/projects/kitchen-studio-andheri/065e035e-DSC05096.webp",
+      "/uploads/projects/kitchen-studio-andheri/b11143ae-DSC05111.webp",
+      "/uploads/projects/kitchen-studio-andheri/5620eb30-DSC05104.webp",
+      "/uploads/projects/kitchen-studio-andheri/07ec0358-DSC05100.webp",
+      "/uploads/projects/kitchen-studio-andheri/b39c7d7c-DSC05114.webp",
+      "/uploads/projects/kitchen-studio-andheri/24663241-DSC05116.webp",
+      "/uploads/projects/kitchen-studio-andheri/3d31d07d-DSC05120.webp",
+      "/uploads/projects/kitchen-studio-andheri/82a8194e-DSC05132.webp",
+      "/uploads/projects/kitchen-studio-andheri/74716cd6-DSC05121.webp",
+      "/uploads/projects/kitchen-studio-andheri/0fa285dd-DSC05123.webp",
+      "/uploads/projects/kitchen-studio-andheri/d700344f-DSC05138.webp",
+      "/uploads/projects/kitchen-studio-andheri/23505ae9-DSC05061.webp",
+      "/uploads/projects/kitchen-studio-andheri/e322e4f7-DSC05068.webp",
+      "/uploads/projects/kitchen-studio-andheri/103bc452-DSC05069.webp",
+      "/uploads/projects/kitchen-studio-andheri/38f90e32-DSC05070.webp",
+      "/uploads/projects/kitchen-studio-andheri/446f02a6-DSC05073.webp",
+      "/uploads/projects/kitchen-studio-andheri/ca23b2ec-DSC05075.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kitchen-studio-andheri/d4a7e930-DSC05096.webp"
+    ],
+    "is_hero_project": false,
+    "area": "500 sq.ft.",
+    "style": "Exposed",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "kitchen-studio-showroom",
+    "title": "Kitchen Studio Showroom",
+    "description": "",
+    "images": [
+      "/uploads/projects/kitchen-studio-worli/0908e79c-Kitchen-Studio-Shakti-Mills-11182023_140756--1-.webp",
+      "/uploads/projects/kitchen-studio-worli/ee54610a-Kitchen-Studio-Shakti-Mills-11182023_140055--1-.webp",
+      "/uploads/projects/kitchen-studio-worli/0e42b397-Kitchen-Studio-Shakti-Mills-11182023_140239.webp",
+      "/uploads/projects/kitchen-studio-worli/15234706-Kitchen-Studio-Shakti-Mills-11182023_140557.webp",
+      "/uploads/projects/kitchen-studio-worli/1f96fa8f-Kitchen-Studio-Shakti-Mills-11182023_140447.webp",
+      "/uploads/projects/kitchen-studio-worli/e4c13514-Kitchen-Studio-Shakti-Mills-11182023_140402.webp",
+      "/uploads/projects/kitchen-studio-worli/17a27d1e-Kitchen-Studio-Shakti-Mills-11182023_140924.webp",
+      "/uploads/projects/kitchen-studio-worli/f2ec16da-Kitchen-Studio-Shakti-Mills-Living-Room.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kitchen-studio-worli/e345f0b8-Kitchen-Studio-Shakti-Mills-11182023_140557.webp"
+    ],
+    "is_hero_project": true,
+    "area": "1200 sq.ft.",
+    "style": "Neoclassical",
+    "date": "2023",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "khandala-valley-one",
+    "title": "Khandala Valley One ",
+    "description": "",
+    "images": [
+      "/uploads/projects/khandala-valley-one-bungalow/5e8df612-Cam-01_04_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/96a9b06d-Cam-02_02_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/44f4cb9a-Cam-03_03_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/bc140fa3-Cam-04_05_CRF.webp",
+      "/uploads/projects/khandala-valley-one-bungalow/f18318f7-Cam-05_03_CRF.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/khandala-valley-one-bungalow/6ac778fb-Cam-02_02_CRF.webp"
+    ],
+    "is_hero_project": true,
+    "area": "10000 sq.ft.",
+    "style": "",
+    "date": "2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "dental-clinic",
+    "title": "Dental Clinic",
+    "description": "",
+    "images": [
+      "/uploads/projects/dr-bhavsars-clinic/6427c51d-DT-6_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9510b12c-DT-7_051222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9ad2d4de-DT-11_061222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/d335a851-DT-3_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/9fc0ab5b-DT-5_301122.webp",
+      "/uploads/projects/dr-bhavsars-clinic/25613701-DT-1_291122--1-.webp",
+      "/uploads/projects/dr-bhavsars-clinic/0415c279-DT-2_301122--1-.webp",
+      "/uploads/projects/dr-bhavsars-clinic/f2907773-DT-10_061222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/94136f19-DT-9_051222.webp",
+      "/uploads/projects/dr-bhavsars-clinic/72a02adb-DT-8_051222.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/dr-bhavsars-clinic/33600194-DT-3_301122.webp"
+    ],
+    "is_hero_project": false,
+    "area": "350 sq.ft.",
+    "style": "",
+    "date": "2022",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "kanakia-house",
+    "title": "Kanakia House ",
+    "description": "",
+    "images": [
+      "/uploads/projects/kanakia-house-2bhk/867c7ba0-E_SZ89885.webp",
+      "/uploads/projects/kanakia-house-2bhk/006060cd-E_SZ89891.webp",
+      "/uploads/projects/kanakia-house-2bhk/f003aa33-E_SZ89869.webp",
+      "/uploads/projects/kanakia-house-2bhk/07ea0f4b-E_SZ89844.webp",
+      "/uploads/projects/kanakia-house-2bhk/c6343cc0-E_SZ89841.webp",
+      "/uploads/projects/kanakia-house-2bhk/d42da078-E_SZ89838a.webp",
+      "/uploads/projects/kanakia-house-2bhk/77502404-E_SZ89857a.webp",
+      "/uploads/projects/kanakia-house-2bhk/75ddabc0-E_SZ89860.webp",
+      "/uploads/projects/kanakia-house-2bhk/3f2927c7-E_SZ89865.webp",
+      "/uploads/projects/kanakia-house-2bhk/73fc29e7-E_SZ89872.webp",
+      "/uploads/projects/kanakia-house-2bhk/2e530e8a-E_SZ89875.webp",
+      "/uploads/projects/kanakia-house-2bhk/d7c274bc-E_SZ89773.webp",
+      "/uploads/projects/kanakia-house-2bhk/0b63f4f5-E_SZ89785.webp",
+      "/uploads/projects/kanakia-house-2bhk/4680779f-E_SZ89807.webp",
+      "/uploads/projects/kanakia-house-2bhk/9b5c7840-E_SZ89800.webp",
+      "/uploads/projects/kanakia-house-2bhk/fb62a43a-E_SZ89788.webp",
+      "/uploads/projects/kanakia-house-2bhk/137734e4-E_SZ89815.webp",
+      "/uploads/projects/kanakia-house-2bhk/b3d09c74-E_SZ89825.webp",
+      "/uploads/projects/kanakia-house-2bhk/6200e5c2-E_SZ89877.webp",
+      "/uploads/projects/kanakia-house-2bhk/42925873-E_SZ89882.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kanakia-house-2bhk/7c333b03-E_SZ89841.webp"
+    ],
+    "is_hero_project": true,
+    "area": "1800 sq.ft.",
+    "style": "Contemporary",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "veds-house",
+    "title": "Ved's House",
+    "description": "",
+    "images": [
+      "/uploads/projects/niraj-ved/52b8ca3c-NV1.webp",
+      "/uploads/projects/niraj-ved/cc296a42-NV4.webp",
+      "/uploads/projects/niraj-ved/e867e50c-NV5.webp",
+      "/uploads/projects/niraj-ved/0dcc826f-NV6.webp",
+      "/uploads/projects/niraj-ved/23bda9c9-NV3.webp",
+      "/uploads/projects/niraj-ved/54ca0871-NV2.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/veds-house/740b8416-NV5.webp"
+    ],
+    "is_hero_project": false,
+    "area": "850 sq.ft",
+    "style": "Contemporary",
+    "date": "2021",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "south-house",
+    "title": "South House",
+    "description": "",
+    "images": [
+      "/uploads/projects/santosh/79180db3-HB_19759.webp",
+      "/uploads/projects/santosh/9d7f015a-HB_19763.webp",
+      "/uploads/projects/santosh/834a5238-HB_19770.webp",
+      "/uploads/projects/santosh/b7628588-HB_19780.webp",
+      "/uploads/projects/santosh/f511f02d-HB_19823.webp",
+      "/uploads/projects/santosh/08427106-HB_19820.webp",
+      "/uploads/projects/santosh/45ac251c-HB_19786.webp",
+      "/uploads/projects/santosh/2805af89-HB_19830.webp",
+      "/uploads/projects/santosh/cb6aa685-HB_19832.webp",
+      "/uploads/projects/santosh/d2d1719d-HB_19834.webp",
+      "/uploads/projects/santosh/b82e5345-HB_19845.webp",
+      "/uploads/projects/santosh/27bc28a8-HB_19853.webp",
+      "/uploads/projects/santosh/6b26734e-HB_19859.webp",
+      "/uploads/projects/santosh/dc36e338-HB_19861.webp",
+      "/uploads/projects/santosh/fa368cb2-HB_19867.webp",
+      "/uploads/projects/santosh/b37b9a21-HB_19869.webp",
+      "/uploads/projects/santosh/2d9625c8-HB_19868.webp",
+      "/uploads/projects/santosh/a6b2f518-HB_19873.webp",
+      "/uploads/projects/santosh/3af1ef28-HB_19910.webp",
+      "/uploads/projects/santosh/b594e6d0-HB_19917.webp",
+      "/uploads/projects/santosh/527d42aa-HB_19924.webp",
+      "/uploads/projects/santosh/e96c7882-HB_19928.webp",
+      "/uploads/projects/santosh/6a2083ad-HB_19941.webp",
+      "/uploads/projects/santosh/d407378b-HB_20008.webp",
+      "/uploads/projects/santosh/a272b9d9-HB_19948.webp",
+      "/uploads/projects/santosh/66aa7bd0-HB_19944.webp",
+      "/uploads/projects/santosh/ca093e0b-HB_29824.webp",
+      "/uploads/projects/santosh/af875845-HB_29850.webp",
+      "/uploads/projects/santosh/b3b9532b-HB_29866.webp",
+      "/uploads/projects/santosh/1225cd3e-HB_29876.webp",
+      "/uploads/projects/santosh/30428593-HB_29976.webp",
+      "/uploads/projects/santosh/473392f1-HB_29990.webp",
+      "/uploads/projects/santosh/712a0386-HB_19831.webp",
+      "/uploads/projects/santosh/59e6a77c-PHOTO-2022-01-13-19-43-17_1.webp",
+      "/uploads/projects/santosh/6ce4b9fa-PHOTO-2022-01-13-19-43-17.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/santosh/a2d1a94b-HB_19868.webp"
+    ],
+    "is_hero_project": false,
+    "area": "1200 sq.ft.",
+    "style": "South ",
+    "date": "2022",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "wooden-office",
+    "title": "Wooden Office",
+    "description": "",
+    "images": [
+      "/uploads/projects/kunal-sheth-office/76a7f202-Adjustments--6-.webp",
+      "/uploads/projects/kunal-sheth-office/88b0e0e5-Adjustments--7-.webp",
+      "/uploads/projects/kunal-sheth-office/a95960c5-IMG_1647.webp",
+      "/uploads/projects/kunal-sheth-office/629482a5-Adjustments--5-.webp",
+      "/uploads/projects/kunal-sheth-office/a06d6895-Adjustments--8-.webp",
+      "/uploads/projects/kunal-sheth-office/489acc83-IMG_1698.webp",
+      "/uploads/projects/kunal-sheth-office/c938c30d-IMG_1646.webp",
+      "/uploads/projects/kunal-sheth-office/70135b6c-IMG_1656.webp",
+      "/uploads/projects/kunal-sheth-office/3c9b0903-IMG_1650.webp",
+      "/uploads/projects/kunal-sheth-office/f8e932a0-IMG_1667.webp",
+      "/uploads/projects/kunal-sheth-office/a725dfad-Adjustments--1-.webp",
+      "/uploads/projects/kunal-sheth-office/abde57e8-IMG_1677.webp",
+      "/uploads/projects/kunal-sheth-office/a5a2e3b6-Adjustments--9-.webp",
+      "/uploads/projects/kunal-sheth-office/e3ef5987-Adjustments.webp",
+      "/uploads/projects/kunal-sheth-office/0776ab63-Adjustments--3-.webp",
+      "/uploads/projects/kunal-sheth-office/96302b96-IMG_1699.webp",
+      "/uploads/projects/kunal-sheth-office/2ef6a4c1-Adjustments--2-.webp",
+      "/uploads/projects/kunal-sheth-office/50f2d458-Adjustments--4-.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/kunal-sheth-office/ab07b9a6-Adjustments--8-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "650 sq.ft.",
+    "style": "Contemporary",
+    "date": "2019",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "long-sofa-house",
+    "title": "Long Sofa House",
+    "description": "",
+    "images": [
+      "/uploads/projects/maulik-unadkat/c3b242dc-IMG_8347--1-.webp",
+      "/uploads/projects/maulik-unadkat/54b32e85-IMG_8348--1-.webp",
+      "/uploads/projects/maulik-unadkat/b3770648-IMG_8341--1-.webp",
+      "/uploads/projects/maulik-unadkat/848e1ee5-IMG_8351--1-.webp",
+      "/uploads/projects/maulik-unadkat/86cbeb9b-IMG_8356--1-.webp",
+      "/uploads/projects/maulik-unadkat/754f38c5-IMG_8362--1-.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/long-sofa-house/ecc75252-IMG_8347--1-.webp"
+    ],
+    "is_hero_project": false,
+    "area": "1000 sq.ft.",
+    "style": "Contemporary",
+    "date": "2020",
     "testimonial": {
       "text": "",
       "image": "",
