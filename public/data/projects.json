@@ -501,7 +501,7 @@
   {
     "id": "kitchen-studio-showroom",
     "title": "Kitchen Studio Showroom",
-    "description": "",
+    "description": "A neoclassical space defined by elegant arches, fluted details, and refined stone surfaces in a soft, modern palette.",
     "images": [
       "/uploads/projects/kitchen-studio-worli/0908e79c-Kitchen-Studio-Shakti-Mills-11182023_140756--1-.webp",
       "/uploads/projects/kitchen-studio-worli/ee54610a-Kitchen-Studio-Shakti-Mills-11182023_140055--1-.webp",
@@ -520,7 +520,7 @@
     "style": "Neoclassical",
     "date": "2023",
     "testimonial": {
-      "text": "",
+      "text": "Where classical grace meets contemporary luxury, crafted in every curve and detail.",
       "image": "",
       "video": ""
     }
