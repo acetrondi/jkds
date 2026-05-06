@@ -143,41 +143,6 @@
     }
   },
   {
-    "id": "gaurav-joshi",
-    "title": "Gaurav Joshi ",
-    "description": "Layered in natural tones and subtle textures, this cozy home blends smart planning with effortless elegance.",
-    "images": [
-      "/uploads/projects/gaurav-joshi/32a2b9ae-IMG_2413.webp",
-      "/uploads/projects/gaurav-joshi/621ab30e-IMG_2410.webp",
-      "/uploads/projects/gaurav-joshi/cd575fa6-IMG_2415.webp",
-      "/uploads/projects/gaurav-joshi/6c1b6679-IMG_2414.webp",
-      "/uploads/projects/gaurav-joshi/c489ac44-IMG_2412.webp",
-      "/uploads/projects/gaurav-joshi/602f00e8-IMG_2451.webp",
-      "/uploads/projects/gaurav-joshi/7b227487-IMG_2440--1-.webp",
-      "/uploads/projects/gaurav-joshi/f95a6a34-IMG_2448.webp",
-      "/uploads/projects/gaurav-joshi/3f7800f5-IMG_2440.webp",
-      "/uploads/projects/gaurav-joshi/3f045d1e-IMG_2453.webp",
-      "/uploads/projects/gaurav-joshi/bea28469-IMG_2450.webp",
-      "/uploads/projects/gaurav-joshi/e622ed1b-IMG_2452.webp",
-      "/uploads/projects/gaurav-joshi/46c14f00-IMG_2449.webp",
-      "/uploads/projects/gaurav-joshi/ad11d1f1-IMG_2441.webp",
-      "/uploads/projects/gaurav-joshi/29d3b006-IMG_2442.webp",
-      "/uploads/projects/gaurav-joshi/53223be4-IMG_2443.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/gaurav-joshi/6bc8e7b2-IMG_2444.webp"
-    ],
-    "is_hero_project": false,
-    "area": "500 sq.ft.",
-    "style": "Minimal is Maximum",
-    "date": "2021",
-    "testimonial": {
-      "text": "A warm, compact bedroom where comfort meets thoughtful design.",
-      "image": "",
-      "video": ""
-    }
-  },
-  {
     "id": "the-volume-house",
     "title": "The Volume House",
     "description": "A luxurious private residence featuring premium materials like white travertine and bespoke interior details.",
@@ -452,7 +417,7 @@
       "image": "/src/assets/projects/rakyan-infra/NOW_8569.avif",
       "video": ""
     },
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "600 sq.ft.",
     "style": "Neo Contemporary",
     "date": "2024"
@@ -539,7 +504,7 @@
     "cover_images": [
       "/uploads/projects/khandala-valley-one-bungalow/6ac778fb-Cam-02_02_CRF.webp"
     ],
-    "is_hero_project": true,
+    "is_hero_project": false,
     "area": "10000 sq.ft.",
     "style": "",
     "date": "2026",
