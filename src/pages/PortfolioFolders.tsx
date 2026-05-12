@@ -15,8 +15,8 @@ const PortfolioFolders = () => {
 
             <main className="pt-32 pb-20 px-4 md:px-8">
                 <header className="max-w-7xl mx-auto mb-16 text-center">
-                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-black">PORTFOLIO FOLDERS</h1>
-                    <p className="text-black/60 uppercase tracking-[0.3em] text-sm">Project Wise Showcase</p>
+                    <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-4 text-black">PORTFOLIO</h1>
+                    <p className="text-black/60 uppercase tracking-[0.3em] text-sm">Our Projects</p>
                 </header>
 
                 {/* Project Grid */}

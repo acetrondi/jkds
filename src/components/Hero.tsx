@@ -90,10 +90,7 @@ const Hero = () => {
 
           {/* Right: Desktop-only Visuals */}
           <div className="hidden lg:flex flex-col items-end text-right gap-6">
-            <div className="flex items-center gap-4">
-              <div className="h-[1px] w-12 bg-primary/50" />
-              <p className="text-xs uppercase tracking-[0.4em] text-white/60">Selected Works 2024-2026</p>
-            </div>
+            
 
             <div className="flex gap-2">
               {slides.map((_, idx) => (
@@ -103,12 +100,6 @@ const Hero = () => {
                   className={`h-1 transition-all duration-500 ${current === idx ? 'w-12 bg-primary' : 'w-4 bg-white/20'}`}
                 />
               ))}
-            </div>
-
-            <div className="max-w-[200px] space-y-4">
-              <p className="text-sm text-white/70 font-light leading-relaxed">
-                Photorealistic visualizations that showcase your ideas before they are <span className="text-white font-bold">built.</span>
-              </p>
             </div>
           </div>
         </div>
