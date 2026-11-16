@@ -757,27 +757,5 @@
       "image": "",
       "video": ""
     }
-  },
-  {
-    "id": "test",
-    "title": "Test",
-    "description": "testing if it workds or not",
-    "images": [
-      "/uploads/projects/test/23a0d014-ccfa32e7c8eb45947cb81a36d5345082.webp",
-      "/uploads/projects/test/ee6f516c-2e4349f24421281e5fcaed5e47cfdfd6.webp",
-      "/uploads/projects/test/1878a50a-abd6668aaaa1315ba7ba889debc58eb8.webp"
-    ],
-    "cover_images": [
-      "/uploads/projects/test/124a8aa1-ccfa32e7c8eb45947cb81a36d5345082.webp"
-    ],
-    "is_hero_project": false,
-    "area": "1000",
-    "style": "test",
-    "date": "2026",
-    "testimonial": {
-      "text": "",
-      "image": "",
-      "video": ""
-    }
   }
 ]
