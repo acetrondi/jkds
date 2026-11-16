@@ -757,5 +757,27 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "test",
+    "title": "Test",
+    "description": "testing",
+    "images": [
+      "/uploads/projects/test/f66bad76-ccfa32e7c8eb45947cb81a36d5345082.webp",
+      "/uploads/projects/test/174fef15-2e4349f24421281e5fcaed5e47cfdfd6.webp",
+      "/uploads/projects/test/f384c91b-abd6668aaaa1315ba7ba889debc58eb8.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/test/66bd0b89-f99e65dbf50d18aeacb21d6b86748e12.webp"
+    ],
+    "is_hero_project": false,
+    "area": "120",
+    "style": "test",
+    "date": "1-11-2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
