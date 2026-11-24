@@ -757,5 +757,53 @@
       "image": "",
       "video": ""
     }
+  },
+  {
+    "id": "aphrodite-foods-2",
+    "title": "Aphrodite Foods 2",
+    "description": "",
+    "images": [
+      "/uploads/projects/aphrodite-foods-2/a5ea34a5-BIZ06331-b.webp",
+      "/uploads/projects/aphrodite-foods-2/6654206f-BIZ06377-b.webp",
+      "/uploads/projects/aphrodite-foods-2/c1cf1dfa-BIZ06406-b.webp",
+      "/uploads/projects/aphrodite-foods-2/dfb6233f-BIZ06441-b.webp",
+      "/uploads/projects/aphrodite-foods-2/94c9d93a-BIZ06465-b.webp",
+      "/uploads/projects/aphrodite-foods-2/b08e0922-BIZ06496-bb.webp",
+      "/uploads/projects/aphrodite-foods-2/73ce4bb2-BIZ06525-b.webp",
+      "/uploads/projects/aphrodite-foods-2/41007c4a-BIZ06566-b.webp",
+      "/uploads/projects/aphrodite-foods-2/573da66c-BIZ06586-b.webp",
+      "/uploads/projects/aphrodite-foods-2/ba7ff648-BIZ06606-b.webp",
+      "/uploads/projects/aphrodite-foods-2/2a996df3-BIZ06626-b.webp",
+      "/uploads/projects/aphrodite-foods-2/c6dc21eb-BIZ06708-b.webp",
+      "/uploads/projects/aphrodite-foods-2/4f8b6fed-BIZ06728-bb.webp",
+      "/uploads/projects/aphrodite-foods-2/48c9db32-BIZ06808-b.webp",
+      "/uploads/projects/aphrodite-foods-2/29214290-BIZ06825-b.webp",
+      "/uploads/projects/aphrodite-foods-2/f253cd66-BIZ06839--b.webp",
+      "/uploads/projects/aphrodite-foods-2/8d9c77cb-BIZ06861-b.webp",
+      "/uploads/projects/aphrodite-foods-2/f8375437-BIZ06897-b.webp",
+      "/uploads/projects/aphrodite-foods-2/4700edbf-BIZ06928-b.webp",
+      "/uploads/projects/aphrodite-foods-2/ee4363d8-BIZ06946-b.webp",
+      "/uploads/projects/aphrodite-foods-2/738de098-BIZ06962--b.webp",
+      "/uploads/projects/aphrodite-foods-2/d7519f43-BIZ06986-b.webp",
+      "/uploads/projects/aphrodite-foods-2/60cd8b2a-BIZ07000-b-cr.webp",
+      "/uploads/projects/aphrodite-foods-2/96cab83e-BIZ07026-b.webp",
+      "/uploads/projects/aphrodite-foods-2/62edd713-BIZ07044-b.webp",
+      "/uploads/projects/aphrodite-foods-2/cdec8541-BIZ07055-b.webp",
+      "/uploads/projects/aphrodite-foods-2/7070edd4-BIZ07065-bb.webp",
+      "/uploads/projects/aphrodite-foods-2/2c219420-BIZ07091-b.webp",
+      "/uploads/projects/aphrodite-foods-2/346f376f-BIZ07117-b.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/aphrodite-foods-2/02c302f6-BIZ06825-b.webp"
+    ],
+    "is_hero_project": false,
+    "area": "1800 sq.ft.",
+    "style": "Contemporary",
+    "date": "August 2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
   }
 ]
