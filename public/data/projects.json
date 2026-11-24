@@ -796,10 +796,65 @@
     "cover_images": [
       "/uploads/projects/aphrodite-foods-2/02c302f6-BIZ06825-b.webp"
     ],
-    "is_hero_project": false,
+    "is_hero_project": true,
     "area": "1800 sq.ft.",
     "style": "Contemporary",
     "date": "August 2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "neo---classical-workspace",
+    "title": "Neo - Classical Workspace",
+    "description": "",
+    "images": [
+      "/uploads/projects/neo---classical-workspace/971c9256-BIZ09469-b.webp",
+      "/uploads/projects/neo---classical-workspace/c8bc1f98-BIZ09498-b.webp",
+      "/uploads/projects/neo---classical-workspace/c4ad5f5c-BIZ09527--b.webp",
+      "/uploads/projects/neo---classical-workspace/12ffb83e-BIZ09527-b.webp",
+      "/uploads/projects/neo---classical-workspace/07f9e741-BIZ09563-b.webp",
+      "/uploads/projects/neo---classical-workspace/ebc4e09b-BIZ09602-b.webp",
+      "/uploads/projects/neo---classical-workspace/cf782e2a-BIZ09627-b.webp",
+      "/uploads/projects/neo---classical-workspace/25406d82-BIZ09641-b.webp",
+      "/uploads/projects/neo---classical-workspace/66afbce2-BIZ09655-b.webp",
+      "/uploads/projects/neo---classical-workspace/4f2091b6-BIZ09670-b.webp",
+      "/uploads/projects/neo---classical-workspace/6175b6be-BIZ09688--b.webp",
+      "/uploads/projects/neo---classical-workspace/41267dd5-BIZ09688-b.webp",
+      "/uploads/projects/neo---classical-workspace/4467ee93-BIZ09708-b.webp",
+      "/uploads/projects/neo---classical-workspace/b7504bd6-BIZ09563-bb.webp",
+      "/uploads/projects/neo---classical-workspace/436fe8da-BIZ09721-bb.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/neo---classical-workspace/78749784-BIZ09469-b.webp"
+    ],
+    "is_hero_project": true,
+    "area": "350",
+    "style": "Neo - Classical",
+    "date": "June 2026",
+    "testimonial": {
+      "text": "",
+      "image": "",
+      "video": ""
+    }
+  },
+  {
+    "id": "saraf-bhavan",
+    "title": "Saraf Bhavan",
+    "description": "",
+    "images": [
+      "/uploads/projects/saraf-bhavan/0cc269ba-WhatsApp-Image-2026-08-19-at-11.39.46-AM.webp",
+      "/uploads/projects/saraf-bhavan/579cb2bc-WhatsApp-Image-2026-08-31-at-11.41.29-AM.webp"
+    ],
+    "cover_images": [
+      "/uploads/projects/saraf-bhavan/04f842b0-WhatsApp-Image-2026-08-19-at-11.39.46-AM.webp"
+    ],
+    "is_hero_project": false,
+    "area": "",
+    "style": "",
+    "date": "",
     "testimonial": {
       "text": "",
       "image": "",
